@@ -1,0 +1,1 @@
+export {NAV_1_LINKS} from './links'
