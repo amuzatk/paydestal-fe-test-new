@@ -1,4 +1,3 @@
-// import CollectionIcon from '../../../public/assets/svg/collection.svg';
 import CollectionIcon from '../../public/assets/svg/collection.svg';
 import CardProcessingIcon from '../../public/assets/svg/Card-processing.svg';
 import BankTransferIcon from '../../public/assets/svg/bank-transfer.svg';

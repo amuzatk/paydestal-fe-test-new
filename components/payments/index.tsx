@@ -104,15 +104,6 @@ flex-direction: column-reverse;
 const StyledLeft = styled(StyledFlexItem)`
 /* padding:10px 0; */
 padding-bottom: 25px;
-/* padding-right: 42px; */
-/* max-width: 800px; */
-// max-width: 731px;
-/* border: 1px solid green; */
-/* display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start; */
-
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
@@ -135,10 +126,6 @@ margin-top: -650px;
 `;
 
 const StyledHeading = styled(HeadingText)`
-     /* font-family: Plus Jakarta Sans;
-font-size: 44px;
-font-weight: 800;
-line-height: 55.44px; */
 text-align: left;
 @media only screen and (min-width:1367px){
 // font-size: 70px;
@@ -157,11 +144,6 @@ text-align: left;
 
 const StyledParagraph = styled(ParagraphText)`
 /* border: 1px solid red; */
-/* padding: 0 0px; */
-// max-width: 765px;
-/* max-width: 700px; */
-/* width: 100%; */
-/* padding-right: 15px; */
 text-align: left;
 @media only screen and (min-width:1367px){
     font-size: 20px;

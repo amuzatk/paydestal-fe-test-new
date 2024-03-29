@@ -1,5 +1,7 @@
 import Hero from '@/components/Hero';
+import Faq from '@/components/faq';
 import FooterComponent from '@/components/footer';
+import NavBar from '@/components/navbar';
 import PaymentSolutions from '@/components/payments';
 import EndlessPossibilities from '@/components/possibilities';
 import SecureSection from '@/components/secure';
@@ -14,20 +16,21 @@ export default function Home() {
       <Head>
         <title>Home Page</title>
         <meta name="description" content="Welcome to my Next.js app!" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" /> {/* Move viewport meta tag here */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <main>
+        <NavBar />
         <Hero />
         <SecureSection />
         <EndlessPossibilities />
         <PaymentSolutions />
+        <Faq />
         <FooterComponent />
       </main>
 
-      <footer>
-        {/* <p>Footer content goes here.</p> */}
-      </footer>
+      {/* <footer>
+      </footer> */}
     </div>
   );
 }

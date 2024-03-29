@@ -1,10 +1,9 @@
-import { StyledButton, StyledFlex, StyledFlexItem, StyledHeroSection } from '@/__style/ui-block.style'
+import {  StyledFlex, StyledFlexItem, StyledHeroSection } from '@/__style/ui-block.style'
 import Image from 'next/image'
 import React from 'react'
 import { styled } from 'styled-components'
 import PossibityImage from '../../public/assets/images/PossibilityImage.webp'
 import PossibilityIcon from '../../public/assets/icons/check.png'
-import PossibilityI from '../../public/assets/svg/background2.svg'
 import { HeadingText, ParagraphText } from '@/__style/global.style'
 import PossibilityItemized from './PossibilityItemized'
 

@@ -56,22 +56,11 @@ box-shadow: 0px 16px 29.799999237060547px 3px #00000040;
 justify-content: center;
 align-items: center;
 border-radius:69px;
-
 padding: 0 0 30px 0;
-
-/* top: 55px;
-left: 214.5px;
-gap: 0px;
-opacity: 0px; */
-
-/* border: 1px solid red; */
 `;
 const StyledP = styled(ParagraphText)`
 margin-bottom: 50px;
 `;
-// const StyledP2 = styled(ParagraphText)`
-// border: 1px solid yellow;
-// `;
 const StyledHeading = styled(HeadingText)`
 /* margin-top: -6px */
 `;
@@ -114,13 +103,4 @@ font-size: 21px;
 font-weight: 400;
 line-height: 26.46px;
 text-align: left;
-
-/* background: #1B442A; */
-
-/* font-family: Plus Jakarta Sans;
-font-size: 21px;
-font-weight: 400;
-line-height: 26.46px;
-text-align: left; */
-
 `;
