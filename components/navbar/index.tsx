@@ -255,7 +255,7 @@ const NavBar = () => {
         title=""
         placement="left"
         onClose={closeDrawer}
-        visible={drawerVisible}
+        open={drawerVisible}
       >
         <StyledDrawerMenu>
           <li>
@@ -299,23 +299,6 @@ const StyledLogo = styled.a`
   cursor: pointer;
 `;
 
-const StyledSearch = styled.div`
-  position: relative;
-`;
-
-const StyledInput = styled.input`
-  padding: 8px 30px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-  outline: none;
-`;
-
-const StyledSearchIcon = styled.div`
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-`;
 
 const StyledNav = styled.nav`
   display: flex;
@@ -346,36 +329,11 @@ const StyledLink = styled.a`
   }
 `;
 
-const StyledBell = styled.img`
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-`;
-
-const StyledUser = styled.div`
-  position: relative;
-`;
-
-const StyledUserInfo = styled.div`
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-`;
-
-const StyledUserName = styled.span`
-  margin-right: 10px;
-`;
-
-const StyledDropdown = styled.img`
-  width: 20px;
-  height: 20px;
-`;
-
 const StyledMobileBtn = styled.div`
   display: none;
 
   @media only screen and (max-width: 900px) {
     display: block;
-    margin-right: 20px; /* Add margin to push the hamburger icon to the right */
+    margin-right: 20px;
   }
 `;
