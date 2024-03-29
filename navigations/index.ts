@@ -1,1 +1,1 @@
-export {NAV_1_LINKS} from './links'
+export {NAV_1_LINKS, NAV_2_LINKS} from './links'

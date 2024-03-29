@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <NavBar />
+        <NavBar  />
         <Hero />
         <SecureSection />
         <EndlessPossibilities />

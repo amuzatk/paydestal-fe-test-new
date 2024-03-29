@@ -19,7 +19,7 @@ export const NAV_1_LINKS = [
     },
     {
       TITLE: 'Why Paydestal',
-      LINK: '/paydestal',
+      LINK: '/why-paydestal',
       SLUG: 'paydestal',
       TYPE: 1,
     },
@@ -33,6 +33,21 @@ export const NAV_1_LINKS = [
       TITLE: 'Support',
       LINK: '/support',
       SLUG: 'support',
+      TYPE: 1,
+    },
+  ];
+
+  export const NAV_2_LINKS = [
+    {
+      TITLE: 'Login',
+      LINK: '/auth/login',
+      SLUG: 'login',
+      TYPE: 1,
+    },
+    {
+      TITLE: 'Get Started',
+      LINK: '/auth/register',
+      SLUG: 'register',
       TYPE: 1,
     },
   ];
