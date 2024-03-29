@@ -220,28 +220,114 @@ A modern, technology payment processing and settlement built for you and your bu
 
   </StyledFlex> 
         </StyledFirst>
+
 <StyledSecond>
-{/* iujfoeowpoijp;ijfde faljco;kvjjroweiv fljvnjnojrije djljvnjnwrjoe
-tretr
-A modern, technology payment processing and settlement built for you and your business. */}
-{/* <Image src={FooterWebLogo} width={304.49} height={70} alt='FooterWebLogo'  /> */}
+
+<ParagraphText
+fsize='24px'
+fw='600'
+lh='30.24px'
+textAlign='left'
+color=' #1B442A'
+>
+Company
+</ParagraphText>
+
+<ParagraphText
+fsize='20px'
+fw='400'
+lh='25.2px'
+textAlign='left'
+color='#202020'
+>
+
+About Us
+</ParagraphText>
+
+<ParagraphText
+fsize='20px'
+fw='400'
+lh='25.2px'
+textAlign='left'
+color='#202020'
+>
+
+Developer
+</ParagraphText>
+
+<ParagraphText
+fsize='20px'
+fw='400'
+lh='25.2px'
+textAlign='left'
+color='#202020'
+>
+
+FAQ
+</ParagraphText>
 </StyledSecond>
+
+
 <StyledThird>
-{/* iujfoeowpoijp;ijfde faljco;kvjjroweiv fljvnjnojrije djljvnjnwrjoe
-645u66465 */}
+
+<ParagraphText
+fsize='24px'
+fw='600'
+lh='30.24px'
+textAlign='left'
+color=' #1B442A'
+>
+Legal
+</ParagraphText>
+
+<ParagraphText
+fsize='20px'
+fw='400'
+lh='25.2px'
+textAlign='left'
+color='#202020'
+>
+
+Support Policy 
+</ParagraphText>
+
+<ParagraphText
+fsize='20px'
+fw='400'
+lh='25.2px'
+textAlign='left'
+color='#202020'
+>
+
+Privacy Policy 
+</ParagraphText>
+
+<ParagraphText
+fsize='20px'
+fw='400'
+lh='25.2px'
+textAlign='left'
+color='#202020'
+>
+
+Terms & Conditions
+</ParagraphText>
+
 </StyledThird>
 <StyledFourth>
-{/* iujfoeowpoijp;ijfde faljco;kvjjroweiv fljvnjnojrije djljvnjnwrjoe
-yw554g5tt */}
+<ParagraphText
+fsize='24px'
+fw='600'
+lh='30.24px'
+textAlign='left'
+color=' #1B442A'
+>
+Our Office
+</ParagraphText>
+
+
+
 </StyledFourth>
-
-{/* <div>
-<Image src={FooterWebLogo} width={304.49} height={70} alt='FooterWebLogo'  />
-</div> */}
-
-      {/* <h2>
-      A modern, technology payment processing and settlement built for you and your business.
-      </h2> */}
 
 
 
@@ -300,7 +386,8 @@ display: flex;
 flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  gap: 15px;
 
 `;
 const StyledSecond = styled(StyledDiv)`
@@ -309,9 +396,10 @@ flex-basis: 20%;
 max-width: 137px;
 height: 195px;
 display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+flex-direction: column;
+justify-content: flex-start;
+  align-items: flex-start;
+  /* flex-grow: 1; */
 
 
 `;
@@ -321,8 +409,9 @@ flex-basis: 20%;
 max-width: 187px;
 height: 195px;
 display: flex;
-  justify-content: center;
-  align-items: center;
+flex-direction: column;
+justify-content: flex-start;
+  align-items: flex-start;
   flex-grow: 1;
 
 `;
@@ -332,4 +421,10 @@ flex-basis: 30%;
 max-width: 444px;
 height: 195px;
 flex-grow: 1;
+
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1;
 `;
