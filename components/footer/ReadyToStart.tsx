@@ -11,8 +11,9 @@ const ReadyToStart = () => {
       <StyledHeading
       fsize='64px'
       fw='800'
-      lh='80.64px'
+      // lh='80.64px'
       align='left'
+      color=' #FFFFFF'
       >
       Ready to get started?
       </StyledHeading>
@@ -22,6 +23,7 @@ const ReadyToStart = () => {
       fw='400'
       lh='30.24px'
       textAlign='center'
+      color='#FFFFFF'
       >
       It only takes a few minutes to register your FREE  account.
       </StyledP>
@@ -55,6 +57,8 @@ justify-content: center;
 align-items: center;
 border-radius:69px;
 
+padding: 0 0 30px 0;
+
 /* top: 55px;
 left: 214.5px;
 gap: 0px;
@@ -63,13 +67,13 @@ opacity: 0px; */
 /* border: 1px solid red; */
 `;
 const StyledP = styled(ParagraphText)`
-border: 1px solid orange;
+margin-bottom: 50px;
 `;
-const StyledP2 = styled(ParagraphText)`
-border: 1px solid yellow;
-`;
+// const StyledP2 = styled(ParagraphText)`
+// border: 1px solid yellow;
+// `;
 const StyledHeading = styled(HeadingText)`
-border: 1px solid green;
+/* margin-top: -6px */
 `;
 
 const StyledGetStartedCont2 = styled.button`
@@ -90,14 +94,6 @@ border: none;
 
 
 
-/* width: 275px;
-height: Hug (60px)px;
-top: 305.21px;
-left: 721px;
-padding: 16px 55px 16px 55px;
-gap: 10px;
-border-radius: 100px 0px 0px 0px;
-opacity: 0px; */
 
 @media only screen and (max-width:991px){
 /* width: 189px; */

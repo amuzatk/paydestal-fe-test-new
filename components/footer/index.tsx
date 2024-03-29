@@ -402,7 +402,7 @@ const StyledGetStarted = styled(StyledDiv)`
 position: absolute;
 left: 155px;
 /* bottom: 0px; */
-top: 2080px;
+top: 2055px;
 `;
 const StyledBackground = styled.div`
 /* position: relative; */
