@@ -192,7 +192,8 @@ import React, { useEffect, useState } from "react";
 import { MenuOutlined } from '@ant-design/icons';
 import { Drawer } from 'antd';
 import Image from "next/image";
-import Logo from '../../public/assets/images/logoFooterWeb.png';
+import Logo from '../../public/assets/icons/Nav_Logo.png';
+import MobileLogo from '../../public/assets/icons/PaydestalMobileLogo.png';
 import styled from "styled-components";
 
 const NavBar = () => {
@@ -221,7 +222,8 @@ const NavBar = () => {
   return (
     <StyledHeader>
       <StyledLogo href="/dashboard">
-        <Image src={Logo} width={250} height={100} alt="logo" />
+        <Image className="web" src={Logo} width={243} height={74.47} alt="Paydestal logo" />
+        <Image className="mobile" src={MobileLogo} width={155} height={50} alt="Paydestal logo" />
       </StyledLogo>
       {screenWidth <= 900 ? (
         <StyledMobileBtn onClick={() => setDrawerVisible(true)}>
@@ -230,24 +232,30 @@ const NavBar = () => {
       ) : (
         <StyledNav>
           <StyledMenu>
-            <li>
-              <StyledLink href="/services">Services</StyledLink>
-            </li>
-            <li>
-              <StyledLink href="/contact">Contact</StyledLink>
-            </li>
-            <li>
-              <StyledLink href="/projects">Projects</StyledLink>
-            </li>
-            <li>
-              <StyledLink href="/about-us">About Us</StyledLink>
-            </li>
-            <li>
-              <StyledLink href="/login">Login</StyledLink>
-            </li>
-            <li>
-              <StyledLink href="/register">Register</StyledLink>
-            </li>
+          <li>
+            <StyledLink onClick={closeDrawer} href="/services">Services</StyledLink>
+          </li>
+          <li>
+            <StyledLink onClick={closeDrawer} href="/contact">Pricing</StyledLink>
+          </li>
+          <li>
+            <StyledLink onClick={closeDrawer} href="/projects">Developer</StyledLink>
+          </li>
+          <li>
+            <StyledLink onClick={closeDrawer} href="/about-us">Why Paydestal</StyledLink>
+          </li>
+          <li>
+            <StyledLink onClick={closeDrawer} href="/about-us">Company</StyledLink>
+          </li>
+          <li>
+            <StyledLink onClick={closeDrawer} href="/about-us">Support</StyledLink>
+          </li>
+          <li>
+            <StyledLink onClick={closeDrawer} href="/login">Login</StyledLink>
+          </li>
+          <li>
+            <StyledLink onClick={closeDrawer} href="/register">Register</StyledLink>
+          </li>
           </StyledMenu>
         </StyledNav>
       )}
@@ -262,13 +270,19 @@ const NavBar = () => {
             <StyledLink onClick={closeDrawer} href="/services">Services</StyledLink>
           </li>
           <li>
-            <StyledLink onClick={closeDrawer} href="/contact">Contact</StyledLink>
+            <StyledLink onClick={closeDrawer} href="/contact">Pricing</StyledLink>
           </li>
           <li>
-            <StyledLink onClick={closeDrawer} href="/projects">Projects</StyledLink>
+            <StyledLink onClick={closeDrawer} href="/projects">Developer</StyledLink>
           </li>
           <li>
-            <StyledLink onClick={closeDrawer} href="/about-us">About Us</StyledLink>
+            <StyledLink onClick={closeDrawer} href="/about-us">Why Paydestal</StyledLink>
+          </li>
+          <li>
+            <StyledLink onClick={closeDrawer} href="/about-us">Company</StyledLink>
+          </li>
+          <li>
+            <StyledLink onClick={closeDrawer} href="/about-us">Support</StyledLink>
           </li>
           <li>
             <StyledLink onClick={closeDrawer} href="/login">Login</StyledLink>
@@ -288,15 +302,35 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  position: sticky;
+  padding: 15px 50px;
+  position: fixed;
   top: 0;
   z-index: 999;
-  background-color: #fff; /* Add background color if needed */
+  width: 100%;
+  background-color: #fff;
 `;
 
 const StyledLogo = styled.a`
   cursor: pointer;
+
+  @media only screen and (max-width:768px){
+    .mobile{
+      display: inline-block;
+    }
+    .web{
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width:769px){
+    .mobile{
+      display: none;
+    }
+
+    .web{
+      display: inline-block;
+    }
+  }
 `;
 
 
@@ -334,6 +368,7 @@ const StyledMobileBtn = styled.div`
 
   @media only screen and (max-width: 900px) {
     display: block;
-    margin-right: 20px;
+    margin-right: 60px;
+    /* z-index: 2000; */
   }
 `;
