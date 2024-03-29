@@ -90,6 +90,7 @@ with Paydestal
 export default EndlessPossibilities
 
 const StyledBackground = styled.div`
+margin-top: 200px;
 position: relative;
 /* background-image: url('/assets/images/PossibilityBackground.webp'); */
 background-image: url('/assets/svg/background2.svg');
