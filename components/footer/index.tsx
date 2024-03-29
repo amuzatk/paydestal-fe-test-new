@@ -193,6 +193,10 @@ import PossibilityI from '../../public/assets/svg/background2.svg'
 import InstagramIcon from '../../public/assets/icons/InstagramSvg.svg'
 import TwitterIcon from '../../public/assets/icons/TwitterSvg.svg'
 import FacebookIcon from '../../public/assets/icons/facebookSvg.svg'
+import LocationIcon from '../../public/assets/icons/locationIcon.png'
+import EmailIcon from '../../public/assets/icons/emailIcon.png'
+import TelephoneIcon from '../../public/assets/icons/telephoneIcon.png'
+
 
 import { HeadingText, ParagraphText } from '@/__style/global.style'
 import PossibilityItemized from '../possibilities/PossibilityItemized'
@@ -213,7 +217,9 @@ const FooterComponent = () => {
 >
 A modern, technology payment processing and settlement built for you and your business.
 </ParagraphText>
-<StyledFlex>
+<StyledFlex
+g='15px'
+>
 <Image src={InstagramIcon} width={40} height={40} alt='InstagramIcon'  />
 <Image src={TwitterIcon} width={40} height={40} alt='TwitterIcon'  />
 <Image src={FacebookIcon} width={40} height={40} alt='FacebookIcon'  />
@@ -325,7 +331,60 @@ color=' #1B442A'
 Our Office
 </ParagraphText>
 
+<ParagraphText
+fsize='20px'
+fw='400'
+lh='25.2px'
+textAlign='left'
+color='#202020'
+style={{
+  display:"flex",
+  flexDirection:"row",
+  justifyContent:"center",
+  alignItems:"center",
+  gap:"10px"
+}}
+>
+<Image src={LocationIcon} width={20} height={20} alt='LocationIcon'  />
+ 6 Alhaji Bakinson Street, Ikeja, Lagos Nigeria
+</ParagraphText>
 
+
+<ParagraphText
+fsize='20px'
+fw='400'
+lh='25.2px'
+textAlign='left'
+color='#202020'
+style={{
+  display:"flex",
+  flexDirection:"row",
+  justifyContent:"center",
+  alignItems:"center",
+  gap:"10px"
+}}
+>
+<Image src={EmailIcon} width={20} height={20} alt='EmailIcon'  />
+ support@paydestal.com
+</ParagraphText>
+
+<ParagraphText
+fsize='20px'
+fw='400'
+lh='25.2px'
+textAlign='left'
+color='#202020'
+style={{
+  display:"flex",
+  flexDirection:"row",
+  justifyContent:"center",
+  alignItems:"center",
+  gap:"10px"
+}}
+>
+<Image src={TelephoneIcon} width={20} height={20} alt='TelephoneIcon'  />
+ +234 80 9990 0045
+</ParagraphText>
 
 </StyledFourth>
 
@@ -374,11 +433,13 @@ const StyledMainContainer = styled.div`
 max-height: 702.24px;
 max-width: 1428px;
 display: flex;
+flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 `;
 
 const StyledFirst = styled(StyledDiv)`
-border: 1px solid red;
+/* border: 1px solid red; */
 flex-basis: 30%;
 max-width: 436px;
 height: 195px;
@@ -391,7 +452,7 @@ flex-direction: column;
 
 `;
 const StyledSecond = styled(StyledDiv)`
-border: 1px solid green;
+/* border: 1px solid green; */
 flex-basis: 20%;
 max-width: 137px;
 height: 195px;
@@ -404,7 +465,7 @@ justify-content: flex-start;
 
 `;
 const StyledThird = styled(StyledDiv)`
-border: 1px solid yellow;
+/* border: 1px solid yellow; */
 flex-basis: 20%;
 max-width: 187px;
 height: 195px;
@@ -416,7 +477,7 @@ justify-content: flex-start;
 
 `;
 const StyledFourth = styled(StyledDiv)`
-border: 1px solid red;
+/* border: 1px solid red; */
 flex-basis: 30%;
 max-width: 444px;
 height: 195px;

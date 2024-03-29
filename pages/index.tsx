@@ -8,7 +8,8 @@ import Head from 'next/head';
 export default function Home() {
   return (
     <div style={{
-        overflowX:"hidden"
+        overflowX:"hidden",
+        overflowY:"hidden"
     }}>
       <Head>
         <title>Home Page</title>
