@@ -200,7 +200,7 @@ const FooterComponent = () => {
     <StyledMainContainer>
 
 
-
+<div>hjhlj</div>
 
       {/* <StyledWrapper
       fDirection='row'
