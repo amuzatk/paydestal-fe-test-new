@@ -203,11 +203,15 @@ import PossibilityItemized from '../possibilities/PossibilityItemized'
 // import PossibilityItemized from './PossibilityItemized'
 // import FooterWebLogo from '../../../public/assets/images/logoFooterWeb.png'
 import FooterWebLogo from '../../public/assets/images/logoFooterWeb.png'
+import ReadyToStart from './ReadyToStart'
 
 
 const FooterComponent = () => {
   return (
     <StyledBackground>
+      <StyledGetStarted>
+      <ReadyToStart />
+      </StyledGetStarted>
     <StyledMainContainer>
 
 
@@ -387,16 +391,19 @@ style={{
 </ParagraphText>
 
 </StyledFourth>
-
-
-
     </StyledMainContainer>
     </StyledBackground>
   )
 }
 
 export default FooterComponent
-
+const StyledGetStarted = styled(StyledDiv)`
+/* border: 1px solid red; */
+position: absolute;
+left: 155px;
+/* bottom: 0px; */
+top: 2080px;
+`;
 const StyledBackground = styled.div`
 /* position: relative; */
 /* background-image: url('/assets/images/PossibilityBackground.webp'); */
