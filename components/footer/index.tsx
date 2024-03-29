@@ -398,44 +398,32 @@ style={{
 export default FooterComponent
 
 const StyledBackground = styled.div`
-position: relative;
+/* position: relative; */
 /* background-image: url('/assets/images/PossibilityBackground.webp'); */
 background-image: url('/assets/images/footerBackground.png');
-  background-size: cover;
-  /* background-size: contain; */
+  /* background-size: cover; */
+  background-size: contain;
   background-repeat: no-repeat;
   // Image: solutions-business-bgg;
 /* background-image: url("solutions-business-bgg.png"); */
-
-  /* background-position: center; */
-
-  /* &:before {
-    content: '';
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    width: 100%;
-    height: 200px;
-    background-image: inherit;
-    background-size: cover;
-    background-position: center;
-  } */
 
   @media only screen and (max-width: 991px) {
     background-image: none;
   }
 `;
 const StyledMainContainer = styled.div`
-/* position: relative; */
+position: relative;
 /* bottom: 130px; */
 /* left: 70px; */
-/* top: 0px; */
-max-height: 702.24px;
+top: 290px;
+/* min-height: 702.24px; */
+min-height: 502.24px;
 max-width: 1428px;
 display: flex;
 flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 0 70px;
 `;
 
 const StyledFirst = styled(StyledDiv)`
