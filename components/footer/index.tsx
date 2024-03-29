@@ -183,16 +183,23 @@
 // `;
 
 
-import { StyledButton, StyledFlex, StyledFlexItem, StyledHeroSection } from '@/__style/ui-block.style'
+import { StyledButton, StyledDiv, StyledFlex, StyledFlexItem, StyledHeroSection } from '@/__style/ui-block.style'
 import Image from 'next/image'
 import React from 'react'
 import { styled } from 'styled-components'
 import PossibityImage from '../../public/assets/images/PossibilityImage.webp'
 import PossibilityIcon from '../../public/assets/icons/check.png'
 import PossibilityI from '../../public/assets/svg/background2.svg'
+import InstagramIcon from '../../public/assets/icons/InstagramSvg.svg'
+import TwitterIcon from '../../public/assets/icons/TwitterSvg.svg'
+import FacebookIcon from '../../public/assets/icons/facebookSvg.svg'
+
 import { HeadingText, ParagraphText } from '@/__style/global.style'
 import PossibilityItemized from '../possibilities/PossibilityItemized'
 // import PossibilityItemized from './PossibilityItemized'
+// import FooterWebLogo from '../../../public/assets/images/logoFooterWeb.png'
+import FooterWebLogo from '../../public/assets/images/logoFooterWeb.png'
+
 
 const FooterComponent = () => {
   return (
@@ -200,79 +207,41 @@ const FooterComponent = () => {
     <StyledMainContainer>
 
 
-<div>hjhlj</div>
+    <StyledFirst>
+<Image src={FooterWebLogo} width={304.49} height={70} alt='FooterWebLogo'  />
+<ParagraphText
+>
+A modern, technology payment processing and settlement built for you and your business.
+</ParagraphText>
+<StyledFlex>
+<Image src={InstagramIcon} width={40} height={40} alt='InstagramIcon'  />
+<Image src={TwitterIcon} width={40} height={40} alt='TwitterIcon'  />
+<Image src={FacebookIcon} width={40} height={40} alt='FacebookIcon'  />
 
-      {/* <StyledWrapper
-      fDirection='row'
-      justify='center'
-      align='center'
-      p='0 50px'
-      // g='-20px'
-      >
-        <StyledLeft
-        // grow
-        // mWidth='637px'
-        >
+  </StyledFlex> 
+        </StyledFirst>
+<StyledSecond>
+{/* iujfoeowpoijp;ijfde faljco;kvjjroweiv fljvnjnojrije djljvnjnwrjoe
+tretr
+A modern, technology payment processing and settlement built for you and your business. */}
+{/* <Image src={FooterWebLogo} width={304.49} height={70} alt='FooterWebLogo'  /> */}
+</StyledSecond>
+<StyledThird>
+{/* iujfoeowpoijp;ijfde faljco;kvjjroweiv fljvnjnojrije djljvnjnwrjoe
+645u66465 */}
+</StyledThird>
+<StyledFourth>
+{/* iujfoeowpoijp;ijfde faljco;kvjjroweiv fljvnjnojrije djljvnjnwrjoe
+yw554g5tt */}
+</StyledFourth>
 
+{/* <div>
+<Image src={FooterWebLogo} width={304.49} height={70} alt='FooterWebLogo'  />
+</div> */}
 
-<Image 
-src={PossibilityIcon} 
-// width={69} 
-// height={68.51} 
-width={55} 
-height={55.51}
-alt='PossibilityIcon'
-blurDataURL="/assets/icons/PossibilityIcon.png"
- />
-
-<StyledParagraph
-     fw='600'
-     fsize='21px'
-     lh='26.46px'
-     textAlign='left'
-    color='#202020'
-    mb='-30px'
-    // mt='-0px'
-     >
-     Why Choose Us
-     </StyledParagraph>
-
-        <StyledHeading
-    // fsize='44px'
-    //  fw='800'
-    //  lh='55.44px'
-    // fsize='40px'
-     fw='800'
-     lh='50.44px'
-     align='left'
-     color='#1B442A'
-     mb='15px'
-
-     >
-
-
-      Discover <StyledSpan>Endless Possibilities  </StyledSpan> 
-with Paydestal
-     </StyledHeading>
-
-     <PossibilityItemized />
-
-        </StyledLeft>
-        <StyledRight
-        grow
-        >
-
-      <Image 
-      src={PossibityImage} 
-      width={708} 
-      height={702.98} 
-      // width={808} 
-      // height={802.98} 
-      alt='PossibityImage'
-      blurDataURL="/assets/images/PossibilityImage.webp"
-        />
-        </StyledRight>
-      </StyledWrapper> */}
+      {/* <h2>
+      A modern, technology payment processing and settlement built for you and your business.
+      </h2> */}
 
 
 
@@ -287,8 +256,8 @@ const StyledBackground = styled.div`
 position: relative;
 /* background-image: url('/assets/images/PossibilityBackground.webp'); */
 background-image: url('/assets/images/footerBackground.png');
-  /* background-size: cover; */
-  background-size: contain;
+  background-size: cover;
+  /* background-size: contain; */
   background-repeat: no-repeat;
   // Image: solutions-business-bgg;
 /* background-image: url("solutions-business-bgg.png"); */
@@ -311,110 +280,56 @@ background-image: url('/assets/images/footerBackground.png');
     background-image: none;
   }
 `;
-const StyledMainContainer = styled(StyledHeroSection)`
-position: relative;
-bottom: 130px;
-left: 70px;
+const StyledMainContainer = styled.div`
+/* position: relative; */
+/* bottom: 130px; */
+/* left: 70px; */
 /* top: 0px; */
-max-height: 724.83px;
-
-
-`;
-
-const StyledWrapper = styled(StyledFlex)`
-@media only screen and (max-width:991px){
+max-height: 702.24px;
+max-width: 1428px;
+display: flex;
   flex-wrap: wrap;
-}
 `;
 
-const StyledSpan = styled.span`
-color: #F4B23E;
-`;
-
-const StyledLeft = styled(StyledFlexItem)`
+const StyledFirst = styled(StyledDiv)`
+border: 1px solid red;
+flex-basis: 30%;
+max-width: 436px;
+height: 195px;
 display: flex;
 flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
-/* min-width: 637px; */
-/* max-height: 626.94px; */
-max-height: 526.94px;
-/* padding: 20px 0; */
-
-/* @media only screen and (max-width:768px){
   justify-content: flex-start;
   align-items: flex-start;
-} */
-@media only screen and (max-width:991px){
-  justify-content: flex-start;
-  align-items: flex-start;
-  /* text-align: center; */
-  margin-top: 320px;
-  
-}
+  flex-grow: 1;
 
-@media only screen and (max-width:568px) and (min-width:332px) {
-  margin-top: 250px;
-}
-@media only screen and (min-width:1367px){
- min-width: 750px;
-}
 `;
+const StyledSecond = styled(StyledDiv)`
+border: 1px solid green;
+flex-basis: 20%;
+max-width: 137px;
+height: 195px;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 
-const StyledHeading = styled(HeadingText)`
-/* font-size: 40px; */
-font-size: 30px;
-/* @media only screen and (min-width:1367px){
-font-size: 70px;
-} */
-@media only screen and (max-width:991px){
-  text-align: left;
 
-}
-@media only screen and (max-width:768px){
-/* font-size: 34px; */
-/* line-height: 42.84px; */
-
-/* font-family: Plus Jakarta Sans; */
-font-size: 25px;
-/* font-weight: 800; */
-line-height: 31.5px;
-text-align: left;
-margin-bottom: 40px;
-/* margin-top: 10px; */
-}
 `;
+const StyledThird = styled(StyledDiv)`
+border: 1px solid yellow;
+flex-basis: 20%;
+max-width: 187px;
+height: 195px;
+display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 
-const StyledParagraph = styled(ParagraphText)`
-@media only screen and (min-width:1367px){
-    font-size: 20px;
-}
-@media only screen and (max-width:991px){
-  text-align: center;
-}
-@media only screen and (max-width:768px){
-font-size: 16px;
-font-size: 16px;
-line-height: 20.16px;
-text-align: left;
-margin-bottom: 0;
-}
 `;
-
-const StyledRight = styled(StyledFlexItem)`
-min-width: 588px;
-height: 565.96;
-
-img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@media only screen and (max-width:991px){
-  max-width: 731px;
-}
-@media only screen and (max-width: 768px){
-  display: none;
-}
+const StyledFourth = styled(StyledDiv)`
+border: 1px solid red;
+flex-basis: 30%;
+max-width: 444px;
+height: 195px;
+flex-grow: 1;
 `;
-
