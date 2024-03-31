@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { MenuOutlined } from '@ant-design/icons';
+// import { MenuOutlined } from '@ant-design/icons';
 import { Drawer } from 'antd';
 import Image from "next/image";
 import Logo from '../../public/assets/icons/Nav_Logo.png';
+import Hamburger from '../../public/assets/icons/Hamburger.png';
 import MobileLogo from '../../public/assets/icons/PaydestalMobileLogo.png';
 import Link from "next/link";
 import styled from "styled-components";
-import LogoIcon from "./Logo";
+// import LogoIcon from "./Logo";
 import { StyledContainerFluid } from "@/__style/ui-block.style";
 
 const NavBar = () => {
@@ -40,9 +41,10 @@ const NavBar = () => {
         <Image className="web" src={Logo} width={243} height={74.47} alt="Paydestal Logo" />
         <Image className="mobile" src={MobileLogo} width={155} height={50} alt="Paydestal Logo" />
       </StyledLogo>
-      {screenWidth <= 900 ? (
+      {screenWidth <= 1200 ? (
         <StyledMobileBtn onClick={() => setDrawerVisible(true)}>
-          <MenuOutlined />
+          {/* <MenuOutlined /> */}
+        <Image src={Hamburger} width={20} height={14} alt="Hamburger" />
         </StyledMobileBtn>
       ) : (
         <><StyledNav>
@@ -68,6 +70,12 @@ const NavBar = () => {
               </StyledMenu>
             </StyledNav>
             <StyledAuthButtons>
+              <div
+              className="drop"
+              >Dropdown</div>
+              <div
+              className="login"
+              >
                 <li
                 >
                   <Link href="/login">
@@ -81,6 +89,7 @@ const NavBar = () => {
                     <StyledButton onClick={closeDrawer}>Register</StyledButton>
                   </Link>
                 </li>
+                </div>
               </StyledAuthButtons></>
       )}
       <Drawer
@@ -123,7 +132,7 @@ const NavBar = () => {
 
 export default NavBar;
 const StyledFixed = styled.div`
-border: 1px solid green;
+/* border: 1px solid green; */
  position: fixed;
  top: 0;
   z-index: 999;
@@ -131,12 +140,16 @@ border: 1px solid green;
   background-color: #fff;
 `;
 const StyledHeader = styled(StyledContainerFluid)`
-  background-color: #f1d9d9;
+  /* background-color: #f1d9d9; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: 104.28px; */
+  height: 104.28px;
   /* padding: 15px 60px; */
+
+  @media only screen and (max-width: 1199px){
+    /* padding: 0 24px; */
+  }
 `;
 
 const StyledLogo = styled.a`
@@ -145,6 +158,7 @@ const StyledLogo = styled.a`
   @media only screen and (max-width:1199px){
     .mobile{
       display: inline-block;
+      padding-left: 24px;
     }
     .web{
       display: none;
@@ -159,6 +173,17 @@ const StyledLogo = styled.a`
     .web{
       display: inline-block;
     }
+  }
+
+  @media only screen and (max-width:576px){
+    .mobile{
+      /* display: none; */
+      /* padding-left: 24px; */
+    }
+
+    /* .web{
+      display: inline-block;
+    } */
   }
 `;
 
@@ -178,6 +203,11 @@ const StyledNav = styled.nav`
  } */
  @media only screen and (max-width:1360px){
   padding-right: 70px;
+  /* justify-content: center; */
+ }
+
+ @media only screen and (max-width:1200px){
+  padding-right: 0px;
   /* justify-content: center; */
  }
 `;
@@ -222,8 +252,28 @@ const StyledAuthButtons = styled.ul`
   display: flex;
   align-items: center;
 
-  @media only screen and (min-width:901px) and (max-width:1400px){
-    display: none;
+  @media only screen and (min-width:901px) and (max-width:1363px){
+    .drop{
+      display: inline-block;
+ 
+    }
+
+    .login{
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width:1364px){
+    .drop{
+      display: none;
+    }
+
+    .login{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;
 
@@ -246,10 +296,20 @@ const StyledButton = styled.button`
 const StyledMobileBtn = styled.div`
   display: none;
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1200px) {
     display: block;
-    margin-right: 60px;
+    /* margin-right: 60px; */
     /* z-index: 2000; */
+    /* margin-right: 24px; */
+    padding-right: 24px;
+
+  }
+
+  @media only screen and (max-width: 576px) {
+    /* display: block; */
+    /* margin-right: 60px; */
+    /* z-index: 2000; */
+    /* padding-right: 24px; */
   }
 `;
 
