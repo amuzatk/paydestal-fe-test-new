@@ -109,6 +109,7 @@ blurDataURL="/assets/images/SecureMobile.webp"
 export default SecureSection
 
 const StyledMainContainer = styled(StyledContainer)`
+margin-top: 70px;
 /* border: 1px solid red; */
 max-height: 824.12px;
 max-width: 1728px;

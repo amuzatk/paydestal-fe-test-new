@@ -197,9 +197,18 @@ const StyledDrawerMenu = styled(StyledMenu)`
 
 const StyledLink = styled.a`
   text-decoration: none;
-  color: #000;
+  /* color: #000; */
+  color: #202020;
+
   margin-right: 20px;
   cursor: pointer;
+
+  /* font-family: Plus Jakarta Sans; */
+font-size: 16px;
+font-weight: 400;
+line-height: 20.16px;
+text-align: center;
+
 
   &:hover {
     color: #555;

@@ -72,6 +72,7 @@ blurDataURL="/assets/icons/RightArrow.png"
 export default Hero
 
 const StyledMainContainer = styled(StyledHeroSection)`
+margin-top: 186px;
 max-height: 724.83px;
 margin-top: 160px;
 `;
