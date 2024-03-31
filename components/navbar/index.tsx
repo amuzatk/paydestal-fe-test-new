@@ -429,7 +429,7 @@ const NavBar = () => {
                 </li>
                 <li>
                   <Link href="/register">
-                    <StyledButton onClick={closeDrawer}>Register</StyledButton>
+                    <StyledButton onClick={closeDrawer}>Get Started</StyledButton>
                   </Link>
                 </li>
                 </div>
