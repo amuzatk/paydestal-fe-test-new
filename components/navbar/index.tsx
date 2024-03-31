@@ -412,7 +412,19 @@ const NavBar = () => {
                 <li
                 >
                   <Link href="/login">
-                    <button onClick={closeDrawer}>Login</button>
+                    <button 
+                    onClick={closeDrawer}
+                    style={{
+                      backgroundColor:"white",
+                      border:"none",
+                      cursor:"pointer",
+                      fontSize:"14px",
+                      fontWeight:"400",
+                      lineHeight:"17.64px",
+                      textAlign:"left",
+                      color:"#202020"
+                    }}
+                    >Login</button>
                   </Link>
                 </li>
                 <li>
