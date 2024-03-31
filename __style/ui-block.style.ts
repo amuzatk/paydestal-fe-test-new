@@ -220,6 +220,7 @@ export const StyledLink = styled(StyledDiv)<{
     }
   }
 `;
+// Old Hero
 export const StyledHeroSection = styled.section`
   width: 100%;
   padding-right: 15px;
@@ -254,7 +255,7 @@ export const StyledHeroSection = styled.section`
   } */
 
   @media (min-width: 1200px) {
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
   /* max-width: 1203px; */
     max-width: 1203px;
     /* margin: auto; */
@@ -268,7 +269,7 @@ export const StyledHeroSection = styled.section`
     max-width: 1250px;
   } */
 `;
-
+// for old hero-section
 export const StyledContainer = styled.section`
   width: 100%;
   margin: auto;
@@ -310,6 +311,7 @@ export const StyledContainer = styled.section`
   } */
 `;
 
+// 1. For Navbar
 export const StyledContainer2 = styled.section`
   width: 100%;
   // padding-right: 15px;
@@ -345,8 +347,9 @@ export const StyledContainer2 = styled.section`
     max-width: 1250px;
   }
 `;
-
+// 1b. For Navbar
 export const StyledContainerFluid = styled(StyledContainer2)`
+border: 1px solid blue;
   @media (min-width: 768px) {
     /* max-width: 635px; */
     /* height: 46.34px; */
@@ -382,21 +385,78 @@ export const StyledContainerFluid = styled(StyledContainer2)`
   }
 `;
 
+// 2. New hero section
+export const StyledHeroSectionNew = styled.section`
+  width: 100%;
+  /* padding-right: 25px; */
+  /* padding-left: 25px; */
+  /* margin-right: auto;
+  margin-left: auto; */
+  margin: auto;
 
-// export const StyledContainerFluid = styled(StyledContainer)`
-//   @media (min-width: 768px) {
-//     max-width: 740px;
-//   }
-//   @media (min-width: 868px) {
-//     max-width: 840px;
-//   }
-//   @media (min-width: 1200px) {
-//     max-width: 1140px;
-//   }
-//   @media (min-width: 1360px) {
-//     max-width: 1290px;
-//   }
-//   @media (min-width: 1600px) {
-//     max-width: 1500px;
-//   }
-// `;
+  @media (min-width: 576px) {
+    /* max-width: 540px; */
+  }
+  @media (min-width: 768px) {
+    /* max-width: 720px; */
+  }
+  @media (min-width: 868px) {
+    .main-container {
+      /* max-width: 840px; */
+    }
+  }
+  @media (min-width: 991px) {
+    /* max-width: 960px; */
+
+    /* max-width: 1100px;
+    border: 1px solid red; */
+
+  }
+  @media (min-width: 1201px) {
+    max-width: 1065px;
+    /* border: 1px solid red; */
+  }
+
+  @media (min-width: 1600px) {
+    max-width: 1250px;
+  }
+`;
+
+// 2. New hero Container
+export const StyledContainerFluidHero = styled(StyledHeroSectionNew)`
+   /* border: 1px solid red; */
+ @media (min-width: 768px) {
+    /* max-width: 635px; */
+    /* height: 46.34px; */
+  }
+  @media (min-width: 868px) {
+   /* max-width: 717px; */
+   /* max-width: 1200px; */
+   /* border: 1px solid red; */
+   /* height: 52.4px; */
+  }
+ @media (min-width: 1201px) {
+   max-width: 1000px;
+  }
+  @media (max-width: 1200px) {
+   /* border: 1px solid yellow; */
+   /* max-width: 1000px; */
+   width: 100%;
+   /* padding: 0 24px; */
+  }
+   @media (min-width: 1360px) {
+    /* border: 1px solid yellow; */
+     max-width: 1129px;
+    /* height: 82.1px; */
+   }
+  @media (min-width: 1600px) {
+     max-width: 1322px;
+    /* height: 96.6px; */
+  }
+  @media (min-width: 1728px) {
+    max-width: 1428px;
+    /* height: 104.28px; */
+    /* border: 1px solid red; */
+  }
+`;
+

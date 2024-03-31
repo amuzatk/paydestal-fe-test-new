@@ -533,7 +533,7 @@ const StyledLogo = styled.a`
 const StyledNav = styled.nav`
   display: flex;
   align-items: center;
-  padding-right: 250px;
+  padding-right: 320px;
   /* padding-left: -30px; */
 
   @media only screen and (max-width:1727px){
