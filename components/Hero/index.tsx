@@ -290,9 +290,7 @@ align-items: flex-start;
 }
 
 @media only screen and (min-width:992px) and (max-width:1727px){
-padding-left: 7px;
-  /* border: 3px solid black;  */
- /* min-width: 750px; */
+padding-left: 15px;
 }
 `;
 
@@ -381,6 +379,10 @@ justify-content: center;
 align-items: center;
 border: none;
 margin-top: 49.65px;
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  margin-top: 38.65px;
+}
 @media only screen and (max-width:991px){
 /* width: 189px; */
   width: 100%;
