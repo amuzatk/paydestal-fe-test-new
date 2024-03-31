@@ -74,6 +74,7 @@ const StyledMainContainer = styled(StyledHeroSection)`
 /* border: 1px solid red; */
 max-height: 895.61px;
 /* max-width: 1728px; */
+margin-top: 50px;
 `;
 
 const StyledWrapper = styled(StyledFlex)`

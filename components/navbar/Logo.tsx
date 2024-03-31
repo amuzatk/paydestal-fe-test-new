@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import NavLogo from '../../public/assets/icons/Nav_Logo.png';
 
-const Logo = () => {
+const LogoIcon = () => {
   return (
     <Link href={'/'}>
       <StyledLogoFlex align="center">
@@ -17,7 +17,7 @@ const Logo = () => {
     </Link>
   );
 };
-export default Logo;
+export default LogoIcon;
 
 const StyledLogoFlex = styled(StyledFlex)`
   display: inline-flex;

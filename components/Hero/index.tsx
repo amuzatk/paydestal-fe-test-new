@@ -73,6 +73,7 @@ export default Hero
 
 const StyledMainContainer = styled(StyledHeroSection)`
 max-height: 724.83px;
+margin-top: 160px;
 `;
 
 const StyledWrapper = styled(StyledFlex)`

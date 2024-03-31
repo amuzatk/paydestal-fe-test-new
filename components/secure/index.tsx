@@ -112,6 +112,7 @@ const StyledMainContainer = styled(StyledContainer)`
 /* border: 1px solid red; */
 max-height: 824.12px;
 max-width: 1728px;
+margin-top: 60px;
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
  /* border:5px solid red; */

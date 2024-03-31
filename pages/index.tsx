@@ -1,3 +1,4 @@
+import MyComponent from '@/components/CheckWidth&Height';
 import Hero from '@/components/Hero';
 import Faq from '@/components/faq';
 import FooterComponent from '@/components/footer';
@@ -23,9 +24,9 @@ export default function Home() {
         <NavBar  />
         <Hero />
         <SecureSection />
-        <EndlessPossibilities />
-        <PaymentSolutions />
-        <Faq />
+        {/* <EndlessPossibilities /> */}
+        {/* <PaymentSolutions /> */}
+        {/* <Faq /> */}
         <FooterComponent />
       </main>
 
