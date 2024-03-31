@@ -349,7 +349,7 @@ export const StyledContainer2 = styled.section`
 `;
 // 1b. For Navbar
 export const StyledContainerFluid = styled(StyledContainer2)`
-border: 1px solid blue;
+/* border: 1px solid blue; */
   @media (min-width: 768px) {
     /* max-width: 635px; */
     /* height: 46.34px; */

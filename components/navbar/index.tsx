@@ -536,10 +536,14 @@ const StyledNav = styled.nav`
   padding-right: 320px;
   /* padding-left: -30px; */
 
-  @media only screen and (max-width:1727px){
+  /* @media only screen and (max-width:1727px){
   padding-right: 30px;
-  /* justify-content: center; */
- }
+ } */
+
+ @media only screen and (min-width:992px) and (max-width:1727px){
+  padding-right: 140px;
+
+}
 
   /* @media only screen and (max-width:1400px){
   padding-right: 10px;
@@ -586,6 +590,11 @@ text-align: center;
   &:hover {
     color: #555;
   }
+
+
+  @media only screen and (min-width:992px) and (max-width:1727px){
+    font-size: 14px;
+}
 `;
 
 const StyledAuthButtons = styled.ul`
