@@ -397,7 +397,7 @@ export const StyledHeroSectionNew = styled.section`
   @media (min-width: 576px) {
     /* max-width: 540px; */
   }
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     /* max-width: 720px; */
   }
   @media (min-width: 868px) {

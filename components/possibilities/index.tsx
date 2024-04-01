@@ -347,6 +347,12 @@ max-height: 724.83px;
   bottom: 90px;
 left: 42px;
 }
+
+@media only screen and (max-width: 768px) {
+  /* border: 1px solid red; */
+  /* bottom: 90px; */
+left: 0px;
+}
 `;
 
 const StyledWrapper = styled(StyledFlex)`
@@ -354,6 +360,7 @@ justify-content: center;
 align-items: center;
 @media only screen and (max-width:991px){
   flex-wrap: wrap;
+  margin-top: 300px;
 }
 `;
 
@@ -494,12 +501,13 @@ img{
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
   /* border: 1px solid blue; */
   min-width: 508px;
-height: 630.98px;
+height: 625.98px;
 object-fit: contain;
 
 }
 @media only screen and (max-width:991px){
   max-width: 731px;
+
 }
 @media only screen and (max-width: 768px){
   display: none;
