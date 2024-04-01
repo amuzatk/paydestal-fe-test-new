@@ -264,8 +264,6 @@ const EndlessPossibilities = () => {
 src={PossibilityIcon} 
 width={69} 
 height={68.51} 
-// width={55} 
-// height={55.51}
 alt='PossibilityIcon'
 blurDataURL="/assets/icons/PossibilityIcon.png"
  />
@@ -337,10 +335,13 @@ background-image: url('/assets/svg/background2.svg');
 `;
 const StyledMainContainer = styled(StyledHeroSectionNew)`
 position: relative;
-bottom: 145px;
+
+@media only screen and (min-width: 1728px) {
+  bottom: 145px;
 left: 58px;
 max-height: 724.83px;
 /* border: 1px solid blue; */
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
   /* border: 1px solid red; */
@@ -373,14 +374,16 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
-/* min-width: 537px; */
-/* max-height: 626.94px; */
-/* max-height: 526.94px; */
-/* padding: 20px 0; */
-min-width: 137px;
+
+@media only screen and (min-width: 1728px) {
+/* min-width: 137px; */
 max-height: 626.94px;
 /* border: 1px solid red; */
 
+min-width: 637px;
+/* height: 626.94px; */
+
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
   /* border: 1px solid red; */
@@ -393,6 +396,7 @@ max-height: 626.94px;
   align-items: flex-start;
   /* text-align: center; */
   margin-top: 320px;
+  padding: 0 25px;
   
 }
 
@@ -407,8 +411,12 @@ max-height: 626.94px;
 
 const StyledHeading = styled(HeadingText)`
 /* font-size: 40px; */
-font-size: 44px;
-padding: 0 30px;
+
+
+@media only screen and (min-width: 1728px) {
+  font-size: 44px;
+padding: 0;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
   /* border: 1px solid red; */
@@ -434,11 +442,10 @@ margin-bottom: 40px;
 `;
 
 const StyledParagraph = styled(ParagraphText)`
-padding: 0 30px;
 
-/* @media only screen and (min-width:1367px){
-    font-size: 20px;
-} */
+@media only screen and (min-width: 1728px) {
+  padding: 0;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
   /* border: 1px solid yellow; */
@@ -459,21 +466,17 @@ margin-bottom: 0;
 `;
 
 const StyledIcon = styled.div`
-padding: 0 30px;
-
-/* border: 1px solid red; */
-width: 69px;
-height: 68.51px;
-/* top: 1666.11px;
-left: 246px;
-gap: 0px;
-opacity: 0px; */
-
 img{
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+@media only screen and (min-width: 1728px) {
+  /* padding: 0 30px; */
+width: 69px;
+height: 68.51px;
+}
+
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
   /* border: 1px solid green; */
@@ -485,17 +488,15 @@ padding: 0;
 `;
 
 const StyledRight = styled(StyledFlexItem)`
-/* min-width: 588px;
-height: 565.96; */
-/* border: 1px solid red; */
-/* min-width: 708px; */
-min-width: 708px;
-height: 802.98px;
-
 img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media only screen and (min-width: 1728px) {
+min-width: 708px;
+height: 802.98px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {

@@ -25,7 +25,7 @@ export default function Home() {
         <Hero />
         <SecureSection />
         <EndlessPossibilities />
-        {/* <PaymentSolutions /> */}
+        <PaymentSolutions />
         {/* <Faq /> */}
         {/* <FooterComponent /> */}
       </main>

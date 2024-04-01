@@ -1,4 +1,4 @@
-import { StyledButton, StyledFlex, StyledFlexItem, StyledHeroSection } from '@/__style/ui-block.style'
+import { StyledButton, StyledContainerFluid, StyledFlex, StyledFlexItem, StyledHeroSection } from '@/__style/ui-block.style'
 import Image from 'next/image'
 import React from 'react'
 import { styled } from 'styled-components'
@@ -11,32 +11,32 @@ const PaymentSolutions = () => {
     <StyledMainContainer>
       <StyledWrapper
       fDirection='row'
-      justify='center'
+      // justify='center'
       align='center'
-      cg='126px'
+      // cg='126px'
       >
-        <StyledRight
+        <StyledLeft
         grow
         >
       <Image 
       src={PaymentSection} 
-      width={588} 
-      height={565.96} 
-      // width={516} 
-      // height={436} 
+      // width={588} 
+      // height={565.96} 
+      width={516} 
+      height={436} 
       alt='PaymentSection'
       blurDataURL="/assets/images/PaymentSectionImage.webp"
         />
-        </StyledRight>
-        <StyledLeft
+        </StyledLeft>
+         <StyledRight
         grow
         // mWidth='731px'
         >
         <StyledHeading
-    fsize='44px'
+    // fsize='44px'
      fw='800'
-     lh='55.44px'
-     align='left'
+    //  lh='55.44px'
+    //  align='left'
      color='#1B442A'
      >
     Create tailored  payment 
@@ -78,7 +78,7 @@ alt='RightArrow'
 blurDataURL="/assets/icons/RightArrow.png"
  />
 </StyledGetStartedCont2>
-        </StyledLeft>
+        </StyledRight>
         
       </StyledWrapper>
     </StyledMainContainer>
@@ -87,12 +87,17 @@ blurDataURL="/assets/icons/RightArrow.png"
 
 export default PaymentSolutions
 
-const StyledMainContainer = styled(StyledHeroSection)`
+const StyledMainContainer = styled(StyledContainerFluid)`
 max-height: 724.83px;
 `;
 
 const StyledWrapper = styled(StyledFlex)`
-/* border: 1px solid red; */
+@media only screen and (min-width:1728px){
+justify-content: space-between;
+column-gap: 126px;
+border: 1px solid red;
+}
+
 @media only screen and (max-width:991px){
   flex-wrap: wrap;
   margin-top: 700px;
@@ -101,13 +106,20 @@ flex-direction: column-reverse;
 `;
 
 
-const StyledLeft = styled(StyledFlexItem)`
-/* padding:10px 0; */
+const StyledRight = styled(StyledFlexItem)`
 padding-bottom: 25px;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
+
+
+@media only screen and (min-width:1728px){
+border: 1px solid yellow;
+min-width: 784px;
+height: 374px;
+/* border-radius: 1000px 0px 0px 0px; */
+}
 @media only screen and (max-width:768px){
   /* justify-content: center;
   align-items: center; */
@@ -126,7 +138,17 @@ margin-top: -650px;
 `;
 
 const StyledHeading = styled(HeadingText)`
+/* text-align: left; */
+
+@media only screen and (min-width:1728px){
+  /* font-family: Plus Jakarta Sans; */
+font-size: 44px;
+font-weight: 800;
+line-height: 55.44px;
 text-align: left;
+}
+
+
 @media only screen and (min-width:1367px){
 // font-size: 70px;
 }
@@ -178,19 +200,24 @@ text-align: left;
 `;
 
 
-const StyledRight = styled(StyledFlexItem)`
-/* border: 1px solid yellow; */
-// min-width: 588px;
-// height: 565.96;
-min-width: 388px;
-// min-height: 765.96px;
-
-
+const StyledLeft = styled(StyledFlexItem)`
+/* min-width: 388px; */
 img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+@media only screen and (min-width:1728px){
+border: 1px solid yellow;
+min-width: 516px;
+height: 436px;
+/* gap: 10px;
+opacity: 0px; */
+
+}
+
+
 @media only screen and (max-width:991px){
   max-width: 731px;
 }

@@ -24,7 +24,7 @@ import styled from 'styled-components';
           key={i}
         >
           <StyledIcon
-          p='16px'
+          p='16px 0'
           >
             <Image src={item.icon} 
             width={40} 
@@ -49,7 +49,11 @@ import styled from 'styled-components';
 }
 export default PossibilityItemized
 const StyledWrapper = styled(StyledFlex)`
-padding: 0 30px;
+/* padding: 0 30px; */
+
+@media only screen and (min-width: 1728px) {
+  padding: 0;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
   padding: 0;
@@ -60,7 +64,11 @@ padding: 0 30px;
 
 const StyledList = styled(StyledFlexItem)`
 font-weight: 400;
-line-height: 30.24px;
+/* line-height: 30.24px; */
+
+@media only screen and (min-width: 1728px) {
+  line-height: 30.24px;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
   line-height: 20.24px;
@@ -77,8 +85,6 @@ text-align: left;
 `;
 
 const StyledIcon = styled(StyledFlexItem)`
-width: 46px;
-height: 46px;
 
 img{
   width: 100%;
@@ -86,6 +92,11 @@ img{
   object-fit: contain;
 }
 /* border: 1px solid yellow; */
+
+@media only screen and (min-width: 1728px) {
+width: 46px;
+height: 46px;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
   width: 40px;
