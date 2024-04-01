@@ -24,10 +24,10 @@ export default function Home() {
         <NavBar  />
         <Hero />
         <SecureSection />
-        {/* <EndlessPossibilities /> */}
+        <EndlessPossibilities />
         {/* <PaymentSolutions /> */}
         {/* <Faq /> */}
-        <FooterComponent />
+        {/* <FooterComponent /> */}
       </main>
 
       {/* <footer>
