@@ -15,42 +15,44 @@ import styled from 'styled-components';
   return (
     <>
       {icons.map((item, i) => (
-        <StyledFlex 
+        <StyledWrapper 
           fDirection='row'
           justify='start'
           align='center'
           // g='20px'
-          g='10px'
-        //   m='40px 0'
+          g='9px'
           key={i}
         >
-          <StyledFlexItem
-          p='5px'
+          <StyledIcon
+          p='16px'
           >
             <Image src={item.icon} 
-            // width={40} 
-            // height={40}
-            width={30} 
-            height={30} 
+            width={40} 
+            height={40}
+            // width={30} 
+            // height={30} 
             alt={item.title}
              />
-          </StyledFlexItem>
+          </StyledIcon>
           <StyledList 
           color='#202020'
-          // fsize='24px'
-          // fsize='19px'
-          fsize='16px'
+          fsize='24px'
         textAlign='left'
 
           >
             {item.title}
           </StyledList>
-        </StyledFlex>
+        </StyledWrapper>
       ))}
     </>
   );
 }
 export default PossibilityItemized
+const StyledWrapper = styled(StyledFlex)`
+padding: 0 30px;
+
+`;
+
 const StyledList = styled(StyledFlexItem)`
 font-weight: 400;
 line-height: 30.24px;
@@ -62,4 +64,10 @@ line-height: 17.64px;
 text-align: left;
 
 }
+`;
+
+const StyledIcon = styled(StyledFlexItem)`
+width: 46px;
+height: 46px;
+/* border: 1px solid yellow; */
 `;

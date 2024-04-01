@@ -92,6 +92,7 @@ export default SecureSection
 
 const StyledMainContainer = styled(StyledContainer)`
 margin-top: 70px;
+margin-bottom: 170px;
 /* border: 1px solid red; */
 max-height: 824.12px;
 
