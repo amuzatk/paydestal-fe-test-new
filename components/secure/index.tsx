@@ -105,7 +105,6 @@ max-height: 824.12px;
 @media only screen and (min-width: 821px) and (max-width: 991px) {
  /* border:5px solid red; */
  margin-top: 800px;
-
 }
 
 @media only screen and (max-width: 768px){
@@ -121,8 +120,6 @@ align-items: center;
 flex-direction: row;
 
 @media only screen and (min-width: 769px) and (max-width: 991px) {
- /* border:5px solid red; */
- /* margin-top: 1480px; */
  flex-direction: column-reverse;
 }
 

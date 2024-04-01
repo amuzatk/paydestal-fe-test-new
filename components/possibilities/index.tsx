@@ -324,18 +324,13 @@ with Paydestal
 export default EndlessPossibilities
 
 const StyledBackground = styled.section`
-/* @media only screen and (min-width: 1728px){ */
-/* border: 1px solid red; */
-/* margin-top: 230px; */
 position: relative;
-/* background-image: url('/assets/images/PossibilityBackground.webp'); */
 background-image: url('/assets/svg/background2.svg');
   /* background-size: cover; */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 500px;
-/* } */
   @media only screen and (max-width: 991px) {
     background-image: none;
   }
@@ -344,22 +339,19 @@ const StyledMainContainer = styled(StyledHeroSectionNew)`
 position: relative;
 bottom: 145px;
 left: 58px;
-/* right: 80px; */
-/* left: 70px; */
-/* top: 0px; */
 max-height: 724.83px;
 /* border: 1px solid blue; */
-/* pad: 0 60px; */
 
-
+@media only screen and (min-width: 992px) and (max-width: 1727px) {
+  /* border: 1px solid red; */
+  bottom: 90px;
+left: 42px;
+}
 `;
 
 const StyledWrapper = styled(StyledFlex)`
-      justify-content: center;
-      align-items: center;
-      /* padding: 0 40px; */
-      /* gap: -160px; */
-      /* padding: 0 100px; */
+justify-content: center;
+align-items: center;
 @media only screen and (max-width:991px){
   flex-wrap: wrap;
 }
@@ -378,17 +370,17 @@ align-items: flex-start;
 /* max-height: 626.94px; */
 /* max-height: 526.94px; */
 /* padding: 20px 0; */
-
 min-width: 137px;
 max-height: 626.94px;
 /* border: 1px solid red; */
 
 
+@media only screen and (min-width: 992px) and (max-width: 1727px) {
+  /* border: 1px solid red; */
+  max-width: 510px;
+}
 
-/* @media only screen and (max-width:768px){
-  justify-content: flex-start;
-  align-items: flex-start;
-} */
+
 @media only screen and (max-width:991px){
   justify-content: flex-start;
   align-items: flex-start;
@@ -400,18 +392,22 @@ max-height: 626.94px;
 @media only screen and (max-width:568px) and (min-width:332px) {
   margin-top: 250px;
 }
-@media only screen and (min-width:1367px){
+/* @media only screen and (min-width:1367px){
  min-width: 750px;
-}
+ border: 4px solid green;
+} */
 `;
 
 const StyledHeading = styled(HeadingText)`
 /* font-size: 40px; */
 font-size: 44px;
 padding: 0 30px;
-/* @media only screen and (min-width:1367px){
-font-size: 70px;
-} */
+
+@media only screen and (min-width: 992px) and (max-width: 1727px) {
+  /* border: 1px solid red; */
+  font-size: 35px;
+padding: 0;
+}
 @media only screen and (max-width:991px){
   text-align: left;
 
@@ -433,8 +429,15 @@ margin-bottom: 40px;
 const StyledParagraph = styled(ParagraphText)`
 padding: 0 30px;
 
-@media only screen and (min-width:1367px){
+/* @media only screen and (min-width:1367px){
     font-size: 20px;
+} */
+
+@media only screen and (min-width: 992px) and (max-width: 1727px) {
+  /* border: 1px solid yellow; */
+  font-size: 17px;
+padding: 0;
+
 }
 @media only screen and (max-width:991px){
   text-align: center;
@@ -465,6 +468,13 @@ img{
   object-fit: contain;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1727px) {
+  /* border: 1px solid green; */
+  width: 59px;
+height: 58.51px;
+padding: 0;
+}
+
 `;
 
 const StyledRight = styled(StyledFlexItem)`
@@ -473,12 +483,20 @@ height: 565.96; */
 /* border: 1px solid red; */
 /* min-width: 708px; */
 min-width: 708px;
-height: 802.98px;;
+height: 802.98px;
 
 img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1727px) {
+  /* border: 1px solid blue; */
+  min-width: 508px;
+height: 630.98px;
+object-fit: contain;
+
 }
 @media only screen and (max-width:991px){
   max-width: 731px;
