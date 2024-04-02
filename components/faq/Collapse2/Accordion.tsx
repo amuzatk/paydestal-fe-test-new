@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { PlusOutlined, MinusOutlined } from '@ant-design/icons';
+import { HeadingText, ParagraphText } from '@/__style/global.style';
 
 interface AccordionProps {
   items: { title: string; content: string }[];
@@ -44,6 +45,16 @@ const AccordionContainer = styled.div`
 min-width: 800px;
 /* width: 100%; */
 }
+
+@media only screen and (min-width:769px) and (max-width:991px){
+  min-width: 700px;
+}
+
+@media only screen and (max-width:768px){
+  /* border: 1px solid red; */
+  max-width: 400px;
+
+}
 `;
 
 const AccordionItem = styled.div`
@@ -51,29 +62,34 @@ display: flex;
 flex-direction: column;
 /* box-shadow: 0px 4px 6.599999904632568px 0px #00000040; */
 box-shadow: 0px 4px 6.599999904632568px 0px #9c9b9b40;
-/* box-shadow: 0px 4px 6.599999904632568px 0px #ECECEC; */
-/* box-shadow: 0 1px 6.599999904632568px #0000001a; */
 border-radius: 10.98px;
 margin-bottom: 24.89px;
 
 @media only screen and (min-width: 1728px){
 border: 1px solid #ECECEC;
-    /* width: 893px; */
-    /* height: 55.6px; */
-    /* width: 100%; */
   padding: 0px 25px 0px 25px;
 
   }
 
   @media only screen and (min-width:992px) and (max-width:1727px){
 /* padding: 0px 23px 0px 23px; */
-padding: 0px 25px 0px 25px;
+padding: 0px 23px 0px 23px;
 
+}
+
+@media only screen and (min-width:769px) and (max-width:991px){
+  /* min-width: 700px; */
+padding: 0px 18px 0px 18px;
+}
+
+@media only screen and (max-width:768px){
+  /* min-width: 700px; */
+padding: 0px 15px 0px 15px;
 }
 
 `;
 
-const AccordionTitle = styled.div`
+const AccordionTitle = styled(HeadingText)`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,24 +105,27 @@ font-weight: 600;
   padding: 10px 50px 10px 0;
 font-size: 21px;
 line-height: 26.46px;
-
 }
 
 @media only screen and (min-width:992px) and (max-width:1727px){
 padding: 9px 45px 9px 0;
 font-size: 20px;
 line-height: 20.46px;
+}
 
-
-/* padding: 10px 50px 10px 0;
-font-size: 21px;
-line-height: 26.46px; */
-
-
+@media only screen and (min-width:769px) and (max-width:991px){
+  padding: 7px 40px 7px 0;
+font-size: 18px;
+line-height: 20.46px;
+}
+@media only screen and (max-width:768px){
+  padding: 7px 5px 7px 0;
+font-size: 16px;
+line-height: 20.16px;
 }
 `;
 
-const AccordionContent = styled.div`
+const AccordionContent = styled(ParagraphText)`
   border-top: 1px solid #EEEEEE;
 font-weight: 400;
 text-align: left;
@@ -124,8 +143,14 @@ font-size: 15px;
 line-height: 25px;
 
 
-/* padding: 10px 0;
-font-size: 16px;
-line-height: 28px; */
+@media only screen and (min-width:769px) and (max-width:991px){
+  padding: 8px 0;
+font-size: 14px;
+line-height: 24.46px;
+}
+@media only screen and (max-width:768px){
+font-size: 14px;
+line-height: 24px;
+}
 }
 `;
