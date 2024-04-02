@@ -310,6 +310,52 @@ export const StyledContainer = styled.section`
     max-width: 1250px;
   } */
 `;
+//for faq
+export const StyledFaqSection = styled.section`
+  width: 100%;
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
+  /* margin-right: auto; */
+  /* margin-left: auto; */
+    margin: auto;
+
+
+  /* @media (min-width: 576px) {
+    max-width: 540px;
+  } */
+  /* @media (min-width: 768px) {
+    max-width: 720px;
+  } */
+  /* @media (min-width: 868px) {
+    .main-container {
+      max-width: 840px;
+    }
+  } */
+  /* @media (min-width: 991px) {
+    max-width: 960px;
+  } */
+  /* @media (min-width: 1200px) {
+    max-width: 1303px;
+  } */
+
+  /* @media (min-width: 1200px) {
+  border: 1px solid yellow;
+    max-width: 1303px;
+    margin: auto;
+  } */
+
+  /* @media (min-width: 1200px) {
+  border: 1px solid yellow;
+    max-width: 1203px;
+  } */
+  /* @media (max-width: 1199px) {
+  border: 1px solid red;
+  } */
+
+  /* @media (min-width: 1600px) {
+    max-width: 1250px;
+  } */
+`;
 
 // 1. For Navbar
 export const StyledContainer2 = styled.section`

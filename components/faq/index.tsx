@@ -1,9 +1,6 @@
-import { StyledButton, StyledFlex, StyledFlexItem, StyledHeroSection } from '@/__style/ui-block.style'
-import Image from 'next/image'
+import { StyledFaqSection, StyledFlex, StyledFlexItem } from '@/__style/ui-block.style'
 import React from 'react'
 import { styled } from 'styled-components'
-import HeroImage from '../../../public/assets/images/HeroImage.webp'
-import RightArrow from '../../../public/assets/icons/RightArrow.png'
 import { HeadingText, ParagraphText } from '@/__style/global.style'
 import FaqCollapse2 from './Collapse2'
 
@@ -16,26 +13,26 @@ const Faq = () => {
       justify='center'
       align='center'
       >
-        <StyledLeft
+        <StyledTop
         grow
         // mWidth='731px'
         >
 
-<StyledParagraph
+<StyledP
      fw='600'
-     fsize='21px'
-     lh='26.47px'
-     textAlign='center'
-    color='#202020'
-    // bb='2px solid blue'
-    mb='-20px'
+    //  fsize='21px'
+    //  lh='26.47px'
+    //  textAlign='center'
+    // color='#202020'
+    // // bb='2px solid blue'
+    // mb='-20px'
      >
      If you have a question, we have an answer
-     </StyledParagraph>
+     </StyledP>
         <StyledHeading
-    fsize='44px'
-     fw='800'
-     lh='55.44px'
+    // fsize='44px'
+    //  fw='800'
+    //  lh='55.44px'
      align='center'
      color='#1B442A'
     //  mt='-20px'
@@ -54,12 +51,12 @@ const Faq = () => {
      >
      Get answers to all questions you have and boost your knowledge on our services.
      </StyledParagraph>
-        </StyledLeft>
-        <StyledRight
-        grow
+        </StyledTop>
+        <StyledBottom
+        // grow
         >
       <FaqCollapse2 />
-        </StyledRight>
+        </StyledBottom>
       </StyledWrapper>
     </StyledMainContainer>
       {/* <FaqCollapse2 /> */}
@@ -69,114 +66,161 @@ const Faq = () => {
 
 export default Faq
 
-const StyledMainContainer = styled(StyledHeroSection)`
+const StyledMainContainer = styled(StyledFaqSection)`
 /* border: 1px solid red; */
 max-height: 895.61px;
 /* max-width: 1728px; */
-margin-top: 50px;
+
+@media only screen and (min-width:1728px){
+  /* border: 1px solid red; */
+margin-top: 100px;
+}
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  /* border: 1px solid blue; */
+margin-top: 90px;
+}
 `;
 
 const StyledWrapper = styled(StyledFlex)`
+
 @media only screen and (max-width:991px){
   flex-wrap: wrap;
 }
 `;
 
-const StyledSpan = styled.span`
-color: #F4B23E;
-`;
-
-const StyledLeft = styled(StyledFlexItem)`
+const StyledTop = styled(StyledFlexItem)`
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 /* border: 1px solid red; */
+
+
 @media only screen and (max-width:768px){
   justify-content: center;
   align-items: center;
-}
+  padding: 0 25px;
 
-@media only screen and (min-width:1367px){
- min-width: 750px;
 }
 `;
 
 const StyledHeading = styled(HeadingText)`
-@media only screen and (min-width:1367px){
-font-size: 70px;
+     font-weight: 800;
+
+@media only screen and (min-width:1728px){
+     font-size: 44px;
+     line-height: 55.44px;
 }
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  font-size: 40px;
+     line-height: 51.44px;
+}
+
 @media only screen and (max-width:991px){
   text-align: center;
 }
 @media only screen and (max-width:768px){
-font-size: 34px;
-line-height: 42.84px;
+/* font-size: 34px; */
+/* line-height: 42.84px; */
+/* padding: 0 25px; */
+
+/* font-family: Plus Jakarta Sans; */
+font-size: 25px;
+/* font-weight: 800; */
+line-height: 31.5px;
+/* text-align: center; */
+
+
+}
+`;
+
+
+const StyledP = styled(ParagraphText)`
+color: #202020;
+text-align: center;
+
+@media only screen and (min-width:1728px){
+  /* border:1px solid yellow ; */
+    font-size: 21px;
+    line-height: 26.47px;
+    /* text-align: center; */
+    /* margin-bottom: -20px; */
+}
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  font-size: 20px;
+    line-height: 25.47px;
+}
+
+@media only screen and (max-width:768px){
+  /* text-align: center; */
+/* font-size: 16px; */
+/* line-height: 24px; */
+/* padding: 0 25px; */
+
+
+/* font-family: Plus Jakarta Sans; */
+font-size: 14px;
+font-weight: 600;
+line-height: 17.64px;
+/* text-align: center; */
+
+
 }
 `;
 
 const StyledParagraph = styled(ParagraphText)`
-@media only screen and (min-width:1367px){
-    font-size: 20px;
+
+font-weight: 400;
+text-align: center;
+
+@media only screen and (min-width:1728px){
+     font-size: 24px;
+     line-height: 30.24px;
 }
-@media only screen and (max-width:991px){
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  font-size: 22px;
+     line-height: 28.24px;
+}
+/* @media only screen and (max-width:991px){
   text-align: center;
-}
+} */
 @media only screen and (max-width:768px){
-  text-align: center;
+  /* text-align: center; */
+/* font-size: 16px; */
+/* line-height: 24px; */
+/* padding: 0 25px; */
+
+/* font-family: Plus Jakarta Sans; */
 font-size: 16px;
-line-height: 24px;
+/* font-weight: 400; */
+line-height: 20.16px;
+/* text-align: center; */
+
+
 }
 `;
 
-const StyledRight = styled(StyledFlexItem)`
-/* min-width: 588px; */
-/* height: 565.96; */
+const StyledBottom = styled(StyledFlexItem)`
 
-img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+@media only screen and (min-width:1728px){
+/* border: 4px solid red; */
+  max-width: 893px;
 }
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  max-width: 800px;
+}
+
 @media only screen and (max-width:991px){
   max-width: 731px;
 }
 @media only screen and (max-width: 768px){
   /* display: none; */
+  padding: 0 25px;
 }
-`;
-
-const StyledGetStartedCont2 = styled.button`
-width: 189px;
-max-height: 60px;
-padding: 16px 30px;
-column-gap: 11px;
-border-radius: 100px;
-opacity: 0px;
-background-color: #1B442A;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-border: none;
-margin-top: 49.65px;
-@media only screen and (max-width:991px){
-/* width: 189px; */
-  width: 100%;
-}
-@media only screen and (max-width:768px){
-width: 189px;
-height: 56px;
-padding: 14px 30px;
-}
-`;
-
-const StyledGetStartedBtn = styled(StyledButton)`
-max-height: 20px;
-opacity: 0px;
-color: #FFFFFF;
-font-size: 16px;
-font-weight: 400;
-line-height: 20.16px;
-text-align: left;
 `;
