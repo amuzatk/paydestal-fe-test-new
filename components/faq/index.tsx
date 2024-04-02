@@ -65,7 +65,7 @@ const Faq = () => {
         </StyledRight>
       </StyledWrapper>
     </StyledMainContainer>
-      <FaqCollapse2 />
+      {/* <FaqCollapse2 /> */}
 </>
   )
 }

@@ -13,7 +13,6 @@ const items = [
 const FaqCollapse2: React.FC = () => {
   return (
     <div>
-      <h1>Custom Accordion</h1>
       <Accordion items={items} />
     </div>
   );
