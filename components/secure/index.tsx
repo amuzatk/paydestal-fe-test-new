@@ -308,11 +308,6 @@ padding-bottom:10px;
 `;
 
 const StyledParagraph = styled(ParagraphText)`
-    //  fsize='20px'
-    //  lh='25.2px'
-     /* textAlign='left'
-     color='#FFFFFF'
-    mw='490px' */
     font-size: 20px;
     line-height: 25.2px;
     text-align: left;
@@ -325,9 +320,6 @@ line-height: 18px;
 max-width: 470px;
 
 }
-/* @media only screen and (min-width:1367px){
-    font-size: 20px;
-} */
 @media only screen and (max-width:991px){
   text-align: center;
 }

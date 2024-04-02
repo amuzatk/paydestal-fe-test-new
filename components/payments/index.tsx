@@ -33,10 +33,7 @@ const PaymentSolutions = () => {
         // mWidth='731px'
         >
         <StyledHeading
-    // fsize='44px'
      fw='800'
-    //  lh='55.44px'
-    //  align='left'
      color='#1B442A'
      >
     Create tailored  payment 
@@ -46,10 +43,10 @@ documented APIs
 
      <StyledParagraph
      fw='400'
-     fsize='18.5px'
+    //  fsize='18.5px'
     //  spacing='0.003em'
     //  fsize='20px'
-     lh='25.2px'
+    //  lh='25.2px'
      textAlign='left'
     color='#000000'
      >
@@ -57,10 +54,10 @@ documented APIs
 from simple projects to intricate financial products catering lots of customers.
 <StyledP
 fw='400'
-fsize='18.5px'
-//  spacing='0.003em'
-//  fsize='20px'
-lh='25.2px'
+// fsize='18.5px'
+// //  spacing='0.003em'
+// //  fsize='20px'
+// lh='25.2px'
 textAlign='left'
 color='#000000'
 >Got any ideas, it's time to create.</StyledP> 
@@ -92,34 +89,72 @@ max-height: 724.83px;
 `;
 
 const StyledWrapper = styled(StyledFlex)`
+  justify-content: space-between;
+
+ @media only screen and (min-width:992px) and (max-width:1727px){
+  // border: 1px solid green;
+column-gap: 100px;
+  // max-width: 600.43px;
+}
 @media only screen and (min-width:1728px){
-justify-content: space-between;
+/* justify-content: space-between; */
 column-gap: 126px;
-border: 1px solid red;
+// border: 1px solid red;
 }
 
-@media only screen and (max-width:991px){
+@media only screen and (min-width:769px) and (max-width:991px){
+  /* border: 1px solid red; */
+  flex-wrap: wrap;
+  /* margin-top: 700px; */
+  gap: 70px;
+flex-direction: column-reverse;
+}
+
+/* @media only screen and (max-width:991px){
+  border: 1px solid red;
   flex-wrap: wrap;
   margin-top: 700px;
 flex-direction: column-reverse;
+} */
+
+@media only screen and (min-width:992px) and (max-width:1200px){
+  /* border: 1px solid green; */
+padding: 0 25px;
+}
+
+@media only screen and (max-width:768px){
+  /* border: 1px solid red; */
+padding: 0 25px;
+margin-top: 580px;
 }
 `;
 
 
 const StyledRight = styled(StyledFlexItem)`
-padding-bottom: 25px;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
 
+@media only screen and (min-width:992px) and (max-width:1727px){
+  // border: 1px solid green;
+// column-gap: 100px;
+max-width: 600.43px;
+margin-top: -20px;
+// margin-bottom: 30px;
+  // max-width: 665.43px;
+}
 
 @media only screen and (min-width:1728px){
-border: 1px solid yellow;
+//  border: 1px solid yellow;
 min-width: 784px;
+/* max-width: 200px; */
 height: 374px;
+padding-bottom: 25px;
+
 /* border-radius: 1000px 0px 0px 0px; */
 }
+
 @media only screen and (max-width:768px){
   /* justify-content: center;
   align-items: center; */
@@ -133,25 +168,33 @@ margin-top: -650px;
  /* min-width: 750px; */
 }
 @media only screen and (min-width:1367px){
- min-width: 750px;
+ /* min-width: 750px; */
 }
 `;
 
 const StyledHeading = styled(HeadingText)`
-/* text-align: left; */
+text-align: left;
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50.44px;
+  // padding: 0 30px;
+}
 
 @media only screen and (min-width:1728px){
   /* font-family: Plus Jakarta Sans; */
 font-size: 44px;
 font-weight: 800;
 line-height: 55.44px;
-text-align: left;
+// text-align: left;
+padding: 0 30px;
 }
 
 
-@media only screen and (min-width:1367px){
+/* @media only screen and (min-width:1367px){
 // font-size: 70px;
-}
+} */
 @media only screen and (max-width:991px){
   text-align: center;
 }
@@ -167,23 +210,46 @@ text-align: left;
 const StyledParagraph = styled(ParagraphText)`
 /* border: 1px solid red; */
 text-align: left;
-@media only screen and (min-width:1367px){
-    font-size: 20px;
+font-weight: 400;
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  font-size: 16.3px;
+  line-height: 24.22px;
 }
+
+
+@media only screen and (min-width:1728px){
+font-size: 19.9px;
+padding: 0 30px;
+line-height: 25.2px;
+}
+
+
 @media only screen and (max-width:991px){
   text-align: center;
 }
 @media only screen and (max-width:768px){
 font-size: 16px;
-font-weight: 400;
+// font-weight: 400;
 line-height: 24px;
 text-align: left;
 }
 `;
 const StyledP = styled(ParagraphText)`
-/* color: red; */
+font-weight: 400;
 margin-top: -1px;
-/* font-size:58.5px; */
+
+
+@media only screen and (min-width:1728px){
+font-size: 20px;
+line-height: 25.2px;
+// text-align: left;
+  }
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  font-size: 16.3px;
+  line-height: 24.22px;
+}
 
 @media only screen and (max-width:991px){
   text-align: center;
@@ -201,7 +267,6 @@ text-align: left;
 
 
 const StyledLeft = styled(StyledFlexItem)`
-/* min-width: 388px; */
 img{
   width: 100%;
   height: 100%;
@@ -209,12 +274,8 @@ img{
 }
 
 @media only screen and (min-width:1728px){
-border: 1px solid yellow;
 min-width: 516px;
 height: 436px;
-/* gap: 10px;
-opacity: 0px; */
-
 }
 
 
@@ -228,7 +289,6 @@ opacity: 0px; */
 
 const StyledGetStartedCont2 = styled.button`
 width: 218px;
-/* width: 90px; */
 max-height: 60px;
 padding: 16px 30px;
 column-gap: 11px;
@@ -239,22 +299,29 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 border: none;
+
+
+
+@media only screen and (min-width:1728px){
 margin-top: 49.65px;
+margin-left: 30px;
+  }
 
+@media only screen and (min-width:992px) and (max-width:1727px){
+margin-top: 20.65px;
+margin-left: 0px;
+}
 
-@media only screen and (max-width:991px){
+@media only screen and (min-width:769px) and (max-width:991px){
   /* border: 1px solid red; */
   width: 100%;
-  /* margin: 10px 50px 10px 20px; */
+  margin-top: 30px;
 }
 @media only screen and (max-width:768px){
 width: 218px;
 height: 56px;
 padding: 14px 30px;
-
-/* justify-content: center;
-  align-items: center; */
-
+margin-top: 49.65px;
 }
 `;
 
@@ -266,4 +333,5 @@ font-size: 16px;
 font-weight: 400;
 line-height: 20.16px;
 text-align: left;
+
 `;
