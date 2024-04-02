@@ -24,18 +24,18 @@ const FooterComponent = () => {
 
     <StyledFirst>
 <Image src={FooterWebLogo} width={304.49} height={70} alt='FooterWebLogo'  />
-<ParagraphText
+<StyledParagrah
 >
 A modern, technology payment processing and settlement built for you and your business.
-</ParagraphText>
-<StyledFlex
-g='15px'
+</StyledParagrah>
+<StyledSocials
+// g='15px'
 >
-<Image src={InstagramIcon} width={40} height={40} alt='InstagramIcon'  />
-<Image src={TwitterIcon} width={40} height={40} alt='TwitterIcon'  />
-<Image src={FacebookIcon} width={40} height={40} alt='FacebookIcon'  />
+<Image src={InstagramIcon} width={40} height={40} alt='InstagramIcon' className='socials' />
+<Image src={TwitterIcon} width={40} height={40} alt='TwitterIcon' className='socials' />
+<Image src={FacebookIcon} width={40} height={40} alt='FacebookIcon' className='socials' />
 
-  </StyledFlex> 
+  </StyledSocials> 
         </StyledFirst>
 
 <StyledSecond>
@@ -210,7 +210,7 @@ left: 155px;
 top: 2055px;
 `;
 const StyledBackground = styled.section`
-/* border: 1px solid yellow; */
+border: 1px solid yellow;
 position: relative;
 background-image: url('/assets/images/footerBackground.png');
 background-position: center;
@@ -271,27 +271,61 @@ left: 0px;
 const StyledFirst = styled(StyledDiv)`
 /* border: 1px solid red; */
 flex-basis: 30%;
-/* max-width: 436px; */
-height: 195px;
+/* height: 195px; */
 display: flex;
 flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  /* flex-grow: 1; */
+  /* gap: 15px; */
+
+  @media only screen and (min-width:1728px){
+height: 195px;
+gap: 15px;
+}
+`;
+const StyledParagrah = styled(ParagraphText)`
+font-weight: 400;
+text-align: left;
+color: #000000;
+
+@media only screen and (min-width:1728px){
+font-size: 16px;
+line-height: 20.16px;
+}
+`;
+
+const StyledSocials = styled(StyledFlex)`
+/* border: 1px solid red; */
+img{
+  width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
+}
+@media only screen and (min-width:1728px){
   gap: 15px;
 
+.socials{
+width: 40.29px;
+height: 40px;
+}
+}
 `;
+
+
+
 const StyledSecond = styled(StyledDiv)`
 /* border: 1px solid green; */
 flex-basis: 20%;
-/* max-width: 137px; */
-height: 195px;
+/* height: 195px; */
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
   align-items: flex-start;
-  /* flex-grow: 1; */
 
+  @media only screen and (min-width:1728px){
+height: 195px;
+/* gap: 15px; */
+}
 
 `;
 const StyledThird = styled(StyledDiv)`
