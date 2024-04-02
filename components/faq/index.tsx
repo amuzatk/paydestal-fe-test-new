@@ -5,7 +5,9 @@ import { styled } from 'styled-components'
 import HeroImage from '../../../public/assets/images/HeroImage.webp'
 import RightArrow from '../../../public/assets/icons/RightArrow.png'
 import { HeadingText, ParagraphText } from '@/__style/global.style'
+import FaqCollapse2 from './Collapse2'
 import FaqCollapse from './FaqCollapse'
+// import FaqCollapse from './FaqCollapse'
 // import FaqCollapse from './FaqCollapse/FaqCollapse'
 
 const Faq = () => {
@@ -59,11 +61,11 @@ const Faq = () => {
         <StyledRight
         grow
         >
-      {/* <FaqCollapse /> */}
+      <FaqCollapse2 />
         </StyledRight>
       </StyledWrapper>
     </StyledMainContainer>
-      <FaqCollapse />
+      <FaqCollapse2 />
 </>
   )
 }

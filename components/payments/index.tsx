@@ -19,9 +19,7 @@ const PaymentSolutions = () => {
         grow
         >
       <Image 
-      src={PaymentSection} 
-      // width={588} 
-      // height={565.96} 
+      src={PaymentSection}  
       width={516} 
       height={436} 
       alt='PaymentSection'
@@ -43,10 +41,6 @@ documented APIs
 
      <StyledParagraph
      fw='400'
-    //  fsize='18.5px'
-    //  spacing='0.003em'
-    //  fsize='20px'
-    //  lh='25.2px'
      textAlign='left'
     color='#000000'
      >
@@ -54,10 +48,6 @@ documented APIs
 from simple projects to intricate financial products catering lots of customers.
 <StyledP
 fw='400'
-// fsize='18.5px'
-// //  spacing='0.003em'
-// //  fsize='20px'
-// lh='25.2px'
 textAlign='left'
 color='#000000'
 >Got any ideas, it's time to create.</StyledP> 
@@ -94,10 +84,8 @@ const StyledWrapper = styled(StyledFlex)`
  @media only screen and (min-width:992px) and (max-width:1727px){
   // border: 1px solid green;
 column-gap: 100px;
-  // max-width: 600.43px;
 }
 @media only screen and (min-width:1728px){
-/* justify-content: space-between; */
 column-gap: 126px;
 // border: 1px solid red;
 }
@@ -109,13 +97,6 @@ column-gap: 126px;
   gap: 70px;
 flex-direction: column-reverse;
 }
-
-/* @media only screen and (max-width:991px){
-  border: 1px solid red;
-  flex-wrap: wrap;
-  margin-top: 700px;
-flex-direction: column-reverse;
-} */
 
 @media only screen and (min-width:992px) and (max-width:1200px){
   /* border: 1px solid green; */
@@ -141,8 +122,6 @@ align-items: flex-start;
 // column-gap: 100px;
 max-width: 600.43px;
 margin-top: -20px;
-// margin-bottom: 30px;
-  // max-width: 665.43px;
 }
 
 @media only screen and (min-width:1728px){
@@ -156,9 +135,6 @@ padding-bottom: 25px;
 }
 
 @media only screen and (max-width:768px){
-  /* justify-content: center;
-  align-items: center; */
-
 /* border: 1px solid red; */
 margin-top: -650px;
 }
