@@ -1,4 +1,4 @@
-import { StyledButton, StyledDiv, StyledFlex, StyledFlexItem, StyledHeroSection } from '@/__style/ui-block.style'
+import { StyledButton, StyledContainerFluid, StyledContainerFluidHero, StyledDiv, StyledFlex, StyledFlexItem, StyledHeroSection } from '@/__style/ui-block.style'
 import Image from 'next/image'
 import React from 'react'
 import { styled } from 'styled-components'
@@ -209,37 +209,69 @@ position: absolute;
 left: 155px;
 top: 2055px;
 `;
-const StyledBackground = styled.div`
-/* position: relative; */
-/* background-image: url('/assets/images/PossibilityBackground.webp'); */
+const StyledBackground = styled.section`
+/* border: 1px solid yellow; */
+position: relative;
 background-image: url('/assets/images/footerBackground.png');
+background-position: center;
   /* background-size: cover; */
-  background-size: contain;
   background-repeat: no-repeat;
+  min-height: 570.04px;
+  /* min-height: 670.04px; */
+
+  @media only screen and (min-width: 1728px){
+  background-size: contain;
+  }
+
+  @media only screen and (min-width:992px) and (max-width:1727px){
+/* border: 1px solid red; */
+background-size: contain;
+/* background-size: cover; */
+
+  }
 
   @media only screen and (max-width: 991px) {
     background-image: none;
   }
 `;
-const StyledMainContainer = styled.div`
+const StyledMainContainer = styled(StyledContainerFluid)`
+/* border: 1px solid blue; */
 position: relative;
-/* bottom: 130px; */
-/* left: 70px; */
-top: 290px;
-/* min-height: 702.24px; */
-min-height: 502.24px;
-max-width: 1428px;
+/* top: 290px; */
+/* max-height: 702.24px; */
+max-height: 195px;
+/* max-width: 1428px; */
 display: flex;
 flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0 70px;
+justify-content: space-between;
+
+
+  /* position: relative; */
+
+@media only screen and (min-width: 1728px) {
+  top: 392px;
+}
+@media only screen and (min-width:992px) and (max-width:1727px){
+/* border: 1px solid green; */
+top: 333px;
+left: 9px;
+
+  }
+/* @media only screen and (min-width: 992px) and (max-width: 1727px) {
+  bottom: 90px;
+left: 42px;
+} */
+
+/* @media only screen and (max-width: 768px) {
+left: 0px;
+} */
 `;
 
 const StyledFirst = styled(StyledDiv)`
 /* border: 1px solid red; */
 flex-basis: 30%;
-max-width: 436px;
+/* max-width: 436px; */
 height: 195px;
 display: flex;
 flex-direction: column;
@@ -252,7 +284,7 @@ flex-direction: column;
 const StyledSecond = styled(StyledDiv)`
 /* border: 1px solid green; */
 flex-basis: 20%;
-max-width: 137px;
+/* max-width: 137px; */
 height: 195px;
 display: flex;
 flex-direction: column;
@@ -265,7 +297,7 @@ justify-content: flex-start;
 const StyledThird = styled(StyledDiv)`
 /* border: 1px solid yellow; */
 flex-basis: 20%;
-max-width: 187px;
+/* max-width: 187px; */
 height: 195px;
 display: flex;
 flex-direction: column;

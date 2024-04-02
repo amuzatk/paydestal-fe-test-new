@@ -340,18 +340,14 @@ position: relative;
   bottom: 145px;
 left: 58px;
 max-height: 724.83px;
-/* border: 1px solid blue; */
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
-  /* border: 1px solid red; */
   bottom: 90px;
 left: 42px;
 }
 
 @media only screen and (max-width: 768px) {
-  /* border: 1px solid red; */
-  /* bottom: 90px; */
 left: 0px;
 }
 `;

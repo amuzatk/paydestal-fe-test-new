@@ -483,6 +483,7 @@ const StyledFixed = styled.div`
   background-color: #fff;
 `;
 const StyledHeader = styled(StyledContainerFluid)`
+/* border: 1px solid green; */
   /* background-color: #f1d9d9; */
   display: flex;
   justify-content: space-between;
@@ -657,28 +658,11 @@ const StyledMobileBtn = styled.div`
 
   }
 
-  @media only screen and (max-width: 576px) {
-    /* display: block; */
-    /* margin-right: 60px; */
-    /* z-index: 2000; */
-    /* padding-right: 24px; */
-  }
+  /* @media only screen and (max-width: 576px) {
+  } */
 `;
 
 const StyledSelect = styled.select`
-  /* background-color: #fff;
-  color: #202020;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 8px;
-  margin-left: 10px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #f9f9f9;
-  } */
-
-
 
   background-color:#1B442A;
   color: #fff;

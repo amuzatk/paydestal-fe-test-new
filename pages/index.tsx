@@ -27,7 +27,7 @@ export default function Home() {
         <EndlessPossibilities />
         <PaymentSolutions />
         <Faq />
-        {/* <FooterComponent /> */}
+        <FooterComponent />
       </main>
 
       {/* <footer>
