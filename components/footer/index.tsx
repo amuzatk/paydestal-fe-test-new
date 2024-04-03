@@ -381,8 +381,8 @@ const StyledGetStarted = styled(StyledDiv)`
 position: relative;
 
 @media only screen and (min-width: 1728px){
-  left: 355px;
-bottom: 150px;
+  left: 208px;
+bottom: 100px;
   }
 `;
 const StyledBackground = styled.section`
@@ -429,7 +429,7 @@ justify-content: space-between;
   /* position: relative; */
 
 @media only screen and (min-width: 1728px) {
-  top: 120px;
+  top: 22px;
 }
 @media only screen and (min-width:992px) and (max-width:1727px){
 /* border: 1px solid green; */
