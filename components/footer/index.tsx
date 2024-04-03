@@ -18,29 +18,11 @@ import ReadyToStart from './ReadyToStart'
 const FooterComponent = () => {
   return (
     <StyledBackground>
-      <StyledGetStarted>
+      <StyledCustomDiv>
       <ReadyToStart />
-      </StyledGetStarted>
+      </StyledCustomDiv>
 
       <StyledWrapper>
-
-        {/* <div
-        style={{
-          position:"relative",
-          left:"100px",
-          bottom:"50px"
-        }}
-        >
-          <h1>TESTIGNG TESTIGNGTESTIGNGTESTIGNGTESTIGNG</h1>
-          <h1>TESTIGNG TESTIGNGTESTIGNGTESTIGNGTESTIGNG</h1>
-          <h1>TESTIGNG TESTIGNGTESTIGNGTESTIGNGTESTIGNG</h1>
-          <h1>TESTIGNG TESTIGNGTESTIGNGTESTIGNGTESTIGNG</h1>
-          <h1>TESTIGNG TESTIGNGTESTIGNGTESTIGNGTESTIGNG</h1>
-          <h1>TESTIGNG TESTIGNGTESTIGNGTESTIGNGTESTIGNG</h1>
-
-        </div> */}
-
-
     <StyledMainContainer
     >
     <StyledFirst
@@ -198,78 +180,6 @@ style={{
 
 </StyledFourth>
 
-{/* <StyledMobileFooter
-className='mobileFooter'
->
-<StyledSecond
-// className='web'
->
-
-<StyledPHeading
-color=' #1B442A'
->
-Company
-</StyledPHeading>
-
-<StyledParagrah
->
-
-About Us
-</StyledParagrah>
-
-<StyledParagrah
->
-
-Why Paydestal
-</StyledParagrah>
-
-<StyledParagrah
->
-
-Awards
-</StyledParagrah>
-<StyledParagrah
->
-
-Careers
-</StyledParagrah>
-</StyledSecond>
-
-<StyledSecond
-// className='web'
->
-
-<StyledPHeading
-color=' #1B442A'
->
-Useful Links
-</StyledPHeading>
-
-<StyledParagrah
->
-
-Services
-</StyledParagrah>
-
-<StyledParagrah
->
-
-Contact Us
-</StyledParagrah>
-
-<StyledParagrah
->
-
-Developer
-</StyledParagrah>
-<StyledParagrah
->
-
-FAQ
-</StyledParagrah>
-</StyledSecond>
-</StyledMobileFooter> */}
-
     </StyledMainContainer>
 
     <StyledMainContainer>
@@ -366,7 +276,6 @@ FAQ
 </StyledSecondMobile>
 
 </StyledFlex>
-{/* </StyledMobileFooter> */}
 
     </StyledMainContainer>
     </StyledWrapper>
@@ -375,16 +284,18 @@ FAQ
 }
 
 export default FooterComponent
-const StyledGetStarted = styled(StyledDiv)`
-/* position: absolute; */
+// const StyledGetStarted = styled(StyledDiv)`
+//  position: absolute;
 
-position: relative;
+// // position: relative;
 
-@media only screen and (min-width: 1728px){
-  left: 208px;
-bottom: 100px;
-  }
-`;
+// @media only screen and (min-width: 1728px){
+//   left: 208px;
+// // bottom: 100px;
+// bottom: 400px;
+
+//   }
+// `;
 const StyledBackground = styled.section`
 /* border: 1px solid yellow; */
 position: relative;
@@ -413,6 +324,81 @@ background-size: contain;
 const StyledWrapper = styled.div`
 /* border: 2px solid green; */
 `;
+
+
+// Defining media queries for positioning adjustment
+const mediaQueries = {
+  largeDesktop1: `@media (min-width: 1728px) and (max-width: 1800px)`,
+  largeDesktop2: `@media (min-width: 1801px) and (max-width: 1900px)`,
+  largeDesktop3: `@media (min-width: 1901px) and (max-width: 2000px)`,
+  largeDesktop4: `@media (min-width: 2001px) and (max-width: 2100px)`,
+  largeDesktop5: `@media (min-width: 2101px) and (max-width: 2200px)`,
+  largeDesktop6: `@media (min-width: 2201px) and (max-width: 2300px)`,
+  largeDesktop7: `@media (min-width: 2301px) and (max-width: 2400px)`,
+  largeDesktop8: `@media (min-width: 2401px) and (max-width: 2500px)`,
+  largeDesktop9: `@media (min-width: 2501px)`,
+
+
+  desktop1: `@media (min-width: 992px) and (max-width: 1100px)`,
+  desktop2: `@media (min-width: 1001px) and (max-width: 1200px)`,
+  desktop3: `@media (min-width: 1201px) and (max-width: 1300px)`,
+  desktop4: `@media (min-width: 1301px) and (max-width: 1400px)`,
+  desktop5: `@media (min-width: 1401px) and (max-width: 1500px)`,
+  desktop6: `@media (min-width: 1501px) and (max-width: 1600px)`,
+  desktop7: `@media (min-width: 1601px) and (max-width: 1700px)`,
+  desktop8: `@media (min-width: 1701px) and (max-width: 1727px)`,
+
+  tablet: `@media (max-width: 991px)`,
+};
+
+const StyledCustomDiv = styled(StyledDiv)`
+  position: absolute;
+  ${mediaQueries.largeDesktop1} {
+    left: 208px;
+    bottom: 300px;
+  }
+  ${mediaQueries.largeDesktop2} {
+    left: 265px;
+    bottom: 300px;
+  }
+  ${mediaQueries.largeDesktop3} {
+    left: 310px;
+    bottom: 300px;
+  }
+  ${mediaQueries.largeDesktop4} {
+    left: 367px;
+    bottom: 300px;
+  }
+  ${mediaQueries.largeDesktop5} {
+    left: 410px;
+    bottom: 300px;
+  }
+  ${mediaQueries.largeDesktop6} {
+    left: 470px;
+    bottom: 300px;
+  } ${mediaQueries.largeDesktop7} {
+    left: 540px;
+    bottom: 300px;
+  } ${mediaQueries.largeDesktop8} {
+    left: 610px;
+    bottom: 300px;
+  } ${mediaQueries.largeDesktop9} {
+    left: 680px;
+    bottom: 300px;
+  }
+
+  ${mediaQueries.desktop1} {
+    left: 300px;
+    bottom: 350px;
+  }
+  ${mediaQueries.tablet} {
+    left: 100px;
+    bottom: 250px;
+  }
+`;
+
+
+
 const StyledMainContainer = styled(StyledContainerFluid)`
 /* border: 1px solid blue; */
 position: relative;
@@ -429,7 +415,7 @@ justify-content: space-between;
   /* position: relative; */
 
 @media only screen and (min-width: 1728px) {
-  top: 22px;
+  top: 322px;
 }
 @media only screen and (min-width:992px) and (max-width:1727px){
 /* border: 1px solid green; */
@@ -456,13 +442,6 @@ display: none;
 }
 `;
 
-// const StyledMobileFooter = styled(StyledFlex)`
-// flex-direction: row;
-// justify-content: center;
-// align-items: center;
-// gap:60px;
-// border: 1px solid red;
-// `;
 
 const StyledFirst = styled(StyledDiv)`
 /* border: 1px solid red; */
