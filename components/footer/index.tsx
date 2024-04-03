@@ -261,10 +261,10 @@ FAQ
     className='mobile'
     >
 <Image src={FooterMobileLogo} width={298.93} height={95} alt='FooterWebLogo'  />
-<StyledParagrah
+<StyledParagrahMobile
 >
 A modern, technology payment processing and settlement built for you and your business.
-</StyledParagrah>
+</StyledParagrahMobile>
 <StyledSocials
 // g='15px'
 >
@@ -520,6 +520,19 @@ gap: 25px;
 
 `;
 
+const StyledParagrahMobile = styled(ParagraphText)`
+font-weight: 400;
+text-align: left;
+color: #000000;
+
+  @media only screen and (max-width:768px){
+  /* border: 1px solid red; */
+  padding-right: 23px;
+font-size: 20px;
+line-height: 25.2px;
+}
+`;
+
 const StyledParagrah = styled(ParagraphText)`
 font-weight: 400;
 text-align: left;
@@ -537,7 +550,7 @@ line-height: 19.16px;
 
   @media only screen and (max-width:768px){
   /* border: 1px solid red; */
-  padding-right: 23px;
+  /* padding-right: 23px; */
 font-size: 20px;
 line-height: 25.2px;
 }
