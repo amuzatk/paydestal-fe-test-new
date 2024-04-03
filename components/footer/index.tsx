@@ -436,13 +436,13 @@ display: none;
 }
 `;
 
-const StyledMobileFooter = styled(StyledFlex)`
-flex-direction: row;
-justify-content: center;
-align-items: center;
-gap:60px;
-border: 1px solid red;
-`;
+// const StyledMobileFooter = styled(StyledFlex)`
+// flex-direction: row;
+// justify-content: center;
+// align-items: center;
+// gap:60px;
+// border: 1px solid red;
+// `;
 
 const StyledFirst = styled(StyledDiv)`
 /* border: 1px solid red; */
@@ -527,7 +527,7 @@ text-align: left;
 color: #000000;
 
   @media only screen and (max-width:768px){
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding-right: 23px;
 font-size: 20px;
 line-height: 25.2px;
