@@ -387,8 +387,28 @@ const StyledCustomDiv = styled(StyledDiv)`
     bottom: 300px;
   }
 
-  ${mediaQueries.desktop1} {
+  ${mediaQueries.desktop8} {
+    left: 400px;
+    bottom: 350px;
+  }
+  ${mediaQueries.desktop7} {
     left: 300px;
+    bottom: 350px;
+  }
+  ${mediaQueries.desktop6} {
+    left: 250px;
+    bottom: 350px;
+  }
+  ${mediaQueries.desktop5} {
+    left: 240px;
+    bottom: 350px;
+  }
+  ${mediaQueries.desktop4} {
+    left: 200px;
+    bottom: 350px;
+  }
+  ${mediaQueries.desktop3} {
+    left: 150px;
     bottom: 350px;
   }
   ${mediaQueries.tablet} {
@@ -415,7 +435,7 @@ justify-content: space-between;
   /* position: relative; */
 
 @media only screen and (min-width: 1728px) {
-  top: 322px;
+  top: 394px;
 }
 @media only screen and (min-width:992px) and (max-width:1727px){
 /* border: 1px solid green; */
