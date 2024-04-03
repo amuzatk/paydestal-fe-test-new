@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import { styled } from 'styled-components'
 import InstagramIcon from '../../public/assets/icons/InstagramSvg.svg'
+import InstagramIconMobile from '../../public/assets/icons/InstagramIconMobile.png'
 import TwitterIcon from '../../public/assets/icons/TwitterSvg.svg'
 import FacebookIcon from '../../public/assets/icons/facebookSvg.svg'
 import LocationIcon from '../../public/assets/icons/locationIcon.png'
@@ -267,7 +268,7 @@ A modern, technology payment processing and settlement built for you and your bu
 <StyledSocials
 // g='15px'
 >
-<Image src={InstagramIcon} width={50} height={50} alt='InstagramIcon' className='socials' />
+<Image src={InstagramIconMobile} width={50} height={50} alt='InstagramIcon' className='socials' />
 <Image src={TwitterIcon} width={50} height={50} alt='TwitterIcon' className='socials' />
 <Image src={FacebookIcon} width={50} height={50} alt='FacebookIcon' className='socials' />
 
@@ -509,18 +510,14 @@ height: 60px;
 
 const StyledFirstMobile = styled(StyledDiv)`
 /* padding-bottom: 50px; */
-margin-bottom: 160px;
+margin-bottom: 140px;
 display: flex;
 flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 height: 195px;
-gap: 15px;
+gap: 25px;
 
-  img{
-  width: 100%;
-  height: 100%;
-}
 `;
 
 const StyledParagrah = styled(ParagraphText)`
@@ -540,7 +537,7 @@ line-height: 19.16px;
 
   @media only screen and (max-width:768px){
   /* border: 1px solid red; */
-  padding-right: 17px;
+  padding-right: 23px;
 font-size: 20px;
 line-height: 25.2px;
 }
