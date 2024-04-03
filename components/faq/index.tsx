@@ -70,7 +70,7 @@ const StyledMainContainer = styled(StyledFaqSection)`
 /* border: 1px solid red; */
 max-height: 895.61px;
 /* max-width: 1728px; */
-margin-bottom: 100px;
+margin-bottom: 300px;
 
 @media only screen and (min-width:1728px){
   /* border: 1px solid red; */

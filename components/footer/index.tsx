@@ -18,9 +18,9 @@ import ReadyToStart from './ReadyToStart'
 const FooterComponent = () => {
   return (
     <StyledBackground>
-      {/* <StyledGetStarted>
-      <ReadyToStart />
-      </StyledGetStarted> */}
+      <StyledGetStarted>
+      {/* <ReadyToStart /> */}
+      </StyledGetStarted>
 
       <StyledWrapper>
     <StyledMainContainer
@@ -276,7 +276,7 @@ A modern, technology payment processing and settlement built for you and your bu
         </StyledFirstMobile>
 
         <StyledFlex
-        cg='70px'
+        cg='40px'
         bt='1px solid #EEEEEE'
         p='30px 0'
         >
@@ -360,9 +360,10 @@ FAQ
 
 export default FooterComponent
 const StyledGetStarted = styled(StyledDiv)`
-position: absolute;
+/* position: absolute; */
 left: 155px;
-top: 2055px;
+top: 55px;
+position: relative;
 `;
 const StyledBackground = styled.section`
 /* border: 1px solid yellow; */
@@ -526,7 +527,7 @@ text-align: left;
 color: #000000;
 
   @media only screen and (max-width:768px){
-  /* border: 1px solid red; */
+  border: 1px solid red;
   padding-right: 23px;
 font-size: 20px;
 line-height: 25.2px;
@@ -639,17 +640,6 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
   align-items: flex-start;
-/* min-height: 195px; */
-
-
-  /* @media only screen and (min-width:1728px){
-height: 195px;
-} */
-
-/* @media only screen and (min-width:992px) and (max-width:1727px){
-flex-basis: 15%;
-padding-left: 55px;
-  } */
 
 `;
 const StyledThird = styled(StyledDiv)`
