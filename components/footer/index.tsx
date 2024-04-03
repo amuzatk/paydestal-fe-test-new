@@ -20,8 +20,14 @@ const FooterComponent = () => {
       {/* <StyledGetStarted>
       <ReadyToStart />
       </StyledGetStarted> */}
-    <StyledMainContainer>
-    <StyledFirst>
+
+      <StyledWrapper>
+    <StyledMainContainer
+    >
+    <StyledFirst
+    className='web'
+
+    >
 <Image src={FooterWebLogo} width={304.49} height={70} alt='WebFooterLogo' className='webFooterLogo' />
 <Image src={FooterMobileLogo} width={298.93} height={95} alt='FooterWebLogo' className='mobileFooterLogo' />
 <StyledParagrah
@@ -92,43 +98,24 @@ className='web'
 >
 
 <StyledPHeading
-// fsize='24px'
-// fw='600'
-// lh='30.24px'
-// textAlign='left'
 color=' #1B442A'
 >
 Legal
 </StyledPHeading>
 
 <StyledParagrah
-// fsize='20px'
-// fw='400'
-// lh='25.2px'
-// textAlign='left'
-// color='#202020'
 >
 
 Support Policy 
 </StyledParagrah>
 
 <StyledParagrah
-// fsize='20px'
-// fw='400'
-// lh='25.2px'
-// textAlign='left'
-// color='#202020'
 >
 
 Privacy Policy 
 </StyledParagrah>
 
 <StyledParagrah
-// fsize='20px'
-// fw='400'
-// lh='25.2px'
-// textAlign='left'
-// color='#202020'
 >
 
 Terms & Conditions
@@ -139,21 +126,12 @@ Terms & Conditions
 className='web'
 >
 <StyledPHeading
-// fsize='24px'
-// fw='600'
-// lh='30.24px'
-// textAlign='left'
 color=' #1B442A'
 >
 Our Office
 </StyledPHeading>
 
 <StyledParagrah
-// fsize='20px'
-// fw='400'
-// lh='25.2px'
-// textAlign='left'
-// color='#202020'
 style={{
   display:"flex",
   flexDirection:"row",
@@ -169,11 +147,6 @@ style={{
 
 
 <StyledParagrah
-// fsize='20px'
-// fw='400'
-// lh='25.2px'
-// textAlign='left'
-// color='#202020'
 style={{
   display:"flex",
   flexDirection:"row",
@@ -206,7 +179,7 @@ style={{
 
 </StyledFourth>
 
-<StyledMobileFooter
+{/* <StyledMobileFooter
 className='mobileFooter'
 >
 <StyledSecond
@@ -276,9 +249,110 @@ Developer
 FAQ
 </StyledParagrah>
 </StyledSecond>
-</StyledMobileFooter>
+</StyledMobileFooter> */}
 
     </StyledMainContainer>
+
+
+
+    <StyledMainContainer>
+    <StyledFirstMobile
+    className='mobile'
+    >
+<Image src={FooterMobileLogo} width={298.93} height={95} alt='FooterWebLogo'  />
+<StyledParagrah
+>
+A modern, technology payment processing and settlement built for you and your business.
+</StyledParagrah>
+<StyledSocials
+// g='15px'
+>
+<Image src={InstagramIcon} width={50} height={50} alt='InstagramIcon' className='socials' />
+<Image src={TwitterIcon} width={50} height={50} alt='TwitterIcon' className='socials' />
+<Image src={FacebookIcon} width={50} height={50} alt='FacebookIcon' className='socials' />
+
+  </StyledSocials> 
+        </StyledFirstMobile>
+
+        <StyledFlex
+        cg='70px'
+        bt='1px solid #EEEEEE'
+        p='30px 0'
+        >
+
+<StyledSecondMobile
+    className='mobile'
+>
+
+<StyledPHeading
+color=' #1B442A'
+>
+Company
+</StyledPHeading>
+
+<StyledParagrah
+>
+
+About Us
+</StyledParagrah>
+
+<StyledParagrah
+>
+
+Why Paydestal
+</StyledParagrah>
+
+<StyledParagrah
+>
+
+Awards
+</StyledParagrah>
+<StyledParagrah
+>
+
+Careers
+</StyledParagrah>
+</StyledSecondMobile>
+
+<StyledSecondMobile
+    className='mobile'
+>
+
+<StyledPHeading
+color=' #1B442A'
+>
+Useful Links
+</StyledPHeading>
+
+<StyledParagrah
+>
+
+Services
+</StyledParagrah>
+
+<StyledParagrah
+>
+
+Contact Us
+</StyledParagrah>
+
+<StyledParagrah
+>
+
+Developer
+</StyledParagrah>
+<StyledParagrah
+>
+
+FAQ
+</StyledParagrah>
+</StyledSecondMobile>
+
+</StyledFlex>
+{/* </StyledMobileFooter> */}
+
+    </StyledMainContainer>
+    </StyledWrapper>
     </StyledBackground>
   )
 }
@@ -290,7 +364,7 @@ left: 155px;
 top: 2055px;
 `;
 const StyledBackground = styled.section`
-border: 1px solid yellow;
+/* border: 1px solid yellow; */
 position: relative;
 background-image: url('/assets/images/footerBackground.png');
 background-position: center;
@@ -313,6 +387,9 @@ background-size: contain;
   @media only screen and (max-width: 991px) {
     background-image: none;
   }
+`;
+const StyledWrapper = styled.div`
+/* border: 2px solid green; */
 `;
 const StyledMainContainer = styled(StyledContainerFluid)`
 /* border: 1px solid blue; */
@@ -338,20 +415,22 @@ top: 373px;
 left: 0px;
 /* justify-content: space-evenly; */
   }
-/* @media only screen and (min-width: 992px) and (max-width: 1727px) {
-  bottom: 90px;
-left: 42px;
-} */
 
 @media only screen and (max-width: 1200px) {
 padding: 0 14px;
 }
-
 @media only screen and (max-width:768px){
   padding: 0 24px;
   .web{
       display: none;
     }
+}
+
+@media only screen and (min-width:769px){
+  /* padding: 0 24px; */
+.mobile{
+display: none;
+}
 }
 `;
 
@@ -427,6 +506,23 @@ height: 60px;
     }
   }
 `;
+
+const StyledFirstMobile = styled(StyledDiv)`
+/* padding-bottom: 50px; */
+margin-bottom: 160px;
+display: flex;
+flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+height: 195px;
+gap: 15px;
+
+  img{
+  width: 100%;
+  height: 100%;
+}
+`;
+
 const StyledParagrah = styled(ParagraphText)`
 font-weight: 400;
 text-align: left;
@@ -441,6 +537,13 @@ line-height: 20.16px;
   font-size: 15px;
 line-height: 19.16px;
   }
+
+  @media only screen and (max-width:768px){
+  /* border: 1px solid red; */
+  padding-right: 17px;
+font-size: 20px;
+line-height: 25.2px;
+}
 `;
 
 const StyledPHeading = styled(ParagraphText)`
@@ -484,6 +587,15 @@ width: 38.29px;
 height: 38px;
 }
   }
+
+  @media only screen and (max-width:768px){
+  gap: 12.5px;
+
+.socials{
+width: 50px;
+height: 50px;
+}
+  }
 `;
 
 
@@ -506,6 +618,28 @@ height: 195px;
 flex-basis: 15%;
 padding-left: 55px;
   }
+
+`;
+
+const StyledSecondMobile = styled(StyledDiv)`
+/* border: 1px solid green; */
+/* flex-basis: 25%; */
+/* height: 195px; */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+  align-items: flex-start;
+/* min-height: 195px; */
+
+
+  /* @media only screen and (min-width:1728px){
+height: 195px;
+} */
+
+/* @media only screen and (min-width:992px) and (max-width:1727px){
+flex-basis: 15%;
+padding-left: 55px;
+  } */
 
 `;
 const StyledThird = styled(StyledDiv)`
