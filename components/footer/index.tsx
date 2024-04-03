@@ -19,10 +19,28 @@ const FooterComponent = () => {
   return (
     <StyledBackground>
       <StyledGetStarted>
-      {/* <ReadyToStart /> */}
+      <ReadyToStart />
       </StyledGetStarted>
 
       <StyledWrapper>
+
+        {/* <div
+        style={{
+          position:"relative",
+          left:"100px",
+          bottom:"50px"
+        }}
+        >
+          <h1>TESTIGNG TESTIGNGTESTIGNGTESTIGNGTESTIGNG</h1>
+          <h1>TESTIGNG TESTIGNGTESTIGNGTESTIGNGTESTIGNG</h1>
+          <h1>TESTIGNG TESTIGNGTESTIGNGTESTIGNGTESTIGNG</h1>
+          <h1>TESTIGNG TESTIGNGTESTIGNGTESTIGNGTESTIGNG</h1>
+          <h1>TESTIGNG TESTIGNGTESTIGNGTESTIGNGTESTIGNG</h1>
+          <h1>TESTIGNG TESTIGNGTESTIGNGTESTIGNGTESTIGNG</h1>
+
+        </div> */}
+
+
     <StyledMainContainer
     >
     <StyledFirst
@@ -254,8 +272,6 @@ FAQ
 
     </StyledMainContainer>
 
-
-
     <StyledMainContainer>
     <StyledFirstMobile
     className='mobile'
@@ -361,9 +377,13 @@ FAQ
 export default FooterComponent
 const StyledGetStarted = styled(StyledDiv)`
 /* position: absolute; */
-left: 155px;
-top: 55px;
+
 position: relative;
+
+@media only screen and (min-width: 1728px){
+  left: 355px;
+bottom: 150px;
+  }
 `;
 const StyledBackground = styled.section`
 /* border: 1px solid yellow; */
@@ -409,7 +429,7 @@ justify-content: space-between;
   /* position: relative; */
 
 @media only screen and (min-width: 1728px) {
-  top: 392px;
+  top: 120px;
 }
 @media only screen and (min-width:992px) and (max-width:1727px){
 /* border: 1px solid green; */
