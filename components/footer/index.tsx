@@ -277,7 +277,7 @@ A modern, technology payment processing and settlement built for you and your bu
 
         <StyledFlex
         cg='40px'
-        bt='1px solid #EEEEEE'
+        // bt='1px solid #EEEEEE'
         p='30px 0'
         >
 
@@ -510,8 +510,12 @@ height: 60px;
 `;
 
 const StyledFirstMobile = styled(StyledDiv)`
-/* padding-bottom: 50px; */
-margin-bottom: 140px;
+/* border: 1px solid red; */
+margin-right: 35px;
+/* width: 100%; */
+padding-bottom: 120px;
+border-bottom: 1px solid #EEEEEE;
+/* margin-bottom: 140px; */
 display: flex;
 flex-direction: column;
   justify-content: flex-start;
