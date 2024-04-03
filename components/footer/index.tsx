@@ -10,6 +10,7 @@ import EmailIcon from '../../public/assets/icons/emailIcon.png'
 import TelephoneIcon from '../../public/assets/icons/telephoneIcon.png'
 import { ParagraphText } from '@/__style/global.style'
 import FooterWebLogo from '../../public/assets/images/logoFooterWeb.png'
+import FooterMobileLogo from '../../public/assets/icons/web_mobile_footer_logo.png'
 import ReadyToStart from './ReadyToStart'
 
 
@@ -20,10 +21,9 @@ const FooterComponent = () => {
       <ReadyToStart />
       </StyledGetStarted> */}
     <StyledMainContainer>
-
-
     <StyledFirst>
-<Image src={FooterWebLogo} width={304.49} height={70} alt='FooterWebLogo'  />
+<Image src={FooterWebLogo} width={304.49} height={70} alt='WebFooterLogo' className='webFooterLogo' />
+<Image src={FooterMobileLogo} width={298.93} height={95} alt='FooterWebLogo' className='mobileFooterLogo' />
 <StyledParagrah
 >
 A modern, technology payment processing and settlement built for you and your business.
@@ -38,135 +38,142 @@ A modern, technology payment processing and settlement built for you and your bu
   </StyledSocials> 
         </StyledFirst>
 
-<StyledSecond>
+<StyledSecond
+className='web'
+>
 
-<ParagraphText
-fsize='24px'
-fw='600'
-lh='30.24px'
-textAlign='left'
+<StyledPHeading
+// fsize='24px'
+// fw='600'
+// lh='30.24px'
+// textAlign='left'
 color=' #1B442A'
 >
 Company
-</ParagraphText>
+</StyledPHeading>
 
-<ParagraphText
-fsize='20px'
-fw='400'
-lh='25.2px'
-textAlign='left'
-color='#202020'
+<StyledParagrah
+// fsize='20px'
+// fw='400'
+// lh='25.2px'
+// textAlign='left'
+// color='#202020'
 >
 
 About Us
-</ParagraphText>
+</StyledParagrah>
 
-<ParagraphText
-fsize='20px'
-fw='400'
-lh='25.2px'
-textAlign='left'
-color='#202020'
+<StyledParagrah
+// fsize='20px'
+// fw='400'
+// lh='25.2px'
+// textAlign='left'
+// color='#202020'
 >
 
 Developer
-</ParagraphText>
+</StyledParagrah>
 
-<ParagraphText
-fsize='20px'
-fw='400'
-lh='25.2px'
-textAlign='left'
-color='#202020'
+<StyledParagrah
+// fsize='20px'
+// fw='400'
+// lh='25.2px'
+// textAlign='left'
+// color='#202020'
 >
 
 FAQ
-</ParagraphText>
+</StyledParagrah>
 </StyledSecond>
 
 
-<StyledThird>
+<StyledThird
+className='web'
+>
 
-<ParagraphText
-fsize='24px'
-fw='600'
-lh='30.24px'
-textAlign='left'
+<StyledPHeading
+// fsize='24px'
+// fw='600'
+// lh='30.24px'
+// textAlign='left'
 color=' #1B442A'
 >
 Legal
-</ParagraphText>
+</StyledPHeading>
 
-<ParagraphText
-fsize='20px'
-fw='400'
-lh='25.2px'
-textAlign='left'
-color='#202020'
+<StyledParagrah
+// fsize='20px'
+// fw='400'
+// lh='25.2px'
+// textAlign='left'
+// color='#202020'
 >
 
 Support Policy 
-</ParagraphText>
+</StyledParagrah>
 
-<ParagraphText
-fsize='20px'
-fw='400'
-lh='25.2px'
-textAlign='left'
-color='#202020'
+<StyledParagrah
+// fsize='20px'
+// fw='400'
+// lh='25.2px'
+// textAlign='left'
+// color='#202020'
 >
 
 Privacy Policy 
-</ParagraphText>
+</StyledParagrah>
 
-<ParagraphText
-fsize='20px'
-fw='400'
-lh='25.2px'
-textAlign='left'
-color='#202020'
+<StyledParagrah
+// fsize='20px'
+// fw='400'
+// lh='25.2px'
+// textAlign='left'
+// color='#202020'
 >
 
 Terms & Conditions
-</ParagraphText>
+</StyledParagrah>
 
 </StyledThird>
-<StyledFourth>
-<ParagraphText
-fsize='24px'
-fw='600'
-lh='30.24px'
-textAlign='left'
+<StyledFourth
+className='web'
+>
+<StyledPHeading
+// fsize='24px'
+// fw='600'
+// lh='30.24px'
+// textAlign='left'
 color=' #1B442A'
 >
 Our Office
-</ParagraphText>
+</StyledPHeading>
 
-<ParagraphText
-fsize='20px'
-fw='400'
-lh='25.2px'
-textAlign='left'
-color='#202020'
+<StyledParagrah
+// fsize='20px'
+// fw='400'
+// lh='25.2px'
+// textAlign='left'
+// color='#202020'
 style={{
   display:"flex",
   flexDirection:"row",
   justifyContent:"center",
   alignItems:"center",
-  gap:"10px"
+  gap:"10px",
+  // width:"100%"
 }}
 >
 <Image src={LocationIcon} width={20} height={20} alt='LocationIcon'  />
  6 Alhaji Bakinson Street, Ikeja, Lagos Nigeria
-</ParagraphText>
+</StyledParagrah>
 
 
-<ParagraphText
-fsize='20px'
-fw='400'
-lh='25.2px'
-textAlign='left'
-color='#202020'
+<StyledParagrah
+// fsize='20px'
+// fw='400'
+// lh='25.2px'
+// textAlign='left'
+// color='#202020'
 style={{
   display:"flex",
   flexDirection:"row",
@@ -177,14 +184,14 @@ style={{
 >
 <Image src={EmailIcon} width={20} height={20} alt='EmailIcon'  />
  support@paydestal.com
-</ParagraphText>
+</StyledParagrah>
 
-<ParagraphText
-fsize='20px'
-fw='400'
-lh='25.2px'
-textAlign='left'
-color='#202020'
+<StyledParagrah
+// fsize='20px'
+// fw='400'
+// lh='25.2px'
+// textAlign='left'
+// color='#202020'
 style={{
   display:"flex",
   flexDirection:"row",
@@ -195,9 +202,82 @@ style={{
 >
 <Image src={TelephoneIcon} width={20} height={20} alt='TelephoneIcon'  />
  +234 80 9990 0045
-</ParagraphText>
+</StyledParagrah>
 
 </StyledFourth>
+
+<StyledMobileFooter
+className='mobileFooter'
+>
+<StyledSecond
+// className='web'
+>
+
+<StyledPHeading
+color=' #1B442A'
+>
+Company
+</StyledPHeading>
+
+<StyledParagrah
+>
+
+About Us
+</StyledParagrah>
+
+<StyledParagrah
+>
+
+Why Paydestal
+</StyledParagrah>
+
+<StyledParagrah
+>
+
+Awards
+</StyledParagrah>
+<StyledParagrah
+>
+
+Careers
+</StyledParagrah>
+</StyledSecond>
+
+<StyledSecond
+// className='web'
+>
+
+<StyledPHeading
+color=' #1B442A'
+>
+Useful Links
+</StyledPHeading>
+
+<StyledParagrah
+>
+
+Services
+</StyledParagrah>
+
+<StyledParagrah
+>
+
+Contact Us
+</StyledParagrah>
+
+<StyledParagrah
+>
+
+Developer
+</StyledParagrah>
+<StyledParagrah
+>
+
+FAQ
+</StyledParagrah>
+</StyledSecond>
+</StyledMobileFooter>
+
     </StyledMainContainer>
     </StyledBackground>
   )
@@ -254,18 +334,33 @@ justify-content: space-between;
 }
 @media only screen and (min-width:992px) and (max-width:1727px){
 /* border: 1px solid green; */
-top: 333px;
-left: 9px;
-
+top: 373px;
+left: 0px;
+/* justify-content: space-evenly; */
   }
 /* @media only screen and (min-width: 992px) and (max-width: 1727px) {
   bottom: 90px;
 left: 42px;
 } */
 
-/* @media only screen and (max-width: 768px) {
-left: 0px;
-} */
+@media only screen and (max-width: 1200px) {
+padding: 0 14px;
+}
+
+@media only screen and (max-width:768px){
+  padding: 0 24px;
+  .web{
+      display: none;
+    }
+}
+`;
+
+const StyledMobileFooter = styled(StyledFlex)`
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap:60px;
+border: 1px solid red;
 `;
 
 const StyledFirst = styled(StyledDiv)`
@@ -278,10 +373,59 @@ flex-direction: column;
   align-items: flex-start;
   /* gap: 15px; */
 
+  img{
+  width: 100%;
+  height: 100%;
+}
+
   @media only screen and (min-width:1728px){
 height: 195px;
 gap: 15px;
+
+.webFooterLogo{
+/* border: 5px solid red; */
+width: 304.49px;
+height: 70px;
 }
+}
+
+@media only screen and (min-width:769px) and (max-width:1727px){
+gap: 13px;
+
+.webFooterLogo{
+/* border: 1px solid red; */
+width: 294.49px;
+height: 60px;
+}
+  }
+
+  /* @media only screen and (min-width:769px) and (max-width:991px){
+gap: 10px;
+
+.webFooterLogo{
+width: 294.49px;
+height: 60px;
+}
+  } */
+
+  @media only screen and (max-width:768px){
+    .mobileFooterLogo{
+      display: inline-block;
+      /* border: 1px solid red; */
+    }
+    .webFooterLogo{
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width:769px){
+    .mobileFooterLogo{
+      display: none;
+    }
+    .webFooterLogo{
+      display: inline-block;
+    }
+  }
 `;
 const StyledParagrah = styled(ParagraphText)`
 font-weight: 400;
@@ -292,7 +436,29 @@ color: #000000;
 font-size: 16px;
 line-height: 20.16px;
 }
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  font-size: 15px;
+line-height: 19.16px;
+  }
 `;
+
+const StyledPHeading = styled(ParagraphText)`
+/* border: 1px solid red; */
+font-weight: 600;
+text-align: left;
+
+  @media only screen and (min-width:1728px){
+    line-height: 30.24px;
+    font-size: 24px;
+}
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  line-height: 28.24px;
+    font-size: 23px;
+  }
+`;
+
 
 const StyledSocials = styled(StyledFlex)`
 /* border: 1px solid red; */
@@ -309,6 +475,15 @@ width: 40.29px;
 height: 40px;
 }
 }
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  gap: 13px;
+
+.socials{
+width: 38.29px;
+height: 38px;
+}
+  }
 `;
 
 
@@ -326,6 +501,11 @@ justify-content: flex-start;
 height: 195px;
 /* gap: 15px; */
 }
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+flex-basis: 15%;
+padding-left: 55px;
+  }
 
 `;
 const StyledThird = styled(StyledDiv)`
@@ -351,5 +531,5 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
   align-items: flex-start;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 `;
