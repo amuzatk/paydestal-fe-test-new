@@ -211,7 +211,7 @@ height: 200px;
 
 @media only screen and (max-width:768px){
 padding: 0 10px 25px 10px;
-border-radius:54px;
+border-radius:40px;
 width: auto;
 height: 390px;
 gap: 20px;
