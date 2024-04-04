@@ -8,6 +8,7 @@ import Link from "next/link";
 import styled from "styled-components";
 import { StyledContainerFluid } from "@/__style/ui-block.style";
 import SafariToolBar from "./safari-toolbar";
+import MobileMenu from "./NavBarMobile";
 
 const NavBar = () => {
   const [screenWidth, setScreenWidth] = useState(
@@ -44,7 +45,6 @@ const NavBar = () => {
       </StyledLogo>
       {screenWidth <= 1200 ? (
         <StyledMobileBtn onClick={() => setDrawerVisible(true)}>
-          {/* <MenuOutlined /> */}
         <Image src={Hamburger} width={20} height={14} alt="Hamburger" />
         </StyledMobileBtn>
       ) : (
@@ -54,19 +54,19 @@ const NavBar = () => {
                   <StyledLink onClick={closeDrawer} href="/services">Services</StyledLink>
                 </li>
                 <li>
-                  <StyledLink onClick={closeDrawer} href="/contact">Pricing</StyledLink>
+                  <StyledLink onClick={closeDrawer} href="/pricing">Pricing</StyledLink>
                 </li>
                 <li>
-                  <StyledLink onClick={closeDrawer} href="/projects">Developer</StyledLink>
+                  <StyledLink onClick={closeDrawer} href="/developer">Developer</StyledLink>
                 </li>
                 <li>
                   <StyledLink onClick={closeDrawer} href="/about-us">Why Paydestal</StyledLink>
                 </li>
                 <li>
-                  <StyledLink onClick={closeDrawer} href="/about-us">Company</StyledLink>
+                  <StyledLink onClick={closeDrawer} href="/company">Company</StyledLink>
                 </li>
                 <li>
-                  <StyledLink onClick={closeDrawer} href="/about-us">Support</StyledLink>
+                  <StyledLink onClick={closeDrawer} href="/support">Support</StyledLink>
                 </li>
               </StyledMenu>
             </StyledNav>
@@ -125,32 +125,7 @@ const NavBar = () => {
         onClose={closeDrawer}
         open={drawerVisible}
       >
-        <StyledDrawerMenu>
-          <li>
-            <StyledLink onClick={closeDrawer} href="/services">Services</StyledLink>
-          </li>
-          <li>
-            <StyledLink onClick={closeDrawer} href="/contact">Pricing</StyledLink>
-          </li>
-          <li>
-            <StyledLink onClick={closeDrawer} href="/projects">Developer</StyledLink>
-          </li>
-          <li>
-            <StyledLink onClick={closeDrawer} href="/about-us">Why Paydestal</StyledLink>
-          </li>
-          <li>
-            <StyledLink onClick={closeDrawer} href="/about-us">Company</StyledLink>
-          </li>
-          <li>
-            <StyledLink onClick={closeDrawer} href="/about-us">Support</StyledLink>
-          </li>
-          <li>
-            <StyledLink onClick={closeDrawer} href="/login">Login</StyledLink>
-          </li>
-          <li>
-            <StyledLink onClick={closeDrawer} href="/register">Register</StyledLink>
-          </li>
-        </StyledDrawerMenu>
+<MobileMenu closeDrawer={closeDrawer} />
       </Drawer>
     </StyledHeader>
     </StyledFixed>
