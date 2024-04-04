@@ -445,7 +445,8 @@ const StyledGetStarted = styled(StyledDiv)`
 `;
 
 const StyledMainContainer = styled(StyledContainerFluid)`
-/* border: 1px solid red; */
+border: 1px solid red;
+/* overflow-y: scroll; */
 position: relative;
 max-height: 195px;
 display: flex;

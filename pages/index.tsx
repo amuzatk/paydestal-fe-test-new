@@ -1,3 +1,4 @@
+import { StyledDiv } from '@/__style/ui-block.style';
 import MyComponent from '@/components/CheckWidth&Height';
 import Hero from '@/components/Hero';
 import Faq from '@/components/faq';
@@ -7,13 +8,11 @@ import PaymentSolutions from '@/components/payments';
 import EndlessPossibilities from '@/components/possibilities';
 import SecureSection from '@/components/secure';
 import Head from 'next/head';
+import styled from 'styled-components';
 
 export default function Home() {
   return (
-    <div style={{
-        overflowX:"hidden",
-        // overflowY:"hidden"
-    }}>
+    <StyledContainer>
       <Head>
         <title>Home Page</title>
         <meta name="description" content="Welcome to my Next.js app!" />
@@ -32,6 +31,21 @@ export default function Home() {
 
       {/* <footer>
       </footer> */}
-    </div>
+    </StyledContainer>
   );
 }
+const StyledContainer = styled(StyledDiv)`
+overflow-x: hidden;
+/* overflow-y: scroll; */
+overflow-y: hidden;
+height: 100%;
+
+/* style={{
+        overflowX:"hidden",
+        overflowY:"hidden",
+        minHeight:"5000px"
+        // overflowY:"auto"
+    }} */
+
+
+`;
