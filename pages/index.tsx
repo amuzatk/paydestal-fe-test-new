@@ -2,7 +2,9 @@ import { StyledDiv } from '@/__style/ui-block.style';
 import Hero from '@/components/Hero';
 import Faq from '@/components/faq';
 import FooterComponent from '@/components/footer';
+import FooterBase from '@/components/footer/footet-base';
 import NavBar from '@/components/navbar';
+import SafariToolBar from '@/components/navbar/safari-toolbar';
 import PaymentSolutions from '@/components/payments';
 import EndlessPossibilities from '@/components/possibilities';
 import SecureSection from '@/components/secure';
@@ -19,6 +21,7 @@ export default function Home() {
       </Head>
 
       <main>
+    {/* <SafariToolBar /> */}
         <NavBar  />
         <Hero />
         <SecureSection />
@@ -26,10 +29,13 @@ export default function Home() {
         <PaymentSolutions />
         <Faq />
         <FooterComponent />
+      <FooterBase />
+
       </main>
 
-      {/* <footer>
-      </footer> */}
+      <footer>
+      {/* <FooterBase /> */}
+      </footer>
     </StyledContainer>
   );
 }

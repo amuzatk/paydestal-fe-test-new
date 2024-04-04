@@ -161,11 +161,6 @@ style={{
 </StyledParagrah>
 
 <StyledParagrah
-// fsize='20px'
-// fw='400'
-// lh='25.2px'
-// textAlign='left'
-// color='#202020'
 style={{
   display:"flex",
   flexDirection:"row",
@@ -313,11 +308,14 @@ background-size: contain;
   @media only screen and (max-width: 768px) {
     /* border: 1px solid yellow; */
     background-image: none;
-  }
-  @media only screen and (max-width: 768px) {
     margin-top: -220px;
-    /* border: 1px solid yellow; */
-    /* background-image: none; */
+  }
+
+  @media only screen and (min-width:501px) and (max-width:768px){
+border: 1px solid yellow;
+background-size: contain;
+/* background-size: cover; */
+margin-top: 5px;
   }
 `;
 const StyledWrapper = styled.div`
