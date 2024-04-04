@@ -81,6 +81,12 @@ margin-top: 160px;
   /* border: 1px solid orange; */
 margin-top: 120px;
 }
+
+@media only screen and (max-width:500px){
+
+  /* border: 1px solid red; */
+
+}
 `;
 
 const StyledWrapper = styled(StyledFlex)`

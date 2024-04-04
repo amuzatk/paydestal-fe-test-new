@@ -116,15 +116,14 @@ gap: 70px;
 }
 
 @media only screen and (max-width:768px){
-  /* display: column; */
-  /* flex-direction: row-reverse; */
   justify-content: center;
-  /* flex-direction: column-reverse; */
-
-  /* flex-wrap: wrap-reverse; */
   /* border: 1px solid red; */
 margin-bottom: 0px;
-
+}
+@media only screen and (max-width:500px){
+  /* justify-content: center; */
+  margin-top: 190px;
+  /* border: 1px solid red; */
 }
 `;
 
