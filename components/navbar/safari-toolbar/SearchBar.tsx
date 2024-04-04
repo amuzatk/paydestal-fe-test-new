@@ -29,9 +29,17 @@ const StyledContainer = styled(StyledFlex)`
 /* border: 1px solid red; */
 flex-direction: row;
 justify-content: flex-start;
-column-gap: 27px;
 align-items: center;
-column-gap: 15.76px;
+/* column-gap: 15.76px; */
+
+
+@media only screen and (min-width:1728px){ 
+  column-gap: 15.76px;
+}
+
+@media only screen and (min-width:1200px) and (max-width:1727px){
+column-gap: 14px;
+}
 `;
 const StyledShield = styled(StyledFlexItem)``;
 
@@ -48,17 +56,11 @@ height: 28px; */
 border: 1px solid #00000040;
 position: relative;
 
-@media only screen and (min-width:1728px){
-width: 704px;
-height: 28px;
-border-radius: 8px;
-/* position: relative; */
 
 input{
-width: 700px;
-height: 26px;
+/* width: 700px;
+height: 26px; */
 border-radius: 8px;
-/* font-family: Plus Jakarta Sans; */
 font-size: 14px;
 font-weight: 400;
 line-height: 17.64px;
@@ -71,17 +73,52 @@ border: none;
   position: absolute;
 }
 
+@media only screen and (min-width:1728px){
+  /* border: 3px solid red; */
+width: 704px;
+height: 28px;
+border-radius: 8px;
+
+input{
+  width: 700px;
+height: 26px;
+}
+
 .lock{
   left: 290px;
   top: 8px;
-
-  /* right: 406px;
-  top: 8px; */
 }
 
 .arrow{
   right: 3px;
   top: 8px;
+}
+}
+
+
+
+
+@media only screen and (min-width:1200px) and (max-width:1727px){
+  /* border: 3px solid green; */
+  width: 604px;
+height: 26px;
+border-radius: 8px;
+
+
+input{
+  width: 600px;
+height: 24px;
+}
+
+
+.lock{
+  left: 241px;
+  top: 6px;
+}
+
+.arrow{
+  right: 3px;
+  top: 6px;
 }
 }
 `;

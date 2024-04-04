@@ -56,4 +56,13 @@ justify-content: center;
 align-items: center;
 column-gap: 28.34px;
 /* border: 1px solid yellow; */
+
+@media only screen and (min-width:1728px){
+column-gap: 28.34px;
+}
+
+
+@media only screen and (min-width:1200px) and (max-width:1727px){
+  column-gap: 26.34px;
+}
 `;

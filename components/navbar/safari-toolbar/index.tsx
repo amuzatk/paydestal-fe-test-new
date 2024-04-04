@@ -42,8 +42,12 @@ padding: 0 20px;
 height: 51.63px;
 }
 
-@media only screen and (min-width:1200px) and (max-width:1727){
-max-height: 41.63px;
+@media only screen and (min-width:1200px) and (max-width:1727px){
+height: 41.63px;
+}
+
+@media only screen and (max-width:1199px){  
+display: none;
 }
 `;
 const StyledLeft = styled(StyledDiv)`

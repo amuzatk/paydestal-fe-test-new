@@ -21,5 +21,15 @@ export default ArrowUp
 const StyledArrowUp = styled(StyledFlex)`
 justify-content:flex-end;
 align-items: center;
+
+@media only screen and (min-width:1728px){ 
 column-gap: 23.36px;
+/* max-height: 51.63px; */
+/* height: 51.63px; */
+}
+
+@media only screen and (min-width:1200px) and (max-width:1727px){
+column-gap: 22.36px;
+/* max-height: 41.63px; */
+}
 `;
