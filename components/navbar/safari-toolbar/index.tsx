@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components';
 import ToggleComponent from './ToggleComponent';
 import SearchBar from './SearchBar';
+import ArrowUp from './ArrowUp';
 
 const SafariToolBar = () => {
   return (
@@ -18,10 +19,9 @@ const SafariToolBar = () => {
 </StyledMiddle>
 
 <StyledRight>
-{/* <p>SAFARA SAFARASAFARASAFARASAFARASAFARASAFARASAF</p> */}
-<ToggleComponent />
-
+<ArrowUp />
 </StyledRight>
+
     </StyledContainer>
   )
 }
@@ -57,6 +57,6 @@ flex: auto;
 `;
 const StyledRight = styled(StyledDiv)`
 flex: auto;
-border: 1px solid blue;
+/* border: 1px solid blue; */
 `;
 

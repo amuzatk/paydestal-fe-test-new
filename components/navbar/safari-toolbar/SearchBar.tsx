@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import ShieldIcon from '../../../public/assets/icons/shieldIcon.png'
 import LockIcon from '../../../public/assets/icons/lock.fille.png'
 import ArrowClockwiseIcon from '../../../public/assets/icons/arrow-clockwise.png'
+
+
 import Image from 'next/image';
 
 const SearchBar = () => {
@@ -16,7 +18,7 @@ const SearchBar = () => {
       <StyledSearch>
         <input type="text" placeholder='paydestal.com' />
         <Image src={LockIcon} width={7.83} height={11.43} alt='Shield half filled' className='lock' />
-        <Image src={ArrowClockwiseIcon} width={11.2} height={13.67} alt='Shield half filled' className='arrow' />
+        <Image src={ArrowClockwiseIcon} width={11.2} height={13.67} alt='Arrow Clockwise Icon' className='arrow' />
       </StyledSearch>
     </StyledContainer>
   )
