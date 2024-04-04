@@ -18,9 +18,9 @@ import ReadyToStart from './ReadyToStart'
 const FooterComponent = () => {
   return (
     <StyledBackground>
-      <StyledCustomDiv>
+      <StyledGetStarted>
       <ReadyToStart />
-      </StyledCustomDiv>
+      </StyledGetStarted>
 
       <StyledWrapper>
     <StyledMainContainer
@@ -284,18 +284,6 @@ FAQ
 }
 
 export default FooterComponent
-// const StyledGetStarted = styled(StyledDiv)`
-//  position: absolute;
-
-// // position: relative;
-
-// @media only screen and (min-width: 1728px){
-//   left: 208px;
-// // bottom: 100px;
-// bottom: 400px;
-
-//   }
-// `;
 const StyledBackground = styled.section`
 /* border: 1px solid yellow; */
 position: relative;
@@ -330,7 +318,6 @@ const StyledWrapper = styled.div`
 /* border: 2px solid green; */
 `;
 
-
 // Defining media queries for positioning adjustment
 const mediaQueries = {
   largeDesktop1: `@media (min-width: 1728px) and (max-width: 1800px)`,
@@ -363,7 +350,7 @@ const mediaQueries = {
   tablet8: `@media (min-width: 301px) and (max-width: 400px)`,
 };
 
-const StyledCustomDiv = styled(StyledDiv)`
+const StyledGetStarted = styled(StyledDiv)`
   position: absolute;
   ${mediaQueries.largeDesktop1} {
     left: 208px;
@@ -457,22 +444,13 @@ const StyledCustomDiv = styled(StyledDiv)`
   }
 `;
 
-
-
 const StyledMainContainer = styled(StyledContainerFluid)`
-/* border: 1px solid blue; */
 position: relative;
-/* top: 290px; */
-/* max-height: 702.24px; */
 max-height: 195px;
-/* max-width: 1428px; */
 display: flex;
 flex-direction: row;
-  flex-wrap: wrap;
+flex-wrap: wrap;
 justify-content: space-between;
-
-
-  /* position: relative; */
 
 @media only screen and (min-width: 1728px) {
   top: 394px;
@@ -484,10 +462,21 @@ left: 0px;
 /* justify-content: space-evenly; */
   }
 
+  @media only screen and (min-width:769px) and (max-width:991px){
+/* border: 1px solid green; */
+top: 337px;
+left: 0px;
+/* justify-content: space-evenly; */
+  }
+
 @media only screen and (max-width: 1200px) {
 padding: 0 14px;
 }
 @media only screen and (max-width:768px){
+  top: 337px;
+left: 0px;
+
+
   padding: 0 24px;
   .web{
       display: none;
@@ -655,6 +644,15 @@ height: 40px;
 
 @media only screen and (min-width:992px) and (max-width:1727px){
   gap: 13px;
+
+.socials{
+width: 38.29px;
+height: 38px;
+}
+  }
+
+  @media only screen and (min-width:769px) and (max-width:991px){
+  gap: 10px;
 
 .socials{
 width: 38.29px;
