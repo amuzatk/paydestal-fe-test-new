@@ -68,6 +68,7 @@ const StyledContainer = styled(StyledFlex)`
 `;
 
 const StyledItem1 = styled(StyledFlexItem)`
+/* border: 1px solid red; */
             width: 40px;
             height: 41px;
 
@@ -77,33 +78,74 @@ const StyledItem1 = styled(StyledFlexItem)`
               object-fit: contain;
             }
 
-            @media only screen and (min-width:992px) and (max-width:1198px){
-              width: 30px;
-height: 30px;
+            @media only screen and (min-width:1728px){
+              width: 40px;
+            height: 41px;
 }
 
   @media only screen and (min-width:1199px) and (max-width:1727px){
-width: 35px;
-height: 35px;
+width: 37px;
+height: 37px;
+}
+
+@media only screen and (min-width:992px) and (max-width:1198px){
+width: 33px;
+height: 33px;
+}
+
+@media only screen and (min-width:769px) and (max-width:991px){
+width: 30px;
+height: 30px;
+}
+
+@media only screen and (max-width:768px){
+width: 30px;
+height: 30px;
 }
 `;
 const StyledItem= styled(StyledFlexItem)`
+/* border: 1px solid blue; */
   //   fsize='24px'
           // fsize='18px'
         // fw='400'
         // lh='30.24px'
-        font-size: 24px;
         font-weight: 400;
         line-height: 30.24px;
 
-        @media only screen and (min-width:992px) and (max-width:1198px){
-font-size: 16px;
-line-height: 20px;
-}
-          @media only screen and (min-width:1199px) and (max-width:1727px){
-font-size: 20px;
-line-height: 25px;
+     
+
+        @media only screen and (min-width:1728px){
+/* font-size: 16px;
+line-height: 20px; */
+font-size: 24px;
 }
 
+@media only screen and (min-width:1199px) and (max-width:1727px){
+font-size: 20px;
+/* line-height: 25px; */
+}
+
+        @media only screen and (min-width:992px) and (max-width:1198px){
+font-size: 16px;
+/* line-height: 20px; */
+}
+
+
+@media only screen and (min-width:769px) and (max-width:991px){
+/* font-size: 16px;
+line-height: 20px; */
+}
+
+@media only screen and (max-width:768px){
+font-size: 24px;
+/* font-size: 20px; */
+
+}
+
+@media only screen and (max-width:500px){
+/* font-size: 24px; */
+font-size: 19px;
+
+}
 
 `;

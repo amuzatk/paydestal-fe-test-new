@@ -252,6 +252,7 @@ height: 50px;
 `;
 
 const StyledRight = styled(StyledFlexItem)`
+  /* border: 3px solid red; */
 img{
   width: 100%;
   height: 100%;
@@ -263,13 +264,29 @@ min-width: 708px;
 height: 802.98px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1727px) {
+@media only screen and (min-width: 1201px) and (max-width: 1727px) {
   /* border: 1px solid blue; */
   min-width: 508px;
 height: 625.98px;
+/* object-fit: contain; */
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  img{
+  width: 90%;
+  height: 95%;
+  /* object-fit: cover; */
+}
+
+  /* border: 1px solid blue; */
+  min-width: 500px;
+height: 550.98px;
 object-fit: contain;
+/* margin-right: 20px; */
 
 }
+
+
 @media only screen and (max-width:991px){
   max-width: 731px;
 
