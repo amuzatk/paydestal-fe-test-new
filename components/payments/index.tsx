@@ -109,6 +109,12 @@ padding: 0 25px;
 padding: 0 25px;
 margin-top: 350px;
 }
+
+@media only screen and (max-width:500px){
+  /* border: 1px solid yellow; */
+/* padding: 0 25px; */
+margin-top: 300px;
+}
 `;
 
 

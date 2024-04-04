@@ -311,7 +311,13 @@ background-size: contain;
 
   }
   @media only screen and (max-width: 768px) {
+    /* border: 1px solid yellow; */
     background-image: none;
+  }
+  @media only screen and (max-width: 768px) {
+    margin-top: -220px;
+    /* border: 1px solid yellow; */
+    /* background-image: none; */
   }
 `;
 const StyledWrapper = styled.div`
