@@ -396,23 +396,31 @@ const StyledCustomDiv = styled(StyledDiv)`
     bottom: 350px;
   }
   ${mediaQueries.desktop6} {
-    left: 250px;
+    left: 400px;
     bottom: 350px;
   }
   ${mediaQueries.desktop5} {
-    left: 240px;
+    left: 320px;
     bottom: 350px;
   }
   ${mediaQueries.desktop4} {
-    left: 200px;
+    left: 300px;
     bottom: 350px;
   }
   ${mediaQueries.desktop3} {
+    left: 250px;
+    bottom: 350px;
+  }
+  ${mediaQueries.desktop2} {
+    left: 180px;
+    bottom: 350px;
+  }
+  ${mediaQueries.desktop1} {
     left: 150px;
     bottom: 350px;
   }
   ${mediaQueries.tablet} {
-    left: 100px;
+    left: 200px;
     bottom: 250px;
   }
 `;
