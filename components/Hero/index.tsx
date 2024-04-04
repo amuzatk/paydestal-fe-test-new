@@ -107,13 +107,14 @@ padding-left: 15px;
 `;
 
 const StyledHeading = styled(HeadingText)`
+
+@media only screen and (min-width:1728px){
 font-size: 70px;
+}
 
 @media only screen and (min-width:992px) and (max-width:1727px){
   font-size: 51px;
-  /* lh='88.2px' */
   line-height: 70px;
-
 }
 @media only screen and (max-width:991px){
   text-align: center;
@@ -121,6 +122,8 @@ font-size: 70px;
 @media only screen and (max-width:768px){
 font-size: 34px;
 line-height: 42.84px;
+/* box-shadow: 0px 1px 6px 0px #00000040; */
+
 }
 `;
 

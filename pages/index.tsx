@@ -1,5 +1,4 @@
 import { StyledDiv } from '@/__style/ui-block.style';
-import MyComponent from '@/components/CheckWidth&Height';
 import Hero from '@/components/Hero';
 import Faq from '@/components/faq';
 import FooterComponent from '@/components/footer';

@@ -14,10 +14,7 @@ const SecureSection = () => {
       fDirection='row'
       >
 
-        <StyledLeft
-        // grow
-        // mWidth='731px'
-        >
+        <StyledLeft >
           <StyledMobileWeb>
 <Image 
 src={SecureLeft} 
@@ -28,13 +25,9 @@ blurDataURL="/assets/images/secureSectionImage.webp"
  />
 </StyledMobileWeb>
 <StyledMobileImage
-// grow
-// basis='200px'
 >
 <Image 
 src={SecureLeftMobile} 
-// width={382} 
-// height={254} 
 width={782.43} 
 height={600.48} 
 alt='SecureLeft'
@@ -47,12 +40,7 @@ blurDataURL="/assets/images/SecureMobile.webp"
         // grow
         >
           <StyledServices
-    //  fw='400'
-    //  fsize='21px'
-    //  lh='26.46px'
     fw='400'
-    // fsize='18px'
-    // lh='20.46px'
      textAlign='left'
     color='#F4B23E'
     mb='-30px'
@@ -61,12 +49,7 @@ blurDataURL="/assets/images/SecureMobile.webp"
      </StyledServices>
 
 <StyledSubHeading
-    //  fw='800'
-    //  fsize='44px'
-    //  lh='55.44px'
     fw='800'
-    // fsize='40px'
-    // lh='50.44px'
      textAlign='left'
      color='#FFFFFF'
      >
@@ -143,8 +126,6 @@ gap: 70px;
 `;
 
 const StyledLeft = styled(StyledFlexItem)`
-/* width={682.43} 
-height={500.48}  */
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -190,21 +171,15 @@ img{
 @media only screen and (min-width:769px){
   display: none;
 }
-
 `;
 
 const StyledRight = styled(StyledFlexItem)`
 background-color: #1B442A;
-/* border-top-left-radius: 338px; */
-/* border-bottom-left-radius: 338px; */
-/* padding: 60px 70px 60px 200px; */
 box-shadow: 0px 16px 29.799999237060547px 0px #00000040;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
-/* max-height: 665.25px; */
-/* max-width: 1387px; */
 
 
 @media only screen and (min-width:1728px){
@@ -225,11 +200,6 @@ border-top-left-radius: 330px;
 border-bottom-left-radius: 330px;
 }
 
-/* @media only screen and (max-width:991px){
-  padding: 30px 0px 30px 300px;
-margin: auto;
-} */
-
 @media only screen and (min-width:769px) and (max-width:991px){
   /* border: 1px solid red; */
 
@@ -238,9 +208,6 @@ min-width: 725px;
 height: 365.25px;
 border-top-left-radius: 330px;
 border-bottom-left-radius: 330px;
-  /* padding: 50px 60px 50px 150px; */
-/* max-width: 1000px; */
-/* height: 365.25px; */
 }
 
 
@@ -249,14 +216,7 @@ border-bottom-left-radius: 330px;
   border-top-left-radius: 0;
 border-bottom-left-radius: 0;
 padding: 80px 60px 80px 24px;
-/* padding: 0; */
-  /* display: none; */
-  /* text-align: center;
-
-padding: 30px 15px ;
-/* padding: 0; */
 width: 100%;
-/* margin-top: 25px; */
 
 }
 @media only screen and (max-width:568px){
@@ -265,9 +225,6 @@ width: 100%;
 `;
 
 const StyledSubHeading = styled(ParagraphText)`
-  //  fw='800'
-    //  fsize='44px'
-    //  lh='55.44px'
     font-size: 44px;
     line-height: 55.44px;
 
@@ -288,8 +245,6 @@ text-align: left;
 `;
 
 const StyledServices = styled(ParagraphText)`
- //  fsize='21px'
-    //  lh='26.46px'
     font-size: 21px;
     line-height: 26.46px;
 
@@ -301,8 +256,6 @@ line-height: 18px;
 font-size: 18px;
 line-height: 20px;
 }
-/* @media only screen and (min-width:1367px){
-} */
 @media only screen and (max-width:991px){
   text-align: center;
 }
