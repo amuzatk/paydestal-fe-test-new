@@ -84,6 +84,7 @@ const StyledWrapper = styled(StyledFlex)`
  @media only screen and (min-width:992px) and (max-width:1727px){
   // border: 1px solid green;
 column-gap: 100px;
+margin-bottom: 120px;
 }
 @media only screen and (min-width:1728px){
 column-gap: 126px;

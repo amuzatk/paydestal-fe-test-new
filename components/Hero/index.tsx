@@ -88,14 +88,12 @@ color: #F4B23E;
 `;
 
 const StyledLeft = styled(StyledFlexItem)`
-/* border: 1px solid green; */
 padding-left: 10px;
 max-width: 731px;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
-/* border: 1px solid red; */
 @media only screen and (max-width:768px){
   justify-content: center;
   align-items: center;
@@ -122,19 +120,16 @@ font-size: 70px;
 @media only screen and (max-width:768px){
 font-size: 34px;
 line-height: 42.84px;
-/* box-shadow: 0px 1px 6px 0px #00000040; */
-
+padding: 0 40px;
+text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
 }
 `;
 
 const StyledParagraph = styled(ParagraphText)`
-    //  fsize='17px'
     font-size: 20px;
-/* padding-left: 10px; */
 
 @media only screen and (min-width:992px) and (max-width:1727px){
   font-size: 14px;
-  /* lh='88.2px' */
   line-height: 20px;
 
 }
