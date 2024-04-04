@@ -194,47 +194,55 @@ img{
 `;
 
 const StyledRight = styled(StyledFlexItem)`
-
-/* background-color: lightblue; */
 background-color: #1B442A;
-border-top-left-radius: 338px;
-/* border-top-left-radius: 500px; */
-border-bottom-left-radius: 338px;
-/* padding: 60px 60px 60px 100px; */
-padding: 60px 70px 60px 200px;
-/* filter: drop-shadow(0px 16px 29.8px rgba(0,0,0,.25)); */
+/* border-top-left-radius: 338px; */
+/* border-bottom-left-radius: 338px; */
+/* padding: 60px 70px 60px 200px; */
 box-shadow: 0px 16px 29.799999237060547px 0px #00000040;
-/* min-width: 682.43px; */
-/* min-width: 782.43px; */
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
-/* min-height: 365.25px; */
-/* border: 1px solid red; */
+/* max-height: 665.25px; */
+/* max-width: 1387px; */
+
+
+@media only screen and (min-width:1728px){
+border-top-left-radius: 338px;
+border-bottom-left-radius: 338px;
+padding: 60px 70px 60px 200px;
 max-height: 665.25px;
-
 max-width: 1387px;
-/* height: 665.25px; */
-/* top: 79.43px; */
-/* left: 790px; */
-/* gap: 0px; */
-/* border-radius: 338px 0px 0px 0px; */
-/* opacity: 0px; */
 
+}
 
 
 @media only screen and (min-width:992px) and (max-width:1727px){
-  /* border: 1px solid red; */
   padding: 50px 60px 50px 150px;
 max-width: 1000px;
 height: 365.25px;
+border-top-left-radius: 330px;
+border-bottom-left-radius: 330px;
 }
 
-@media only screen and (max-width:991px){
-  /* padding: 30px 0px 30px 300px; */
+/* @media only screen and (max-width:991px){
+  padding: 30px 0px 30px 300px;
 margin: auto;
+} */
+
+@media only screen and (min-width:769px) and (max-width:991px){
+  /* border: 1px solid red; */
+
+  padding: 50px 60px 50px 150px;
+min-width: 725px;
+height: 365.25px;
+border-top-left-radius: 330px;
+border-bottom-left-radius: 330px;
+  /* padding: 50px 60px 50px 150px; */
+/* max-width: 1000px; */
+/* height: 365.25px; */
 }
+
 
 @media only screen and (max-width:768px){
   /* border: 1px solid red; */
@@ -314,15 +322,17 @@ const StyledParagraph = styled(ParagraphText)`
     color: #FFFFFF;
     max-width: 550px;
 
-    @media only screen and (min-width:992px) and (max-width:1727px){
+  @media only screen and (min-width:992px) and (max-width:1727px){
 font-size: 17px;
 line-height: 18px;
 max-width: 470px;
+}
+
+@media only screen and (min-width:769px) and (max-width:991px){
+  text-align: left;
 
 }
-@media only screen and (max-width:991px){
-  text-align: center;
-}
+
 @media only screen and (max-width:768px){
 font-size: 16px;
 font-weight: 400;
