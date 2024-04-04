@@ -210,10 +210,11 @@ height: 200px;
 }
 
 @media only screen and (max-width:768px){
-padding: 0 0 25px 0;
+padding: 0 10px 25px 10px;
 border-radius:54px;
 width: 100%;
 height: 390px;
+gap: 20px;
 }
 `;
 
@@ -355,7 +356,8 @@ width: 240px;
 @media only screen and (max-width:768px){
 width: 189px;
 height: 56px;
-padding: 14px 30px;
+padding: 14px 0px;
+margin-top: 30px;
 }
 `;
 
