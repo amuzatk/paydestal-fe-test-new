@@ -29,13 +29,12 @@ const SafariToolBar = () => {
 export default SafariToolBar
 const StyledContainer = styled(StyledFlex)`
 flex-direction: row;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
-column-gap: 60px;
+/* column-gap: 60px; */
 /* flex: 1; */
-/* width: 1728px; */
+/* width: 1628px; */
 border: 1px solid  #EEEEEE;
-width: 100%;
 padding: 0 20px;
 
 @media only screen and (min-width:1728px){  
