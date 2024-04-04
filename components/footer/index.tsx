@@ -431,7 +431,7 @@ const StyledGetStarted = styled(StyledDiv)`
     bottom: 350px;
   }
   ${mediaQueries.tablet4} {
-    left: 150px;
+    left: 120px;
     bottom: 350px;
   }
   ${mediaQueries.tablet5} {

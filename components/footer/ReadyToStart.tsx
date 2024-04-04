@@ -212,9 +212,11 @@ height: 200px;
 @media only screen and (max-width:768px){
 padding: 0 10px 25px 10px;
 border-radius:54px;
-width: 100%;
+width: auto;
 height: 390px;
 gap: 20px;
+margin: 0 24px;
+/* flex-grow: 1; */
 }
 `;
 
@@ -259,6 +261,7 @@ line-height: 26.24px;
 font-size: 16px;
 line-height: 20.16px;
 text-align: center;
+padding: 0 25px;
 
 }
 
