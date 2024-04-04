@@ -15,8 +15,8 @@ const SearchBar = () => {
 
       <StyledSearch>
         <input type="text" placeholder='paydestal.com' />
-        {/* <Image src={LockIcon} width={7.83} height={11.43} alt='Shield half filled' className='lock' /> */}
-        {/* <Image src={ArrowClockwiseIcon} width={11.2} height={13.67} alt='Shield half filled' className='arrow' /> */}
+        <Image src={LockIcon} width={7.83} height={11.43} alt='Shield half filled' className='lock' />
+        <Image src={ArrowClockwiseIcon} width={11.2} height={13.67} alt='Shield half filled' className='arrow' />
       </StyledSearch>
     </StyledContainer>
   )
@@ -44,9 +44,7 @@ height: 28px; */
 /* border: 1px 0px 0px 0px; */
 /* opacity: 0px; */
 border: 1px solid #00000040;
-
-/* border: 1px solid red; */
-/* position: relative; */
+position: relative;
 
 @media only screen and (min-width:1728px){
 width: 704px;
@@ -55,13 +53,9 @@ border-radius: 8px;
 /* position: relative; */
 
 input{
-  /* width: 100%;
-  height: 100%; */
-
-  width: 700px;
-height: 23px;
+width: 700px;
+height: 26px;
 border-radius: 8px;
-
 /* font-family: Plus Jakarta Sans; */
 font-size: 14px;
 font-weight: 400;
@@ -69,9 +63,23 @@ line-height: 17.64px;
 text-align: center;
 color: #999999;
 border: none;
+}
 
+.lock, .arrow{
+  position: absolute;
+}
 
+.lock{
+  left: 290px;
+  top: 8px;
 
+  /* right: 406px;
+  top: 8px; */
+}
+
+.arrow{
+  right: 3px;
+  top: 8px;
 }
 }
 `;

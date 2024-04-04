@@ -53,7 +53,7 @@ flex: auto;
 `;
 const StyledMiddle = styled(StyledDiv)`
 flex: auto;
-border: 1px solid green;
+/* border: 1px solid green; */
 `;
 const StyledRight = styled(StyledDiv)`
 flex: auto;
