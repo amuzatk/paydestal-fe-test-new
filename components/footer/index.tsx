@@ -1,4 +1,4 @@
-import { StyledButton, StyledContainerFluid, StyledContainerFluidHero, StyledDiv, StyledFlex, StyledFlexItem, StyledHeroSection } from '@/__style/ui-block.style'
+import { StyledContainerFluid, StyledDiv, StyledFlex } from '@/__style/ui-block.style'
 import Image from 'next/image'
 import React from 'react'
 import { styled } from 'styled-components'
@@ -13,6 +13,7 @@ import { ParagraphText } from '@/__style/global.style'
 import FooterWebLogo from '../../public/assets/images/logoFooterWeb.png'
 import FooterMobileLogo from '../../public/assets/icons/web_mobile_footer_logo.png'
 import ReadyToStart from './ReadyToStart'
+import MobileFooter from './MobileFooter'
 
 
 const FooterComponent = () => {
@@ -50,44 +51,22 @@ className='web'
 >
 
 <StyledPHeading
-// fsize='24px'
-// fw='600'
-// lh='30.24px'
-// textAlign='left'
 color=' #1B442A'
 >
 Company
 </StyledPHeading>
 
-<StyledParagrah
-// fsize='20px'
-// fw='400'
-// lh='25.2px'
-// textAlign='left'
-// color='#202020'
->
+<StyledParagrah>
 
 About Us
 </StyledParagrah>
 
-<StyledParagrah
-// fsize='20px'
-// fw='400'
-// lh='25.2px'
-// textAlign='left'
-// color='#202020'
->
+<StyledParagrah>
 
 Developer
 </StyledParagrah>
 
-<StyledParagrah
-// fsize='20px'
-// fw='400'
-// lh='25.2px'
-// textAlign='left'
-// color='#202020'
->
+<StyledParagrah>
 
 FAQ
 </StyledParagrah>
@@ -177,7 +156,7 @@ style={{
 
     </StyledMainContainer>
 
-    <StyledMainContainer>
+    {/* <StyledMainContainer>
     <StyledFirstMobile
     className='mobile'
     >
@@ -272,7 +251,9 @@ FAQ
 
 </StyledFlex>
 
-    </StyledMainContainer>
+    </StyledMainContainer> */}
+
+<MobileFooter />
     </StyledWrapper>
     </StyledBackground>
   )
@@ -449,7 +430,7 @@ const StyledGetStarted = styled(StyledDiv)`
 `;
 
 const StyledMainContainer = styled(StyledContainerFluid)`
-border: 1px solid red;
+/* border: 1px solid red; */
 /* overflow-y: scroll; */
 position: relative;
 max-height: 195px;
