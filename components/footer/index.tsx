@@ -316,8 +316,13 @@ background-size: contain;
 /* background-size: cover; */
 
   }
+  @media only screen and (min-width:769px) and (max-width:991px){
+/* border: 1px solid red; */
+background-size: contain;
+/* background-size: cover; */
 
-  @media only screen and (max-width: 991px) {
+  }
+  @media only screen and (max-width: 768px) {
     background-image: none;
   }
 `;
@@ -348,7 +353,14 @@ const mediaQueries = {
   desktop7: `@media (min-width: 1601px) and (max-width: 1700px)`,
   desktop8: `@media (min-width: 1701px) and (max-width: 1727px)`,
 
-  tablet: `@media (max-width: 991px)`,
+  tablet1: `@media (min-width: 901px) and (max-width: 991px)`,
+  tablet2: `@media (min-width: 801px) and (max-width: 900px)`,
+  tablet3: `@media (min-width: 769px) and (max-width: 800px)`,
+  tablet4: `@media (min-width: 701px) and (max-width: 768px)`,
+  tablet5: `@media (min-width: 601px) and (max-width: 700px)`,
+  tablet6: `@media (min-width: 501px) and (max-width: 600px)`,
+  tablet7: `@media (min-width: 401px) and (max-width: 500px)`,
+  tablet8: `@media (min-width: 301px) and (max-width: 400px)`,
 };
 
 const StyledCustomDiv = styled(StyledDiv)`
@@ -392,7 +404,7 @@ const StyledCustomDiv = styled(StyledDiv)`
     bottom: 350px;
   }
   ${mediaQueries.desktop7} {
-    left: 300px;
+    left: 370px;
     bottom: 350px;
   }
   ${mediaQueries.desktop6} {
@@ -419,9 +431,29 @@ const StyledCustomDiv = styled(StyledDiv)`
     left: 150px;
     bottom: 350px;
   }
-  ${mediaQueries.tablet} {
-    left: 200px;
-    bottom: 250px;
+  ${mediaQueries.tablet1} {
+    left: 180px;
+    bottom: 350px;
+  }
+  ${mediaQueries.tablet2} {
+    left: 130px;
+    bottom: 350px;
+  }
+  ${mediaQueries.tablet3} {
+    left: 110px;
+    bottom: 350px;
+  }
+  ${mediaQueries.tablet4} {
+    left: 150px;
+    bottom: 350px;
+  }
+  ${mediaQueries.tablet5} {
+    left: 75px;
+    bottom: 350px;
+  }
+  ${mediaQueries.tablet6} {
+    left: 35px;
+    bottom: 350px;
   }
 `;
 

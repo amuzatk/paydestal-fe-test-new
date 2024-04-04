@@ -212,9 +212,8 @@ height: 200px;
 @media only screen and (max-width:768px){
 padding: 0 0 25px 0;
 border-radius:54px;
-/* width: 550px; */
 width: 100%;
-height: 200px;
+height: 390px;
 }
 `;
 
