@@ -2,20 +2,18 @@ import { StyledDiv, StyledFlex } from '@/__style/ui-block.style';
 import React from 'react'
 import styled from 'styled-components';
 import ToggleComponent from './ToggleComponent';
+import SearchBar from './SearchBar';
 
 const SafariToolBar = () => {
   return (
     <StyledContainer>
-        {/* <ToggleComponent /> */}
 <StyledLeft>
-{/* <p>SAFARA SAFARASAFARASAFARASAFARASAFARASAFARASAF</p> */}
 <ToggleComponent />
 
 </StyledLeft>
 
 <StyledMiddle>
-{/* <p>SAFARA SAFARASAFARASAFARASAFARASAFARASAFARASAF</p> */}
-<ToggleComponent />
+<SearchBar />
 
 </StyledMiddle>
 
@@ -41,7 +39,8 @@ width: 100%;
 padding: 0 20px;
 
 @media only screen and (min-width:1728px){  
-max-height: 51.63px;
+/* max-height: 51.63px; */
+height: 51.63px;
 }
 
 @media only screen and (min-width:1200px) and (max-width:1727){

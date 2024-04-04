@@ -30,7 +30,6 @@ const StyledContainer = styled(StyledFlex)`
 /* border: 1px solid red; */
 flex-direction: row;
 justify-content: flex-start;
-
 column-gap: 27px;
 align-items: center;
 `;
