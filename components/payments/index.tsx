@@ -105,9 +105,9 @@ padding: 0 25px;
 }
 
 @media only screen and (max-width:768px){
-  /* border: 1px solid red; */
+  /* border: 1px solid yellow; */
 padding: 0 25px;
-margin-top: 580px;
+margin-top: 350px;
 }
 `;
 

@@ -87,6 +87,12 @@ margin-top: 90px;
   /* border: 1px solid blue; */
 margin-top: 95px;
 }
+
+@media only screen and (max-width:768px){
+  /* border: 1px solid blue; */
+  margin-top: -40px;
+/* margin-top: 100px; */
+}
 `;
 
 const StyledWrapper = styled(StyledFlex)`

@@ -75,6 +75,12 @@ const StyledMainContainer = styled(StyledContainerFluidHero)`
 /* margin-top: 186px; */
 max-height: 724.83px;
 margin-top: 160px;
+
+
+@media only screen and (max-width:768px){
+  /* border: 1px solid orange; */
+margin-top: 120px;
+}
 `;
 
 const StyledWrapper = styled(StyledFlex)`

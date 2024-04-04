@@ -106,6 +106,9 @@ left: 42px;
 
 @media only screen and (max-width: 768px) {
 left: 0px;
+
+/* border: 1px solid green; */
+top: -210px;
 }
 `;
 

@@ -122,6 +122,9 @@ gap: 70px;
   /* flex-direction: column-reverse; */
 
   /* flex-wrap: wrap-reverse; */
+  /* border: 1px solid red; */
+margin-bottom: 0px;
+
 }
 `;
 
