@@ -60,6 +60,14 @@ const StyledWrapper = styled(StyledFlex)`
   /* border: 1px solid green; */
 }
 
+/* @media only screen and (min-width: 769px) and (max-width: 991px) {
+  padding: 0;
+} */
+
+/* @media only screen and (max-width: 768px) {
+  padding: 0;
+} */
+
 `;
 
 const StyledList = styled(StyledFlexItem)`
@@ -102,6 +110,12 @@ height: 46px;
   width: 40px;
 height: 40px;
 padding: 8px 0;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  width: 35px;
+height: 35px;
+padding: 7px 0;
 }
 
 @media only screen and (max-width: 768px) {
