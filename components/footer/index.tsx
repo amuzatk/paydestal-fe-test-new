@@ -473,7 +473,7 @@ left: 0px;
 padding: 0 14px;
 }
 @media only screen and (max-width:768px){
-  top: 337px;
+  top: 300px;
 left: 0px;
 
 
@@ -481,6 +481,17 @@ left: 0px;
   .web{
       display: none;
     }
+}
+
+@media only screen and (max-width:500px){
+  top: 460px;
+/* left: 0px; */
+
+
+  /* padding: 0 24px;
+  .web{
+      display: none;
+    } */
 }
 
 @media only screen and (min-width:769px){
