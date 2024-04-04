@@ -18,9 +18,8 @@ import ReadyToStart from './ReadyToStart'
 
 const MobileFooter = () => {
   return (
-    // <div>
        <StyledMainContainer>
-        
+
     <StyledFirstMobile
     className='mobile'
     >
@@ -122,7 +121,8 @@ FAQ
 export default MobileFooter
 
 const StyledMainContainer = styled(StyledContainerFluid)`
-/* border: 1px solid red; */
+margin-top: 200px;
+border: 1px solid red;
 /* overflow-y: scroll; */
 position: relative;
 max-height: 195px;
@@ -131,39 +131,42 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-between;
 
-@media only screen and (min-width: 1728px) {
+/* @media only screen and (min-width: 1728px) {
   top: 394px;
-}
-@media only screen and (min-width:992px) and (max-width:1727px){
-/* border: 1px solid green; */
+} */
+/* @media only screen and (min-width:992px) and (max-width:1727px){
 top: 373px;
 left: 0px;
-/* justify-content: space-evenly; */
-  }
+  } */
 
-  @media only screen and (min-width:769px) and (max-width:991px){
-/* border: 1px solid green; */
+  /* @media only screen and (min-width:769px) and (max-width:991px){
 top: 337px;
 left: 0px;
-/* justify-content: space-evenly; */
-  }
+  } */
 
-@media only screen and (max-width: 1200px) {
-padding: 0 14px;
+
+
+
+@media only screen and (min-width: 769px) {
+/* padding: 0 14px; */
+display: none;
 }
+
+
+
 @media only screen and (max-width:768px){
-  top: 300px;
+  /* top: 300px; */
 left: 0px;
-
-
   padding: 0 24px;
-  .web{
+
+
+  /* .web{
       display: none;
-    }
+    } */
 }
 
 @media only screen and (max-width:500px){
-  top: 460px;
+  /* top: 460px; */
 /* left: 0px; */
 
 
@@ -173,12 +176,11 @@ left: 0px;
     } */
 }
 
-@media only screen and (min-width:769px){
-  /* padding: 0 24px; */
+/* @media only screen and (min-width:769px){
 .mobile{
 display: none;
 }
-}
+} */
 `;
 
 
@@ -228,19 +230,18 @@ font-weight: 400;
 text-align: left;
 color: #000000;
 
-@media only screen and (min-width:1728px){
+/* @media only screen and (min-width:1728px){
 font-size: 16px;
 line-height: 20.16px;
-}
+} */
 
-@media only screen and (min-width:992px) and (max-width:1727px){
-  font-size: 15px;
-line-height: 19.16px;
+@media only screen and (min-width:769px){
+    display: none;
+  /* font-size: 15px;
+line-height: 19.16px; */
   }
 
   @media only screen and (max-width:768px){
-  /* border: 1px solid red; */
-  /* padding-right: 23px; */
 font-size: 20px;
 line-height: 25.2px;
 }
@@ -251,14 +252,15 @@ const StyledPHeading = styled(ParagraphText)`
 font-weight: 600;
 text-align: left;
 
-  @media only screen and (min-width:1728px){
+  /* @media only screen and (min-width:1728px){
     line-height: 30.24px;
     font-size: 24px;
-}
+} */
 
-@media only screen and (min-width:992px) and (max-width:1727px){
-  line-height: 28.24px;
-    font-size: 23px;
+@media only screen and (min-width:769px){
+    display: none;
+  /* line-height: 28.24px;
+    font-size: 23px; */
   }
 `;
 
@@ -269,31 +271,32 @@ img{
   height: 100%;
   /* object-fit: contain; */
 }
-@media only screen and (min-width:1728px){
+/* @media only screen and (min-width:1728px){
   gap: 15px;
 
 .socials{
 width: 40.29px;
 height: 40px;
 }
-}
+} */
 
-@media only screen and (min-width:992px) and (max-width:1727px){
+/* @media only screen and (min-width:992px) and (max-width:1727px){
   gap: 13px;
 
 .socials{
 width: 38.29px;
 height: 38px;
 }
-  }
+  } */
 
-  @media only screen and (min-width:769px) and (max-width:991px){
+  @media only screen and (min-width:769px) {
+    display: none;
   gap: 10px;
 
-.socials{
+/* .socials{
 width: 38.29px;
 height: 38px;
-}
+} */
   }
 
   @media only screen and (max-width:768px){

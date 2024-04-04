@@ -48,9 +48,6 @@ blurDataURL="/assets/icons/RightArrow.png"
 export default ReadyToStart
 const StyledContainer = styled(StyledFlex)`
 flex-direction: column;
-/* width: 1030px; */
-/* max-width: 1299px; */
-/* height: 300.24px; */
 background-color: #1B442A;
 box-shadow: 0px 16px 29.799999237060547px 3px #00000040;
 justify-content: center;
