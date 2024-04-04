@@ -257,6 +257,8 @@ line-height: 26.24px;
 @media only screen and (max-width: 768px) {
 font-size: 16px;
 line-height: 20.16px;
+text-align: center;
+
 }
 
 `;
@@ -291,6 +293,8 @@ line-height: 65.44px;
 @media only screen and (max-width: 768px) {
 font-size: 44px;
 line-height: 55.44px;
+text-align: center;
+
 }
 `;
 
