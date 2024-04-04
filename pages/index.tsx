@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div style={{
         overflowX:"hidden",
-        overflowY:"hidden"
+        // overflowY:"hidden"
     }}>
       <Head>
         <title>Home Page</title>
