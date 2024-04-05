@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Paydestal - Landing Page Design
+
+This repository contains the landing page design for Paydestal, a revolutionary platform that is shaping the future of payment processing and settlement. Paydestal offers a comprehensive suite of services designed to provide seamless and secure payment solutions for diverse needs.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Usage](#usage)
+- [Video Clip](#clip)
+- [Deployment](#deployment)
+- [Contribution](#contribution)
+
+## Introduction
+
+The landing page design for Paydestal represents a pivotal step in revolutionizing financial transactions. With a focus on the future of payment processing and settlement, Paydestal offers a comprehensive suite of services to meet diverse needs. The hero section of the landing page encapsulates this vision, promising seamless and secure payment solutions.
+
+## Technologies Used
+
+The landing page design is implemented using the following technologies:
+- Next.js
+- TypeScript
+- Styled-Components
+- GitHub
+- Vercel (for deployment)
 
 ## Getting Started
 
-First, run the development server:
+To view the landing page design locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- ```bash -->
+git clone https://github.com/amuzatk/paydestal-fe-test-new.git
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Install dependencies:
+    cd paydestal-landing-page
+    npm install
 
-## Learn More
+3. Run the development server:
+    npm run dev
 
-To learn more about Next.js, take a look at the following resources:
+4. Open http://localhost:3000 to view the landing page in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Features
+The landing page consists of the following sections:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Header
+- Hero (Introduction provided above)
+- Services
+- Features
+- Dev Info
+- FAQ
+- Footer
 
-## Deploy on Vercel
+## Usage
+The landing page design serves as the frontend interface for the Paydestal platform. It provides a visually appealing representation of Paydestal's vision and offerings in the realm of payment processing and settlement.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Video Clip
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Clip of the landing page design can be found in the clip directory.
+
+[https://drive.google.com/file/d/124tXLz4g8m3poh930hRogyZzaBw7Im-Y/view?usp=drive_link]
+
+## Deployment
+
+The landing page is deployed and can be accessed at https://kazmatics-paydestal-fe-test-new.vercel.app/.
+
+## Contribution
+
+Contributions to improve the landing page design are welcome! If you have any suggestions or find any issues, please open an issue or submit a pull request.
+
+Thank you for your interest in contributing!

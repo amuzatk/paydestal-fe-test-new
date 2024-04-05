@@ -60,7 +60,6 @@ h6 {
 `;
 
 export const HeadingText = styled.h1<{
-// export const HeadingText = styled.h1<{
   fsize?: string;
   fstyle?: string;
   fw?: string;
