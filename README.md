@@ -62,7 +62,7 @@ The landing page design serves as the frontend interface for the Paydestal platf
 
 Clip of the landing page design can be found in the clip directory.
 
-[https://kazmatics-paydestal-fe-test-new.vercel.app/]
+[https://drive.google.com/file/d/1THKDdm1VNAEJAhfiulVj-oyuHNNjDgLK/view]
 
 ## Deployment
 
