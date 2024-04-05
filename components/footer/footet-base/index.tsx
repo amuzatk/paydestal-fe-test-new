@@ -23,8 +23,17 @@ export default FooterBase
 const StyledContainer = styled(StyledDiv)`
 /* border: 1px solid green; */
 /* width:1728px; */
+width: 100%;
 height: 113.87px;
-padding: 48px 130px;
+padding: 48px 0px;
+
+@media only screen and (max-width:768px){
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 `;
 
 const StyledP = styled(ParagraphText)`
