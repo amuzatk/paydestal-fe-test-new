@@ -39,7 +39,7 @@ height: 51.63px;
 }
 
 @media only screen and (min-width:1201px) and (max-width:1727px){
-height: 41.63px;
+height: 35.63px;
 }
 
 @media only screen and (max-width:1200px){  

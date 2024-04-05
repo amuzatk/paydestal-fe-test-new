@@ -100,7 +100,7 @@ FAQ
 export default MobileFooter
 
 const StyledMainContainer = styled(StyledContainerFluid)`
-margin-top: 200px;
+margin-top: -30px;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;

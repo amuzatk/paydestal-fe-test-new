@@ -20,19 +20,10 @@ const Faq = () => {
 
 <StyledP
      fw='600'
-    //  fsize='21px'
-    //  lh='26.47px'
-    //  textAlign='center'
-    // color='#202020'
-    // // bb='2px solid blue'
-    // mb='-20px'
      >
      If you have a question, we have an answer
      </StyledP>
         <StyledHeading
-    // fsize='44px'
-    //  fw='800'
-    //  lh='55.44px'
      align='center'
      color='#1B442A'
     //  mt='-20px'
@@ -90,8 +81,10 @@ margin-top: 95px;
 
 @media only screen and (max-width:768px){
   /* border: 1px solid blue; */
-  margin-top: -40px;
+  margin-top: -70px;
 /* margin-top: 100px; */
+/* margin-bottom: 0px; */
+
 }
 `;
 

@@ -106,6 +106,9 @@ height: 390px;
 gap: 20px;
 margin: 0 24px;
 /* flex-grow: 1; */
+
+/* border: 1px solid red; */
+margin-top: -190px;
 }
 `;
 
