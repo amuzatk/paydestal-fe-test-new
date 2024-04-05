@@ -159,12 +159,16 @@ color: #000000;
   @media only screen and (max-width:768px){
 font-size: 20px;
 line-height: 25.2px;
+
 }
 `;
 
 const StyledPHeading = styled(ParagraphText)`
 font-weight: 600;
 text-align: left;
+font-size: 24px;
+line-height: 30.24px;
+
 
 @media only screen and (min-width:769px){
     display: none;
