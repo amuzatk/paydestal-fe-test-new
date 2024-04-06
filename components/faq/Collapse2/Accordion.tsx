@@ -58,9 +58,11 @@ min-width: 800px;
 `;
 
 const AccordionItem = styled.div`
+/* border: 1px solid red; */
+padding-bottom: 15px;
+
 display: flex;
 flex-direction: column;
-/* box-shadow: 0px 4px 6.599999904632568px 0px #00000040; */
 box-shadow: 0px 4px 6.599999904632568px 0px #9c9b9b40;
 border-radius: 10.98px;
 margin-bottom: 24.89px;
@@ -126,31 +128,38 @@ line-height: 20.16px;
 `;
 
 const AccordionContent = styled(ParagraphText)`
+/* background-color: lightblue; */
+padding: 20px 0;
+
+/* border: 2px solid blue; */
   border-top: 1px solid #EEEEEE;
 font-weight: 400;
 text-align: left;
 color: #202020;
 
 @media only screen and (min-width:1728px){
-  padding: 10px 0;
+  /* padding: 10px 0; */
+
 font-size: 16px;
 line-height: 28px;
 }
 
 @media only screen and (min-width:992px) and (max-width:1727px){
-  padding: 9px 0;
+  /* padding: 9px 0; */
 font-size: 15px;
 line-height: 25px;
 
 
 @media only screen and (min-width:769px) and (max-width:991px){
-  padding: 8px 0;
+  /* padding: 8px 0; */
 font-size: 14px;
 line-height: 24.46px;
 }
 @media only screen and (max-width:768px){
 font-size: 14px;
 line-height: 24px;
+/* padding-bottom: 80px; */
+
 }
 }
 `;
