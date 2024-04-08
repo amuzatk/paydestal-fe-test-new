@@ -50,24 +50,11 @@ const NavBar = () => {
       ) : (
         <><StyledNav>
               <StyledMenu>
-                <li>
-                  <StyledLink onClick={closeDrawer} href="/services">Services</StyledLink>
-                </li>
-                <li>
-                  <StyledLink onClick={closeDrawer} href="/pricing">Pricing</StyledLink>
-                </li>
-                <li>
-                  <StyledLink onClick={closeDrawer} href="/developer">Developer</StyledLink>
-                </li>
-                <li>
-                  <StyledLink onClick={closeDrawer} href="/about-us">Why Paydestal</StyledLink>
-                </li>
-                <li>
-                  <StyledLink onClick={closeDrawer} href="/company">Company</StyledLink>
-                </li>
-                <li>
-                  <StyledLink onClick={closeDrawer} href="/support">Support</StyledLink>
-                </li>
+              {navigationItems.map((item, index) => (
+                  <li key={index}>
+                    <StyledLink onClick={closeDrawer} href={item.href}>{item.label}</StyledLink>
+                  </li>
+                ))}
               </StyledMenu>
             </StyledNav>
             <StyledAuthButtons>
@@ -292,3 +279,12 @@ const StyledSelect = styled.select`
    color: #202020;
   }
 `;
+
+const navigationItems = [
+  { href: "/services", label: "Services" },
+  { href: "/pricing", label: "Pricing" },
+  { href: "/developer", label: "Developer" },
+  { href: "/about-us", label: "Why Paydestal" },
+  { href: "/company", label: "Company" },
+  { href: "/support", label: "Support" }
+];
