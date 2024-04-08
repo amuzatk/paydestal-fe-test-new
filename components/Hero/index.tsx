@@ -41,9 +41,9 @@ ensuring seamless and secure payment solutions for diverse needs
      </StyledParagraph>
 
      <StyledGetStartedCont2>
-<StyledGetStartedBtn>
+{/* <StyledGetStartedBtn> */}
   Get Started
-</StyledGetStartedBtn>
+{/* </StyledGetStartedBtn> */}
 <Image 
 src={RightArrow} 
 width={7} 
@@ -72,20 +72,11 @@ blurDataURL="/assets/icons/RightArrow.png"
 export default Hero
 
 const StyledMainContainer = styled(StyledContainerFluidHero)`
-/* margin-top: 186px; */
 max-height: 724.83px;
 margin-top: 160px;
 
-
 @media only screen and (max-width:768px){
-  /* border: 1px solid orange; */
 margin-top: 120px;
-}
-
-@media only screen and (max-width:500px){
-
-  /* border: 1px solid red; */
-
 }
 `;
 
@@ -196,11 +187,17 @@ align-items: center;
 border: none;
 margin-top: 49.65px;
 
+color: #FFFFFF;
+font-size: 16px;
+font-weight: 400;
+line-height: 20.16px;
+text-align: left;
+
+
 @media only screen and (min-width:992px) and (max-width:1727px){
   margin-top: 38.65px;
 }
 @media only screen and (max-width:991px){
-/* width: 189px; */
   width: 100%;
 }
 @media only screen and (max-width:768px){
@@ -208,14 +205,4 @@ width: 189px;
 height: 56px;
 padding: 14px 30px;
 }
-`;
-
-const StyledGetStartedBtn = styled(StyledButton)`
-max-height: 20px;
-opacity: 0px;
-color: #FFFFFF;
-font-size: 16px;
-font-weight: 400;
-line-height: 20.16px;
-text-align: left;
 `;

@@ -76,28 +76,23 @@ export default SecureSection
 const StyledMainContainer = styled(StyledContainer)`
 margin-top: 70px;
 margin-bottom: 170px;
-/* border: 1px solid red; */
 max-height: 824.12px;
 
 @media only screen and (min-width: 769px) and (max-width: 820px) {
- /* border:5px solid red; */
  margin-top: 650px;
 
 }
 
 @media only screen and (min-width: 821px) and (max-width: 991px) {
- /* border:5px solid red; */
  margin-top: 800px;
 }
 
 @media only screen and (max-width: 768px){
- /* border:5px solid red; */
  margin-top: -180px;
 }
 `;
 
 const StyledWrapper = styled(StyledFlex)`
-/* border: 1px solid yellow; */
 justify-content: space-between;
 align-items: center;
 flex-direction: row;
@@ -107,12 +102,9 @@ flex-direction: row;
 }
 
 @media only screen and (max-width:991px){
-  //flex-wrap:wrap-reverse ;
-  /* border: 1px solid red; */
-  flex-wrap: wrap;
+flex-wrap: wrap;
 margin-top: 250px;
 gap: 70px;
-/* width: 100%; */
 }
 
 @media only screen and (max-width:768px){
@@ -134,7 +126,6 @@ justify-content: center;
 align-items: center;
 max-width: 682.43px;
 height: 500.48px;
-/* flex-grow: ; */
 
 img{
   width: 100%;
@@ -228,7 +219,6 @@ const StyledIcon = styled(StyledDiv)`
 padding-top: 32.2px;
 }
 
-
 @media only screen and (min-width:992px) and (max-width:1727px){
   padding-top: 25.2px;
 }
@@ -236,17 +226,6 @@ padding-top: 32.2px;
 @media only screen and (max-width:991px){
   padding-top: 20.2px;
 }
-
-
-/* @media only screen and (max-width:768px){
-  border-top-left-radius: 0;
-border-bottom-left-radius: 0;
-padding: 80px 60px 80px 24px;
-width: 100%;
-} */
-/* @media only screen and (max-width:568px){
-  margin-top: -110px;
-} */
 `;
 
 const StyledSubHeading = styled(ParagraphText)`
