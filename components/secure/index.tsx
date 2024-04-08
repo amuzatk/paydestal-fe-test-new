@@ -1,4 +1,4 @@
-import { StyledButton, StyledContainer, StyledFlex, StyledFlexItem, StyledHeroSection, StyledLink } from '@/__style/ui-block.style'
+import { StyledButton, StyledContainer, StyledDiv, StyledFlex, StyledFlexItem } from '@/__style/ui-block.style'
 import Image from 'next/image'
 import React from 'react'
 import { styled } from 'styled-components'
@@ -61,10 +61,10 @@ blurDataURL="/assets/images/SecureMobile.webp"
      >
     All your business financial needs covered with a full range of our  services
      </StyledParagraph>
-     <StyledParagraph
-     >
+
+<StyledIcon>
 <IconComponent />
-</StyledParagraph>
+</StyledIcon>
         </StyledRight>
       </StyledWrapper>
     </StyledMainContainer>
@@ -203,8 +203,6 @@ border-bottom-left-radius: 330px;
 }
 
 @media only screen and (min-width:769px) and (max-width:991px){
-  /* border: 1px solid red; */
-
   padding: 50px 60px 50px 150px;
 min-width: 725px;
 height: 365.25px;
@@ -214,7 +212,6 @@ border-bottom-left-radius: 330px;
 
 
 @media only screen and (max-width:768px){
-  /* border: 1px solid red; */
   border-top-left-radius: 0;
 border-bottom-left-radius: 0;
 padding: 80px 60px 80px 24px;
@@ -224,6 +221,32 @@ width: 100%;
 @media only screen and (max-width:568px){
   margin-top: -110px;
 }
+`;
+
+const StyledIcon = styled(StyledDiv)`
+@media only screen and (min-width:1728px){
+padding-top: 32.2px;
+}
+
+
+@media only screen and (min-width:992px) and (max-width:1727px){
+  padding-top: 25.2px;
+}
+
+@media only screen and (max-width:991px){
+  padding-top: 20.2px;
+}
+
+
+/* @media only screen and (max-width:768px){
+  border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+padding: 80px 60px 80px 24px;
+width: 100%;
+} */
+/* @media only screen and (max-width:568px){
+  margin-top: -110px;
+} */
 `;
 
 const StyledSubHeading = styled(ParagraphText)`
