@@ -83,10 +83,9 @@ const NavBar = () => {
                   window.location.href = '/register';
                 }
               }}>
-                {/* <option value="">Register</option> */}
                 <option value="" >Select</option>
                 <option value="login">Login</option>
-                <option value="register">Register</option>
+                <option value="register">Get Started</option>
               </StyledSelect>
 
                 </div>
@@ -135,7 +134,6 @@ const NavBar = () => {
 
 export default NavBar;
 const StyledFixed = styled.div`
-/* border: 1px solid green; */
  position: fixed;
  top: 0;
   z-index: 999;
@@ -143,17 +141,10 @@ const StyledFixed = styled.div`
   background-color: #fff;
 `;
 const StyledHeader = styled(StyledContainerFluid)`
-/* border: 1px solid green; */
-  /* background-color: #f1d9d9; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 104.28px;
-  /* padding: 15px 60px; */
-
-  @media only screen and (max-width: 1199px){
-    /* padding: 0 24px; */
-  }
 `;
 
 const StyledLogo = styled.a`
@@ -179,44 +170,22 @@ const StyledLogo = styled.a`
     }
   }
 
-  @media only screen and (max-width:576px){
-    .mobile{
-      /* display: none; */
-      /* padding-left: 24px; */
-    }
-
-    /* .web{
-      display: inline-block;
-    } */
-  }
 `;
 
 const StyledNav = styled.nav`
   display: flex;
   align-items: center;
   padding-right: 320px;
-  /* padding-left: -30px; */
-
-  /* @media only screen and (max-width:1727px){
-  padding-right: 30px;
- } */
-
  @media only screen and (min-width:992px) and (max-width:1727px){
   padding-right: 140px;
 
 }
-
-  /* @media only screen and (max-width:1400px){
-  padding-right: 10px;
- } */
  @media only screen and (max-width:1360px){
   padding-right: 70px;
-  /* justify-content: center; */
  }
 
  @media only screen and (max-width:1200px){
   padding-right: 0px;
-  /* justify-content: center; */
  }
 `;
 
@@ -229,29 +198,21 @@ const StyledMenu = styled.ul`
   height: 100%;
 `;
 
-const StyledDrawerMenu = styled(StyledMenu)`
-  flex-direction: column;
-`;
 
 const StyledLink = styled.a`
   text-decoration: none;
-  /* color: #000; */
   color: #202020;
 
   margin-right: 20px;
   cursor: pointer;
-
-  /* font-family: Plus Jakarta Sans; */
 font-size: 16px;
 font-weight: 400;
 line-height: 20.16px;
 text-align: center;
 
-
   &:hover {
     color: #555;
   }
-
 
   @media only screen and (min-width:992px) and (max-width:1727px){
     font-size: 14px;
@@ -311,15 +272,9 @@ const StyledMobileBtn = styled.div`
 
   @media only screen and (max-width: 1200px) {
     display: block;
-    /* margin-right: 60px; */
-    /* z-index: 2000; */
-    /* margin-right: 24px; */
     padding-right: 24px;
-
   }
 
-  /* @media only screen and (max-width: 576px) {
-  } */
 `;
 
 const StyledSelect = styled.select`
@@ -328,21 +283,12 @@ const StyledSelect = styled.select`
   color: #fff;
   border: none;
   border-radius:80px;
-  /* padding:12px 25px; */
   padding:12px;
-  /* padding: 8px; */
   cursor: pointer;
-  /* margin-left: 10px; */
-  /* width: 129px; */
   width: 121px;
   height: 42px;
-
-  /* &:hover {
-    background-color: #0056b3;
-  } */
   &:hover {
     background-color: #f9f9f9;
    color: #202020;
-
   }
 `;
