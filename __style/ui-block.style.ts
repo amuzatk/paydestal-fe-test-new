@@ -185,7 +185,7 @@ export const StyledHeroSection = styled.section`
   margin: auto;
 
   @media (min-width: 1200px) {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
     max-width: 1203px;
   }
 `;
