@@ -38,16 +38,6 @@ export default function Home() {
 }
 const StyledContainer = styled(StyledDiv)`
 overflow-x: hidden;
-/* overflow-y: scroll; */
 overflow-y: hidden;
 height: 100%;
-
-/* style={{
-        overflowX:"hidden",
-        overflowY:"hidden",
-        minHeight:"5000px"
-        // overflowY:"auto"
-    }} */
-
-
 `;

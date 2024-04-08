@@ -3,9 +3,6 @@ import { css } from 'styled-components';
 
 const variables = css`
   :root {
-    /* fonts  */
-    /* --Primary-font: 'Nunito', sans-serif; */
-    /* --Primary-font: 'Nunito', sans-serif; */
     --Primary-font: 'Plus Jakarta Sans', sans-serif;
 
     /* color  */
@@ -91,16 +88,8 @@ const variables = css`
     --deliver: #00b38f;
     --deliver: #00997a;
     --deliver-bg: hsl(168, 100%, 97%);
-
-    /* 
-    --background-light: #cce9fe; */
-    /* --success-bg: #f0fdf4; */
-    /* --success: #22c55e; */
-
     --warning: #f59e0b;
     --warning-bg: #fffbeb;
-    /* --border-2: #ebf1ff;
-    --border-3: #e4e7ec; */
     --warning2: #fd9727;
     --warning3: #ef9644;
     --faingrey: #f9fafb;

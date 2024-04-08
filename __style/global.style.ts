@@ -26,18 +26,6 @@ img{
   font-family: var(--Primary-font) ;
   margin: 0;
   padding: 0;
-  /* -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  text-size-adjust: none;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-  background: var( --background-gradient);
-  .ant-select-item-option-selected{
-    background-color:var(--border) !important
-  } */
 
   .blog-modal{
     z-index: 2000 !important;

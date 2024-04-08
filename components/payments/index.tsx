@@ -1,4 +1,4 @@
-import { StyledButton, StyledContainerFluid, StyledFlex, StyledFlexItem, StyledHeroSection } from '@/__style/ui-block.style'
+import { StyledButton, StyledContainerFluid, StyledFlex, StyledFlexItem,  } from '@/__style/ui-block.style'
 import Image from 'next/image'
 import React from 'react'
 import { styled } from 'styled-components'
@@ -11,7 +11,6 @@ const PaymentSolutions = () => {
     <StyledMainContainer>
       <StyledWrapper
       fDirection='row'
-      // justify='center'
       align='center'
       // cg='126px'
       >
@@ -28,7 +27,6 @@ const PaymentSolutions = () => {
         </StyledLeft>
          <StyledRight
         grow
-        // mWidth='731px'
         >
         <StyledHeading
      fw='800'
@@ -41,17 +39,17 @@ documented APIs
 
      <StyledParagraph
      fw='400'
-     textAlign='left'
     color='#000000'
      >
     The in-depth and clear documentation of our APIs,  enables you to create,
 from simple projects to intricate financial products catering lots of customers.
+</StyledParagraph>
+
 <StyledP
 fw='400'
 textAlign='left'
 color='#000000'
 >Got any ideas, it's time to create.</StyledP> 
-     </StyledParagraph>
 
      <StyledGetStartedCont2>
 <StyledGetStartedBtn>
@@ -218,15 +216,18 @@ line-height: 24px;
 text-align: left;
 }
 `;
+
+
 const StyledP = styled(ParagraphText)`
+/* border: 1px solid red; */
 font-weight: 400;
 margin-top: -1px;
+text-align: left;
 
 
 @media only screen and (min-width:1728px){
 font-size: 20px;
 line-height: 25.2px;
-// text-align: left;
   }
 
 @media only screen and (min-width:992px) and (max-width:1727px){
@@ -235,19 +236,15 @@ line-height: 25.2px;
 }
 
 @media only screen and (max-width:991px){
-  text-align: center;
+margin-top: 40px;
 }
 
 @media only screen and (max-width:768px){
-  margin-top: 40px;
-
-  font-size: 16px;
+font-size: 16px;
 font-weight: 400;
 line-height: 24px;
-text-align: left;
 }
 `;
-
 
 const StyledLeft = styled(StyledFlexItem)`
 img{
