@@ -97,7 +97,6 @@ const AccordionTitle = styled(HeadingText)`
   align-items: center;
   cursor: pointer;
   border: 1px solid #FFFFFF;
-  /* box-shadow: 0px 4px 6.599999904632568px 0px #00000040; */
   text-align: left;
 color: #202020;
 font-weight: 600;

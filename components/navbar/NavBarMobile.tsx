@@ -65,14 +65,12 @@ const MobileMenu: React.FC<Props> = ({ closeDrawer }) => {
 export default MobileMenu;
 
 const StyledMain = styled(StyledFlex)`
-  /* border: 1px solid red; */
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
 `;
 
 const StyledAction = styled(StyledFlex)`
-  /* border: 1px solid red; */
 `;
 
 const StyledDrawerMenu = styled.ul`
@@ -83,7 +81,6 @@ const StyledDrawerMenu = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  /* border: 1px solid red; */
   row-gap: 25px;
 `;
 
@@ -103,7 +100,6 @@ const StyledLink = styled.a`
 `;
 
 const StyledBtn = styled.button`
-  /* border: 1px solid red; */
   background-color: #1b442a;
   border: none;
   color: #ffffff;

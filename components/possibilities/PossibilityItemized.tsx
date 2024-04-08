@@ -19,7 +19,6 @@ import styled from 'styled-components';
           fDirection='row'
           justify='start'
           align='center'
-          // g='20px'
           g='9px'
           key={i}
         >
@@ -29,8 +28,6 @@ import styled from 'styled-components';
             <Image src={item.icon} 
             width={40} 
             height={40}
-            // width={30} 
-            // height={30} 
             alt={item.title}
              />
           </StyledIcon>
@@ -49,7 +46,6 @@ import styled from 'styled-components';
 }
 export default PossibilityItemized
 const StyledWrapper = styled(StyledFlex)`
-/* padding: 0 30px; */
 
 @media only screen and (min-width: 1728px) {
   padding: 0;
@@ -57,22 +53,11 @@ const StyledWrapper = styled(StyledFlex)`
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
   padding: 0;
-  /* border: 1px solid green; */
 }
-
-/* @media only screen and (min-width: 769px) and (max-width: 991px) {
-  padding: 0;
-} */
-
-/* @media only screen and (max-width: 768px) {
-  padding: 0;
-} */
-
 `;
 
 const StyledList = styled(StyledFlexItem)`
 font-weight: 400;
-/* line-height: 30.24px; */
 
 @media only screen and (min-width: 1728px) {
   line-height: 30.24px;
@@ -85,7 +70,6 @@ font-weight: 400;
 
 @media only screen and (max-width:768px){
 font-size: 14px;
-/* font-weight: 400; */
 line-height: 17.64px;
 text-align: left;
 
@@ -99,7 +83,6 @@ img{
   height: 100%;
   object-fit: contain;
 }
-/* border: 1px solid yellow; */
 
 @media only screen and (min-width: 1728px) {
 width: 46px;

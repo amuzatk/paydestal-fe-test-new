@@ -12,7 +12,6 @@ const PaymentSolutions = () => {
       <StyledWrapper
       fDirection='row'
       align='center'
-      // cg='126px'
       >
         <StyledLeft
         grow

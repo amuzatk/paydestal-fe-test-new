@@ -32,25 +32,17 @@ blurDataURL="/assets/icons/PossibilityIcon.png"
      textAlign='left'
     color='#202020'
     mb='-30px'
-    // mt='-0px'
      >
      Why Choose Us
      </StyledParagraph>
 
         <StyledHeading
-    // fsize='44px'
-    //  fw='800'
-    //  lh='55.44px'
-    // fsize='40px'
      fw='800'
      lh='50.44px'
      align='left'
      color='#1B442A'
      mb='15px'
-
      >
-
-
       Discover <StyledSpan>Endless Possibilities  </StyledSpan> 
 with Paydestal
      </StyledHeading>
@@ -81,7 +73,6 @@ export default EndlessPossibilities
 const StyledBackground = styled.section`
 position: relative;
 background-image: url('/assets/svg/background2.svg');
-  /* background-size: cover; */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -106,13 +97,10 @@ left: 42px;
 
 @media only screen and (max-width: 768px) {
 left: 0px;
-/* border: 1px solid green; */
 top: -220px;
 }
 
 @media only screen and (max-width: 768px) {
-/* left: 0px; */
-/* border: 1px solid green; */
 top: -270px;
 }
 `;
@@ -137,17 +125,11 @@ justify-content: flex-start;
 align-items: flex-start;
 
 @media only screen and (min-width: 1728px) {
-/* min-width: 137px; */
 max-height: 626.94px;
-/* border: 1px solid red; */
-
 min-width: 637px;
-/* height: 626.94px; */
-
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
-  /* border: 1px solid red; */
   max-width: 510px;
 }
 
@@ -155,7 +137,6 @@ min-width: 637px;
 @media only screen and (max-width:991px){
   justify-content: flex-start;
   align-items: flex-start;
-  /* text-align: center; */
   margin-top: 320px;
   padding: 0 25px;
   
@@ -164,24 +145,16 @@ min-width: 637px;
 @media only screen and (max-width:568px) and (min-width:332px) {
   margin-top: 250px;
 }
-/* @media only screen and (min-width:1367px){
- min-width: 750px;
- border: 4px solid green;
-} */
 `;
 
 const StyledHeading = styled(HeadingText)`
-/* font-size: 40px; */
-
-
 @media only screen and (min-width: 1728px) {
   font-size: 44px;
 padding: 0;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
-  /* border: 1px solid red; */
-  font-size: 35px;
+font-size: 35px;
 padding: 0;
 }
 @media only screen and (max-width:991px){
@@ -189,16 +162,10 @@ padding: 0;
 
 }
 @media only screen and (max-width:768px){
-/* font-size: 34px; */
-/* line-height: 42.84px; */
-
-/* font-family: Plus Jakarta Sans; */
 font-size: 25px;
-/* font-weight: 800; */
 line-height: 31.5px;
 text-align: left;
 margin-bottom: 40px;
-/* margin-top: 10px; */
 }
 `;
 
@@ -209,7 +176,6 @@ const StyledParagraph = styled(ParagraphText)`
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
-  /* border: 1px solid yellow; */
   font-size: 17px;
 padding: 0;
 
@@ -233,14 +199,12 @@ img{
   object-fit: contain;
 }
 @media only screen and (min-width: 1728px) {
-  /* padding: 0 30px; */
 width: 69px;
 height: 68.51px;
 }
 
 
 @media only screen and (min-width: 992px) and (max-width: 1727px) {
-  /* border: 1px solid green; */
   width: 59px;
 height: 58.51px;
 padding: 0;
@@ -260,7 +224,6 @@ height: 50px;
 `;
 
 const StyledRight = styled(StyledFlexItem)`
-  /* border: 3px solid red; */
 img{
   width: 100%;
   height: 100%;
@@ -273,25 +236,19 @@ height: 802.98px;
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1727px) {
-  /* border: 1px solid blue; */
   min-width: 508px;
 height: 625.98px;
-/* object-fit: contain; */
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   img{
   width: 90%;
   height: 95%;
-  /* object-fit: cover; */
 }
 
-  /* border: 1px solid blue; */
   min-width: 500px;
 height: 550.98px;
 object-fit: contain;
-/* margin-right: 20px; */
-
 }
 
 

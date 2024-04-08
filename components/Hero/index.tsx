@@ -1,4 +1,4 @@
-import { StyledButton, StyledContainerFluidHero, StyledFlex, StyledFlexItem } from '@/__style/ui-block.style'
+import { StyledContainerFluidHero, StyledFlex, StyledFlexItem } from '@/__style/ui-block.style'
 import Image from 'next/image'
 import React from 'react'
 import { styled } from 'styled-components'
@@ -19,7 +19,6 @@ const Hero = () => {
         mWidth='731px'
         >
         <StyledHeading
-    // fsize='61px'
      fw='800'
      lh='88.2px'
      align='left'
@@ -31,7 +30,6 @@ const Hero = () => {
 
      <StyledParagraph
      fw='400'
-    //  fsize='17px'
      lh='25.2px'
      textAlign='left'
     color='#202020'
@@ -41,9 +39,7 @@ ensuring seamless and secure payment solutions for diverse needs
      </StyledParagraph>
 
      <StyledGetStartedCont2>
-{/* <StyledGetStartedBtn> */}
   Get Started
-{/* </StyledGetStartedBtn> */}
 <Image 
 src={RightArrow} 
 width={7} 

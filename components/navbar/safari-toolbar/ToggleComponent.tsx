@@ -27,7 +27,6 @@ const ToggleComponent = () => {
 
 export default ToggleComponent
 const StyledContainer = styled(StyledFlex)`
-/* border: 1px solid red; */
 flex-direction: row;
 justify-content: flex-start;
 column-gap: 27px;
@@ -39,7 +38,6 @@ img{
     width: 100%;
     height: 100%;
 }
-/* border: 1px solid blue; */
 `;
 
 const StyledToggle = styled(StyledDiv)`
@@ -47,7 +45,6 @@ img{
     width: 100%;
     height: 100%;
 }
-/* border: 1px solid green; */
 `;
 
 const StyledChevron = styled(StyledFlex)`
@@ -55,7 +52,6 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 column-gap: 28.34px;
-/* border: 1px solid yellow; */
 
 @media only screen and (min-width:1728px){
 column-gap: 28.34px;

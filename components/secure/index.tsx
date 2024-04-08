@@ -1,10 +1,10 @@
-import { StyledButton, StyledContainer, StyledDiv, StyledFlex, StyledFlexItem } from '@/__style/ui-block.style'
+import {  StyledContainer, StyledDiv, StyledFlex, StyledFlexItem } from '@/__style/ui-block.style'
 import Image from 'next/image'
 import React from 'react'
 import { styled } from 'styled-components'
 import SecureLeft from '../../public/assets/images/secureSectionImage.webp'
 import SecureLeftMobile from '../../public/assets/images/SecureMobile.webp'
-import { HeadingText, ParagraphText } from '@/__style/global.style'
+import { ParagraphText } from '@/__style/global.style'
 import IconComponent from './IconComponent'
 
 const SecureSection = () => {
@@ -36,9 +36,7 @@ blurDataURL="/assets/images/SecureMobile.webp"
  </StyledMobileImage>
         </StyledLeft>
 
-        <StyledRight
-        // grow
-        >
+        <StyledRight>
           <StyledServices
     fw='400'
      textAlign='left'

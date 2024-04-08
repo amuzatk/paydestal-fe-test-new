@@ -39,7 +39,6 @@ const NavBar = () => {
     <SafariToolBar />
     <StyledHeader>
       <StyledLogo href="/dashboard">
-        {/* <LogoIcon /> */}
         <Image className="web" src={Logo} width={243} height={74.47} alt="Paydestal Logo" />
         <Image className="mobile" src={MobileLogo} width={155} height={50} alt="Paydestal Logo" />
       </StyledLogo>

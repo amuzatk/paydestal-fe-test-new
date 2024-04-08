@@ -9,10 +9,7 @@ const ReadyToStart = () => {
   return (
     <StyledContainer>
       <StyledHeading
-      // fsize='64px'
       fw='800'
-      // // lh='80.64px'
-      // align='left'
       color=' #FFFFFF'
       >
       Ready to get started?
@@ -46,7 +43,6 @@ background-color: #1B442A;
 box-shadow: 0px 16px 29.799999237060547px 3px #00000040;
 justify-content: center;
 align-items: center;
-/* padding: 0 0 30px 0; */
 
 
 @media only screen and (min-width:1728px){

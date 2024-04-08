@@ -26,11 +26,9 @@ const SearchBar = () => {
 
 export default SearchBar
 const StyledContainer = styled(StyledFlex)`
-/* border: 1px solid red; */
 flex-direction: row;
 justify-content: flex-start;
 align-items: center;
-/* column-gap: 15.76px; */
 
 
 @media only screen and (min-width:1728px){ 
@@ -44,22 +42,11 @@ column-gap: 14px;
 const StyledShield = styled(StyledFlexItem)``;
 
 const StyledSearch = styled(StyledFlexItem)`
-
-/* width: 704px;
-height: 28px; */
-/* left: 29.5px; */
-/* padding: 6.5px 6.77px 3.5px 206.84px; */
-/* gap: 0px; */
-/* border-radius: 8px; */
-/* border: 1px 0px 0px 0px; */
-/* opacity: 0px; */
 border: 1px solid #00000040;
 position: relative;
 
 
 input{
-/* width: 700px;
-height: 26px; */
 border-radius: 8px;
 font-size: 14px;
 font-weight: 400;
@@ -74,7 +61,6 @@ border: none;
 }
 
 @media only screen and (min-width:1728px){
-  /* border: 3px solid red; */
 width: 704px;
 height: 28px;
 border-radius: 8px;
@@ -99,7 +85,6 @@ height: 26px;
 
 
 @media only screen and (min-width:1200px) and (max-width:1727px){
-  /* border: 3px solid green; */
   width: 604px;
 height: 26px;
 border-radius: 8px;

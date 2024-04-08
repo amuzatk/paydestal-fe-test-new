@@ -27,7 +27,6 @@ export default function Home() {
         <PaymentSolutions />
         <Faq />
         <FooterComponent />
-      {/* <FooterBase /> */}
       </main>
 
       <footer>
