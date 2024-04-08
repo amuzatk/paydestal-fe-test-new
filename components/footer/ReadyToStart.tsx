@@ -19,19 +19,13 @@ const ReadyToStart = () => {
       </StyledHeading>
 
       <StyledP
-      // fsize='24px'
-      // fw='400'
-      // lh='30.24px'
-      // textAlign='center'
       color='#FFFFFF'
       >
       It only takes a few minutes to register your FREE  account.
       </StyledP>
 
       <StyledGetStartedCont2>
-<StyledGetStartedBtn>
   Get Started
-</StyledGetStartedBtn>
 <Image 
 src={RightArrow} 
 width={7} 
@@ -105,9 +99,6 @@ width: auto;
 height: 390px;
 gap: 20px;
 margin: 0 24px;
-/* flex-grow: 1; */
-
-/* border: 1px solid red; */
 margin-top: -190px;
 }
 `;
@@ -195,19 +186,21 @@ text-align: center;
 `;
 
 const StyledGetStartedCont2 = styled.button`
-/* width: 275px;
-max-height: 60px; */
 column-gap: 10px;
 border-radius: 100px;
 opacity: 0px;
 background-color: #F4B23E;
-
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
 border: none;
-/* margin-top: 49.65px; */
+
+color: #1B442A;
+font-size: 21px;
+font-weight: 400;
+line-height: 26.46px;
+text-align: left;
 
 @media only screen and (min-width: 1728px) {
 width: 275px;
@@ -215,38 +208,29 @@ max-height: 60px;
 padding: 16px 55px;
 }
 
-
-/* @media only screen and (min-width:992px) and (max-width:1727px){
-  width: 270px;
-max-height: 58px;
-} */
-
 @media only screen and (min-width:1301px) and (max-width:1727px){
   width: 268px;
 max-height: 58px;
 padding: 14px 45px;
 
 }
-
 @media only screen and (min-width:1101px) and (max-width:1300px){
-  /* border: 1px solid red; */
-  width: 260px;
+width: 260px;
 max-height: 56px;
 padding: 12px 40px;
 
 }
 
 @media only screen and (min-width:992px) and (max-width:1100px){
-  width: 250px;
+width: 250px;
 max-height: 50px;
 padding: 10px 30px;
 }
 
 @media only screen and (max-width:991px){
 width: 240px;
-  /* width: 100%; */
-  max-height: 60px;
-  padding: 10px 0;
+max-height: 60px;
+padding: 10px 0;
 }
 @media only screen and (max-width:768px){
 width: 189px;
@@ -254,14 +238,4 @@ height: 56px;
 padding: 14px 0px;
 margin-top: 30px;
 }
-`;
-
-const StyledGetStartedBtn = styled(StyledButton)`
-/* max-height: 20px; */
-opacity: 0px;
-color: #1B442A;
-font-size: 21px;
-font-weight: 400;
-line-height: 26.46px;
-text-align: left;
 `;

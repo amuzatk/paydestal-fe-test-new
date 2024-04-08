@@ -805,7 +805,6 @@ const FooterComponent = () => {
 
 export default FooterComponent
 const StyledBackground = styled.section`
-/* border: 1px solid yellow; */
 position: relative;
 background-image: url('/assets/images/footerBackground.png');
 background-position: center;

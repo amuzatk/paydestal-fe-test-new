@@ -47,14 +47,11 @@ from simple projects to intricate financial products catering lots of customers.
 
 <StyledP
 fw='400'
-textAlign='left'
 color='#000000'
 >Got any ideas, it's time to create.</StyledP> 
 
      <StyledGetStartedCont2>
-<StyledGetStartedBtn>
 Explore  our  API  
-</StyledGetStartedBtn>
 <Image 
 src={RightArrow} 
 width={7} 
@@ -189,7 +186,6 @@ text-align: left;
 `;
 
 const StyledParagraph = styled(ParagraphText)`
-/* border: 1px solid red; */
 text-align: left;
 font-weight: 400;
 
@@ -211,23 +207,20 @@ line-height: 25.2px;
 }
 @media only screen and (max-width:768px){
 font-size: 16px;
-// font-weight: 400;
 line-height: 24px;
 text-align: left;
 }
 `;
 
-
 const StyledP = styled(ParagraphText)`
-/* border: 1px solid red; */
 font-weight: 400;
 margin-top: -1px;
 text-align: left;
 
-
 @media only screen and (min-width:1728px){
 font-size: 20px;
 line-height: 25.2px;
+padding-left: 29px;
   }
 
 @media only screen and (min-width:992px) and (max-width:1727px){
@@ -281,6 +274,14 @@ align-items: center;
 border: none;
 
 
+opacity: 0px;
+color: #FFFFFF;
+font-size: 16px;
+font-weight: 400;
+line-height: 20.16px;
+text-align: left;
+
+
 
 @media only screen and (min-width:1728px){
 margin-top: 49.65px;
@@ -303,15 +304,4 @@ height: 56px;
 padding: 14px 30px;
 margin-top: 49.65px;
 }
-`;
-
-const StyledGetStartedBtn = styled(StyledButton)`
-max-height: 20px;
-opacity: 0px;
-color: #FFFFFF;
-font-size: 16px;
-font-weight: 400;
-line-height: 20.16px;
-text-align: left;
-
 `;
