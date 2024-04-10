@@ -8,6 +8,7 @@ const variables = css`
     /* color  */
     /* --white: white; */
     --primary-text: #1B442A;
+    /* --primary-text: red; */
   }
 `;
 export default variables;

@@ -24,8 +24,9 @@ const Faq = () => {
      </StyledP>
         <StyledHeading
      align='center'
-     color='#1B442A'
-    // color='var(--primary-text)'
+    //  color='#1B442A'
+    // color='red'
+    color="var(--primary-text)"
      >
     Frequently Asked Questions
      </StyledHeading>
