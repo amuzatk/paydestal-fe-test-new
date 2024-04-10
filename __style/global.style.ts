@@ -1,25 +1,24 @@
 import styled, { createGlobalStyle } from 'styled-components';
-// import fonts from './font.style';
 import variables from './variable.style';
 
 export const GlobalStyle = createGlobalStyle`
 
   ${variables};
-  a {
+  /* a {
   color: inherit;
   text-decoration: none; 
   cursor: pointer;
-}
-img{
+} */
+/* img{
   max-width:100%;
   height: auto;
-}
+} */
 
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
  body,
  html{ 
@@ -27,24 +26,24 @@ img{
   margin: 0;
   padding: 0;
 
-  .blog-modal{
+  /* .blog-modal{
     z-index: 2000 !important;
-  }
+  } */
  }
-p,
+/* p,
 a, span, div {
   font-family: var(--Primary-font) ;
 margin: 0;
-}
+} */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
 h6 {
   font-family: var(--Primary-font) ;
   margin-bottom: 0;
-}
+} */
 `;
 
 export const HeadingText = styled.h1<{
